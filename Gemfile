@@ -1,34 +1,48 @@
 source 'https://rubygems.org'
 
+# Bundler
+gem 'bundler', '>= 1.8.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.rc1', '< 5.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'rails', '~> 5.0.0'
+# Use postgres as the database for Active Record
+gem 'pg', '~> 0.18.4'
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.6.0'
+# Use HAML for HTML content
+gem 'haml-rails', '~> 0.9.0'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0.4'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 3.0.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'coffee-rails', '~> 4.2.1'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.2.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5.x'
+gem 'turbolinks', '~> 5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'jbuilder', '~> 2.6.0'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Mail forms
+gem 'mail_form', github: 'plataformatec/mail_form', branch: 'master'
+# Easier to manage forms
+gem 'simple_form', '~> 3.2.1'
+# Email through Postmark
+gem 'postmark-rails', '~> 0.13.0'
+
+# Bootstrap 4 for layout
+gem 'bootstrap', '~> 4.0.0.alpha3.1'
+
+source 'https://rails-assets.org' do
+  # Needed for Bootstrap 4 Tooltips and Popovers
+  gem 'rails-assets-tether', '>= 1.1.0'
+  # Beautiful Select dropdowns
+  gem 'rails-assets-chosen', '~> 1.6.2'
+  # CSS Animations
+  gem 'rails-assets-animate.css', '~> 3.5.2'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,5 +58,13 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# Heroku gem
+group :production do
+  gem 'rails_12factor'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Ruby version
+ruby '2.3.1'
