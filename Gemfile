@@ -33,7 +33,7 @@ gem 'simple_form', '~> 3.2.1'
 gem 'postmark-rails', '~> 0.13.0'
 
 # Bootstrap 4 for layout
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'bootstrap', '~> 4.0.0.alpha4'
 
 source 'https://rails-assets.org' do
   # Needed for Bootstrap 4 Tooltips and Popovers
