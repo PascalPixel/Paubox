@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 # Bundler
 gem 'bundler', '>= 1.8.4'
+if ENV['HEROKU_APP_NAME']
+  ruby '2.2.2'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7.1'
@@ -27,14 +30,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Mail forms
-gem 'mail_form', github: 'plataformatec/mail_form', branch: 'master'
-# Easier to manage forms
-gem 'simple_form', '~> 3.2.1'
-# Email through Postmark
-gem 'postmark-rails', '~> 0.13.0'
-
-# Locomotive for CMS
+# Use Locomotive as CMS
 gem 'locomotivecms', '~> 3.1.1'
 
 source 'https://rails-assets.org' do
@@ -43,6 +39,10 @@ source 'https://rails-assets.org' do
   # CSS Animations
   gem 'rails-assets-animate.css', '~> 3.5.2'
 end
+# Uploads to AWS
+gem 'carrierwave-aws'
+# API
+gem 'platform-api', '~> 0.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
