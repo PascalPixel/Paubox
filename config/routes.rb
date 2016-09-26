@@ -6,12 +6,10 @@ Rails.application.routes.draw do
 
   # Solutions
   get "solutions", to: "welcomes#solutions"
-  namespace :solutions do
-    get "encrypted-email", to: "welcomes#encrypted_email"
-    get "encrypted-form", to: "welcomes#encrypted_form"
-    get "branded-storage", to: "welcomes#branded_storage"
-    get "email-api", to: "welcomes#email_api"
-  end
+  get "solutions/encrypted-email", to: "welcomes#encrypted_email"
+  get "solutions/encrypted-form", to: "welcomes#encrypted_form"
+  get "solutions/branded-storage", to: "welcomes#branded_storage"
+  get "solutions/email-api", to: "welcomes#email_api"
 
   get "partners", to: "welcomes#partners"
   get "customers", to: "welcomes#customers"
@@ -23,5 +21,5 @@ Rails.application.routes.draw do
   get "jobs", to: "welcomes#jobs"
 
   # Reroute bad links to home
-  get "*path", to: "welcomes#home"
+  get "*path", to: "welcomes#error"
 end
