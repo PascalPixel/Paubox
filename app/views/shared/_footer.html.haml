@@ -5,9 +5,16 @@
         %li
           = link_to 'PAUBOX', root_path
         %li
-          = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path
-        %li
           = link_to 'Solutions', solutions_path
+          %ul
+            %li
+              = link_to 'Encrypted Email', solutions_encrypted_email_path
+            %li
+              = link_to 'Encrypted Form', solutions_encrypted_form_path
+            %li
+              = link_to 'Branded Storage', solutions_branded_storage_path
+            %li
+              = link_to 'Email Api', solutions_email_api_path
         %li
           = link_to 'Customers', customers_path
         %li

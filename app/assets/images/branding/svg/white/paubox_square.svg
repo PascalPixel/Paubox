@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="541px" height="290px" viewBox="0 0 541 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>PAUBOX Square</title>
+    <desc></desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Final-Copy" transform="translate(-3046.000000, -980.000000)" stroke="#FFFFFF" stroke-width="20">
+            <g id="Blue" transform="translate(284.000000, 990.000000)">
+                <g id="PAUBOX-Square" transform="translate(2772.000000, 0.000000)">
+                    <path d="M1,-3.8242854e-13 C1,-3.8242854e-13 74,-3.7885888e-08 106,-3.8242854e-13 C142,3.78851239e-08 141,28 141,28 C141,28 142,55 106,55 C74,55 1,55 1,55 L1,110" id="Path"></path>
+                    <path d="M0,160 C0,160 53,160 85,160 C121,160 120,188 120,188 C120,188 121,215 85,215 C53,215 0,215 0,215" id="Path"></path>
+                    <path d="M0,215 C0,215 73,215 105,215 C141,215 140,242 140,242 C140,242 141,270 105,270 C73,270 0,270 0,270" id="Path-Copy"></path>
+                    <path d="M191,110 C191,110 191,60 191,30 C191,7.32365883e-14 221,0 221,0 L301,0 C301,0 331,9.76996262e-14 331,30 C331,60 331,110 331,110" id="Path-2"></path>
+                    <path d="M193.5,63 L327.5,63" id="Line"></path>
+                    <path d="M381,110 C381,110 381,60 381,30 C381,2.15345135e-13 411,1.42108547e-13 411,1.42108547e-13 L491,1.42108547e-13 C491,1.42108547e-13 521,2.39808173e-13 521,30 C521,60 521,110 521,110" id="Path-2-Copy" transform="translate(451.000000, 55.000000) rotate(-180.000000) translate(-451.000000, -55.000000) "></path>
+                    <path d="M190,240 C190,210 190,220 190,190 C190,160 220,160 220,160 L300,160 C300,160 330,160 330,190 C330,220 330,210 330,240 C330,270 300,270 300,270 L220,270 C220,270 190,270 190,240 Z" id="Path-2-Copy" transform="translate(260.000000, 215.000000) rotate(-180.000000) translate(-260.000000, -215.000000) "></path>
+                    <path d="M380,160 L520,270" id="Path-2-Copy" transform="translate(450.000000, 215.000000) rotate(-180.000000) translate(-450.000000, -215.000000) "></path>
+                    <path d="M380,160 L520,270" id="Path-2-Copy-2" transform="translate(450.000000, 215.000000) scale(-1, 1) rotate(-180.000000) translate(-450.000000, -215.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

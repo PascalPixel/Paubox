@@ -1,12 +1,42 @@
+// html
+//   font-size: 14px
+//   @include media-breakpoint-up(sm)
+//     font-size: 16px
+//   @include media-breakpoint-up(md)
+//     font-size: 18px
+//   @include media-breakpoint-up(lg)
+//     font-size: 20px
+html, body, #hero
+  height: 100%
 body
-  padding-top: 4rem
+  padding-top: 3.375rem
 section
-  padding-top: 4rem
-  padding-bottom: 4rem
+  padding-top: 3.375rem
+  padding-bottom: 3.375rem
 footer
-  padding-top: 4rem
-  padding-bottom: 4rem
+  padding-top: 3.375rem
+  padding-bottom: 3.375rem
   background: $brand-primary
   color: white
   a
     color: white
+.navbar-brand
+  padding-top: 0.7rem
+  padding-bottom: 0.7rem
+  img
+    height: 1rem
+#hero
+  background: image-url('hero.jpg')
+  background-size: cover
+  background-position: center
+  padding-left: 3.375rem
+  padding-right: 3.375rem
+  color: white
+  &:before
+    background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    content: ""

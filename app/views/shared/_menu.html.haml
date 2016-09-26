@@ -1,8 +1,9 @@
-%nav.navbar.navbar-light.bg-faded.navbar-fixed-top
+%nav.navbar.navbar-dark.bg-primary.navbar-fixed-top
   %button.navbar-toggler.hidden-sm-up{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
     ☰
   #collapseNav.collapse.navbar-toggleable-xs
-    = link_to 'PAUBOX', root_path, class: 'navbar-brand'
+    = link_to root_path, class: 'navbar-brand' do
+      = image_tag 'branding/svg/white/paubox.svg'
     %ul.nav.navbar-nav
       %li.nav-item
         = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path, class: 'nav-link'
@@ -10,12 +11,6 @@
         = link_to 'Solutions', solutions_path, class: 'nav-link'
       %li.nav-item
         = link_to 'Customers', customers_path, class: 'nav-link'
-      %li.nav-item
-        = link_to 'Security', security_path, class: 'nav-link'
-      %li.nav-item
-        = link_to 'Terms', terms_path, class: 'nav-link'
-      %li.nav-item
-        = link_to 'Blog', '/blog', class: 'nav-link'
       %li.nav-item
         = link_to 'Help', '/help', class: 'nav-link'
       %li.nav-item
