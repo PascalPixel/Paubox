@@ -3,7 +3,8 @@
     .row
       %ul.list-unstyled
         %li
-          = link_to 'PAUBOX', root_path
+          = link_to root_path do
+            = image_tag 'branding/svg/white/paubox.svg', width: '100px'
         %li
           = link_to 'Solutions', solutions_path
           %ul

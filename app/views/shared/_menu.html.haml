@@ -2,9 +2,11 @@
   %button.navbar-toggler.hidden-sm-up{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
     ☰
   #collapseNav.collapse.navbar-toggleable-xs
-    = link_to root_path, class: 'navbar-brand' do
-      = image_tag 'branding/svg/white/paubox.svg'
+    -# = link_to root_path, class: 'navbar-brand' do
+    -#   = image_tag 'branding/svg/white/paubox.svg'
     %ul.nav.navbar-nav
+      %li.nav-item
+        = link_to 'Home', root_path, class: 'nav-link'
       %li.nav-item
         = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path, class: 'nav-link'
       %li.nav-item
