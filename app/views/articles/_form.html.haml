@@ -1,9 +1,21 @@
-= simple_form_for(@article) do |f|
-  = f.error_notification
-
-  .form-inputs
-    = f.input :title
-    = f.input :body
-
-  .form-actions
-    = f.button :submit
+.row
+  .col-sm-12
+    = simple_form_for @article do |f|
+      - if @article.errors.any?
+        #error_explanation
+          - @article.errors.full_messages.each do |msg|
+            .alert.alert-danger= msg
+      %p
+        = f.label :title
+        %br
+        = f.text_field :title, class: "form-control", spellcheck: "true"
+      %p
+        = f.label :body
+        %br
+        = f.bootsy_area :body, class: "form-control", rows: 20, spellcheck: "true"
+      %p
+        .row
+          .col-sm-6
+            = link_to 'Cancel', articles_path, class: "btn btn-secondary btn-block"
+          .col-sm-6
+            = f.submit 'Save', class: "btn btn-primary btn-block"

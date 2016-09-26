@@ -35,6 +35,21 @@ gem 'postmark-rails', '~> 0.13.0'
 # Bootstrap 4 for layout
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
+# Friendly ID's for blogposts
+gem 'friendly_id', '~> 5.1.0'
+
+# Image uploads to AWS
+gem 'carrierwave', '~> 0.10.0'
+gem 'fog', '~> 1.36.0'
+gem 'fog-aws', '~> 0.8.1'
+gem 'aws-sdk', '< 2.0'
+
+# Markdown blog editing
+gem 'bootsy', '~> 2.2.1'
+
+# Pagination
+gem 'kaminari', '~> 0.16.3'
+
 source 'https://rails-assets.org' do
   # Needed for Bootstrap 4 Tooltips and Popovers
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -42,6 +57,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-chosen', '~> 1.6.2'
   # CSS Animations
   gem 'rails-assets-animate.css', '~> 3.5.2'
+  # Material Design Icons
+  gem 'rails-assets-mdi', '~> 1.7.22'
 end
 
 group :development, :test do

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  # Blog
   resources :articles
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Bootsy editor
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
 
   # Root
   root to: "welcomes#home"
