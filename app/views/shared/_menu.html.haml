@@ -1,5 +1,24 @@
-= link_to 'Home', root_path, class: 'btn'
-= link_to 'Products', products_path, class: 'btn'
-= link_to 'Customers', customers_path, class: 'btn'
-= link_to 'Security', security_path, class: 'btn'
-= link_to 'Terms', terms_path, class: 'btn'
+%nav.navbar.navbar-light.bg-faded.navbar-fixed-top
+  %button.navbar-toggler.hidden-sm-up{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
+    ☰
+  #collapseNav.collapse.navbar-toggleable-xs
+    = link_to 'PAUBOX', root_path, class: 'navbar-brand'
+    %ul.nav.navbar-nav
+      %li.nav-item
+        = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Solutions', solutions_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Customers', customers_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Security', security_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Terms', terms_path, class: 'nav-link'
+      %li.nav-item
+        = link_to 'Blog', '/blog', class: 'nav-link'
+      %li.nav-item
+        = link_to 'Help', '/help', class: 'nav-link'
+      %li.nav-item
+        = link_to 'Contact', '/contact', class: 'nav-link'
+      %li.nav-item.pull-sm-right
+        .nav-link Login

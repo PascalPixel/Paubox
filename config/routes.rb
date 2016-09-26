@@ -4,9 +4,9 @@ Rails.application.routes.draw do
   # Root
   root to: "welcomes#home"
 
-  # Products
-  get "products", to: "welcomes#products"
-  namespace :products do
+  # Solutions
+  get "solutions", to: "welcomes#solutions"
+  namespace :solutions do
     get "encrypted-email", to: "welcomes#encrypted_email"
     get "encrypted-form", to: "welcomes#encrypted_form"
     get "branded-storage", to: "welcomes#branded_storage"
