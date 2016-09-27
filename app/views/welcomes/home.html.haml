@@ -1,13 +1,21 @@
 %section#hero
-  .container-fluid
+  -# .container-fluid
+  -#   .row
+  -#     .col-lg-1.col-md-2.col-sm-4.col-xs-6
+  -#       = image_tag 'branding/svg/blue/paubox_square.svg', class: 'img-fluid'
+  -#   .row
+  -#     .col-lg-11.offset-lg-1.col-md-10.offset-md-2.col-sm-10.offset-sm-2
+  -#       %h1.p-t-1 Medical-grade security for existing email
+  -#       %h2.p-b-1 No new apps, no plug-ins, just email.
+  -#       %button.btn.btn-success Request a demo
+  .container.text-sm-center
     .row
-      .col-lg-1.col-md-2.col-sm-4.col-xs-6
-        = image_tag 'branding/svg/white/paubox_square.svg', class: 'img-fluid'
-    .row
-      .col-lg-11.offset-lg-1.col-md-10.offset-md-2.col-sm-10.offset-sm-2
-        %h1.p-t-1 Medical-grade security for existing email
-        %h2.p-b-1 No new apps, no plug-ins, just email.
+      .col-xs-12
+        %h1.text-primary PAUBOX
+        %h2 Medical-grade security for existing email
+        %h3 No new apps, no plug-ins, just HIPAA compliant.
         %button.btn.btn-success Request a demo
+%hr
 %section#news
   .container.text-xs-center
     .row
@@ -68,4 +76,3 @@
     .row
       .col-sm-12
         %h2 Over 30,000 emails encrypted per day.
-%hr

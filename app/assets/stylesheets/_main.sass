@@ -1,7 +1,9 @@
-html, body, #hero
-  height: 100%
-body
-  padding-top: 3.375rem
+nav
+  user-select: none
+a
+  cursor: pointer
+.mdi:before
+  font-size: 1em
 section
   padding-top: 3.375rem
   padding-bottom: 3.375rem
@@ -17,18 +19,33 @@ footer
   padding-bottom: 0.7rem
   img
     height: 1rem
-#hero
-  background: image-url('hero.jpg')
-  background-size: cover
-  background-position: center
-  padding-left: 3.375rem
-  padding-right: 3.375rem
-  color: white
-  &:before
-    background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
-    bottom: 0
-    left: 0
-    position: absolute
-    right: 0
-    top: 0
-    content: ""
+// #hero
+//   background: image-url('hero.jpg')
+//   background-size: cover
+//   background-position: center
+//   padding-left: 3.375rem
+//   padding-right: 3.375rem
+//   color: white
+//   &:before
+//     background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
+//     bottom: 0
+//     left: 0
+//     position: absolute
+//     right: 0
+//     top: 0
+//     content: ""
+// html, body, #hero
+//   height: 100%
+
+// Sticky footer
+html, body
+  height: 100%
+.wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto
+  padding-top: 3.375rem
+.footer,
+.push
+  height: 2.5rem

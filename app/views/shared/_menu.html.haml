@@ -11,11 +11,34 @@
         = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path, class: 'nav-link'
       %li.nav-item
         = link_to 'Solutions', solutions_path, class: 'nav-link'
+      -# %li.nav-item.dropdown
+      -#   %a.nav-link#solutionsDropdown.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+      -#     Solutions
+      -#   .dropdown-menu{"aria-labelledby" => "solutionsDropdown"}
+      -#     = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
+      -#       %i.mdi.mdi-email-secure
+      -#       Encrypted Email
+      -#     = link_to solutions_encrypted_form_path, class: 'dropdown-item' do
+      -#       %i.mdi.mdi-fingerprint
+      -#       Encrypted Form
+      -#     = link_to solutions_branded_storage_path, class: 'dropdown-item' do
+      -#       %i.mdi.mdi-folder-lock
+      -#       Branded Storage
+      -#     = link_to solutions_email_api_path, class: 'dropdown-item' do
+      -#       %i.mdi.mdi-cube-send
+      -#       Email Api
       %li.nav-item
         = link_to 'Customers', customers_path, class: 'nav-link'
+    %ul.nav.navbar-nav.pull-sm-right
       %li.nav-item
-        = link_to 'Help', '/help', class: 'nav-link'
+        = link_to '/help', class: 'nav-link' do
+          %i.mdi.mdi-help
+          Help
       %li.nav-item
-        = link_to 'Contact', '/contact', class: 'nav-link'
-      %li.nav-item.pull-sm-right
-        .nav-link Login
+        = link_to '/contact', class: 'nav-link' do
+          %i.mdi.mdi-chat
+          Contact
+      %li.nav-item
+        .nav-link
+          %i.mdi.mdi-person
+          Login
