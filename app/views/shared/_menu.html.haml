@@ -1,4 +1,4 @@
-%nav.navbar.navbar-dark.bg-primary.navbar-fixed-top
+%nav.navbar.navbar-light.bg-faded.navbar-fixed-top
   %button.navbar-toggler.hidden-sm-up{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
     ☰
   #collapseNav.collapse.navbar-toggleable-xs
@@ -32,13 +32,13 @@
     %ul.nav.navbar-nav.pull-sm-right
       %li.nav-item
         = link_to '/help', class: 'nav-link' do
-          %i.mdi.mdi-help
+          -# %i.mdi.mdi-help
           Help
       %li.nav-item
         = link_to '/contact', class: 'nav-link' do
-          %i.mdi.mdi-chat
+          -# %i.mdi.mdi-chat
           Contact
       %li.nav-item
         .nav-link
-          %i.mdi.mdi-person
+          -# %i.mdi.mdi-person
           Login
