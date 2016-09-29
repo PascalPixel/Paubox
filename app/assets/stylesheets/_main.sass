@@ -2,6 +2,8 @@ nav
   user-select: none
 a
   cursor: pointer
+.code
+  @extend code
 .mdi:before
   font-size: 1em
 section
@@ -19,23 +21,26 @@ footer
   padding-bottom: 0.7rem
   img
     height: 1rem
-// #hero
-//   background: image-url('hero.jpg')
-//   background-size: cover
-//   background-position: center
-//   padding-left: 3.375rem
-//   padding-right: 3.375rem
-//   color: white
-//   &:before
-//     background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
-//     bottom: 0
-//     left: 0
-//     position: absolute
-//     right: 0
-//     top: 0
-//     content: ""
-// html, body, #hero
-//   height: 100%
+#hero
+  background: image-url('hero.jpg')
+  background-size: cover
+  background-position: center
+  padding-left: 3.375rem
+  padding-right: 3.375rem
+  color: white
+  position: relative
+  padding-top: 30vh
+  padding-bottom: 10vh
+  &:before
+    background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    content: ""
+html, body, #hero
+  height: 100%
 
 // Sticky footer
 html, body

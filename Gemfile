@@ -35,6 +35,9 @@ gem 'postmark-rails', '~> 0.13.0'
 # Bootstrap 4 for layout
 gem 'bootstrap', '~> 4.0.0.alpha4'
 
+# Synthax highlighting
+gem 'haml-coderay', '~> 0.2.0'
+
 source 'https://rails-assets.org' do
   # Needed for Bootstrap 4 Tooltips and Popovers
   gem 'rails-assets-tether', '>= 1.1.0'

@@ -1,32 +1,29 @@
-%nav.navbar.navbar-light.bg-faded.navbar-fixed-top
+%nav.navbar.navbar-dark.bg-primary.navbar-fixed-top
   %button.navbar-toggler.hidden-sm-up{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
     ☰
   #collapseNav.collapse.navbar-toggleable-xs
-    -# = link_to root_path, class: 'navbar-brand' do
-    -#   = image_tag 'branding/svg/white/paubox.svg'
     %ul.nav.navbar-nav
       %li.nav-item
-        = link_to 'Home', root_path, class: 'nav-link'
+        = link_to root_path, class: 'nav-link' do
+          = image_tag 'branding/svg/white/paubox_mini.svg', style: 'height: 1em'
       %li.nav-item
-        = link_to 'HIPAA Compliant Email', solutions_encrypted_email_path, class: 'nav-link'
-      %li.nav-item
-        = link_to 'Solutions', solutions_path, class: 'nav-link'
-      -# %li.nav-item.dropdown
-      -#   %a.nav-link#solutionsDropdown.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
-      -#     Solutions
-      -#   .dropdown-menu{"aria-labelledby" => "solutionsDropdown"}
-      -#     = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
-      -#       %i.mdi.mdi-email-secure
-      -#       Encrypted Email
-      -#     = link_to solutions_encrypted_form_path, class: 'dropdown-item' do
-      -#       %i.mdi.mdi-fingerprint
-      -#       Encrypted Form
-      -#     = link_to solutions_branded_storage_path, class: 'dropdown-item' do
-      -#       %i.mdi.mdi-folder-lock
-      -#       Branded Storage
-      -#     = link_to solutions_email_api_path, class: 'dropdown-item' do
-      -#       %i.mdi.mdi-cube-send
-      -#       Email Api
+        = link_to 'HIPAA Compliant Email', hipaa_compliance_path, class: 'nav-link'
+      %li.nav-item.dropdown
+        %a.nav-link#solutionsDropdown.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+          Solutions
+        .dropdown-menu{"aria-labelledby" => "solutionsDropdown"}
+          = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
+            %i.mdi.mdi-email-secure
+            Encrypted Email
+          = link_to solutions_encrypted_form_path, class: 'dropdown-item' do
+            %i.mdi.mdi-fingerprint
+            Encrypted Form
+          = link_to solutions_branded_storage_path, class: 'dropdown-item' do
+            %i.mdi.mdi-folder-lock
+            Branded Storage
+          = link_to solutions_email_api_path, class: 'dropdown-item' do
+            %i.mdi.mdi-cube-send
+            Email Api
       %li.nav-item
         = link_to 'Customers', customers_path, class: 'nav-link'
     %ul.nav.navbar-nav.pull-sm-right
