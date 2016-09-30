@@ -1,6 +1,4 @@
 %section#form
-  = simple_form
-
   %form.form-email{"accept-charset" => "UTF-8", :action => "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", "data-error" => "Please fill all fields correctly.", "data-success" => "Thanks for your submission, we will be in touch shortly.", :method => "post"}
     %input{:name => "utf8", :type => "hidden", :value => "✓"}
     %input{:name => "authenticity_token", :type => "hidden", :value => "GGiDhPzQZnuTG2SFSHFoGatcebax8AZOInQsjAUTwGgxIr2qE1WlaH3dRFO3RRfPoZszfS+y61C3+fz1eursYA=="}

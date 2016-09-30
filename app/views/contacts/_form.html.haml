@@ -1,0 +1,13 @@
+- flash.each do |name, msg|
+  - if msg.is_a?(String)
+    .alert{class: "alert-#{name == "error" ? "danger" : "success"}"}
+      %a.close{"data-dismiss" => "alert"}
+        &times;
+      = content_tag :div, msg, :id => "flash_#{name}"
+= simple_form_for @contact do |f|
+  = f.input :name, required: true, placeholder: 'Name'
+  = f.input :email, required: true, placeholder: 'Email'
+  = f.input :message, as: :text, required: true, input_html: {rows: 5}, placeholder: 'Message'
+  .hidden
+    = f.input :nickname, hint: 'Leave this field blank!'
+  = f.button :submit, 'Send message', class: "btn btn-outline-primary btn-block"

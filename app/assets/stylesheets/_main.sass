@@ -1,3 +1,9 @@
+// Shrink everything on mobile
+html
+  font-size: 14px
+  @media (min-width: 544px)
+    font-size: inherit
+
 // General
 .code
   @extend code
@@ -6,6 +12,8 @@
 section
   padding-top: 3.375rem
   padding-bottom: 3.375rem
+.hidden
+  display: none
 
 // Child list
 ul.list-unstyled ul
@@ -24,6 +32,9 @@ a
   opacity: 0
 .open > .dropdown-menu
   opacity: 1
+.contactDropdown
+  padding: 1rem
+  min-width: 18rem
 
 // Home
 #hero
@@ -32,8 +43,9 @@ a
   background-position: center
   color: white
   position: relative
-  padding-top: 30vh
-  padding-bottom: 10vh
+  @media (min-width: 544px)
+    padding-top: 30vh
+    padding-bottom: 10vh
   &:before
     background: linear-gradient(135deg, $brand-primary 20%, transparentize($brand-primary, .7) 100%)
     bottom: 0

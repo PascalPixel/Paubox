@@ -33,10 +33,12 @@
         = link_to '/help', class: 'nav-link' do
           -# %i.mdi.mdi-help
           Help
-      %li.nav-item
-        = link_to '/contact', class: 'nav-link' do
-          -# %i.mdi.mdi-chat
-          Contact
+      %li.nav-item.dropdown
+        %a#contactDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+          %span.ss-chat
+          = t('.contact')
+        .contactDropdown.dropdown-menu.dropdown-menu-right.dropdown-navbar{"aria-labelledby" => "contactDropdown"}
+          = render 'contacts/form'
       %li.nav-item
         .nav-link
           -# %i.mdi.mdi-person

@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
   # Root
   root to: "welcomes#home"
+
+  # Contact
+  resources :contacts
 
   # Solutions
   get "solutions", to: "welcomes#solutions"
@@ -17,8 +18,11 @@ Rails.application.routes.draw do
   get "security", to: "welcomes#security"
   get "terms", to: "welcomes#terms"
   get "team", to: "welcomes#team"
-
   get "jobs", to: "welcomes#jobs"
+
+  # Contact form
+  get "contact", to: "contacts#new"
+  resources :contacts, only: [:new, :create]
 
   # Reroute bad links to home
   get "*path", to: "welcomes#error"
