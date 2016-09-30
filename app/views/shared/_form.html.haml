@@ -1,40 +1,34 @@
-%hr
 %section#form
-  .container
+  = simple_form
+
+  %form.form-email{"accept-charset" => "UTF-8", :action => "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", "data-error" => "Please fill all fields correctly.", "data-success" => "Thanks for your submission, we will be in touch shortly.", :method => "post"}
+    %input{:name => "utf8", :type => "hidden", :value => "✓"}
+    %input{:name => "authenticity_token", :type => "hidden", :value => "GGiDhPzQZnuTG2SFSHFoGatcebax8AZOInQsjAUTwGgxIr2qE1WlaH3dRFO3RRfPoZszfS+y61C3+fz1eursYA=="}
+    %input{:name => "oid", :type => "hidden", :value => "00D36000000uAn9"}
+    %input{:name => "retURL", :type => "hidden", :value => "https://www.paubox.com/blog/confirmation"}
     .row
-      .col-md-12.text-center
-        %h5.text-center
-          %strong Get a FREE quote
-          to see how Paubox can seamlessly make your email HIPAA compliant. Fill out the form below today!
-    %br
-    %form.form-email{"accept-charset" => "UTF-8", :action => "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8", "data-error" => "Please fill all fields correctly.", "data-success" => "Thanks for your submission, we will be in touch shortly.", :method => "post"}
-      %input{:name => "utf8", :type => "hidden", :value => "✓"}
-      %input{:name => "authenticity_token", :type => "hidden", :value => "GGiDhPzQZnuTG2SFSHFoGatcebax8AZOInQsjAUTwGgxIr2qE1WlaH3dRFO3RRfPoZszfS+y61C3+fz1eursYA=="}
-      %input{:name => "oid", :type => "hidden", :value => "00D36000000uAn9"}
-      %input{:name => "retURL", :type => "hidden", :value => "https://www.paubox.com/blog/confirmation"}
-      .row
-        .col-md-6
-          %input#first_name.validate-required{:name => "first_name", :placeholder => "First Name", :type => "text"}
-        .col-md-6
-          %input#last_name.validate-required{:name => "last_name", :placeholder => "Last Name", :type => "text"}
-      .row
-        .col-md-6
-          %input#email.validate-required.validate-email{:name => "email", :placeholder => "Email Address", :type => "text"}
-        .col-md-6
-          %input#phone.validate-required{:name => "phone", :placeholder => "Phone Number", :type => "text"}
-      .row
-        .col-md-6
-          %input#title.validate-required{:name => "title", :placeholder => "Job Title", :type => "text"}
-        .col-md-6
-          %input#company.validate-required{:name => "company", :placeholder => "Company", :type => "text"}
-      .row
-        .col-md-6
-          %select#employees{:name => "employees"}
-            %option{:value => "Employees"} Employees
-            %option{:value => "1 - 5 employees"} 1 - 5 employees
-            %option{:value => "6 - 20 employees"} 6 - 20 employees
-            %option{:value => "21 - 100 employees"} 21 - 100 employees
-            %option{:value => "101 - 500 employees"} 101 - 500 employees
-            %option{:value => "501 - 3,500 employees"} 501 - 3,500 employees
-            %option{:value => "3,501 + employees"} 3,501 + employees
-      %input#api_contact{:name => "commit", :onclick => "ga('send', 'event', { eventCategory: 'Contact Form', eventAction: 'Submission', eventLabel: 'API Landing Page', eventValue: 1});", :type => "submit", :value => "yes i want to learn more"}
+      .col-md-6
+        %input#first_name.validate-required{:name => "first_name", :placeholder => "First Name", :type => "text"}
+      .col-md-6
+        %input#last_name.validate-required{:name => "last_name", :placeholder => "Last Name", :type => "text"}
+    .row
+      .col-md-6
+        %input#email.validate-required.validate-email{:name => "email", :placeholder => "Email Address", :type => "text"}
+      .col-md-6
+        %input#phone.validate-required{:name => "phone", :placeholder => "Phone Number", :type => "text"}
+    .row
+      .col-md-6
+        %input#title.validate-required{:name => "title", :placeholder => "Job Title", :type => "text"}
+      .col-md-6
+        %input#company.validate-required{:name => "company", :placeholder => "Company", :type => "text"}
+    .row
+      .col-md-6
+        %select#employees{:name => "employees"}
+          %option{:value => "Employees"} Employees
+          %option{:value => "1 - 5 employees"} 1 - 5 employees
+          %option{:value => "6 - 20 employees"} 6 - 20 employees
+          %option{:value => "21 - 100 employees"} 21 - 100 employees
+          %option{:value => "101 - 500 employees"} 101 - 500 employees
+          %option{:value => "501 - 3,500 employees"} 501 - 3,500 employees
+          %option{:value => "3,501 + employees"} 3,501 + employees
+    %input#api_contact{:name => "commit", :onclick => "ga('send', 'event', { eventCategory: 'Contact Form', eventAction: 'Submission', eventLabel: 'API Landing Page', eventValue: 1});", :type => "submit", :value => "yes i want to learn more"}

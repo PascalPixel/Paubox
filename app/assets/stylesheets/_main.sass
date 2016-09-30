@@ -1,7 +1,4 @@
-nav
-  user-select: none
-a
-  cursor: pointer
+// General
 .code
   @extend code
 .mdi:before
@@ -9,24 +6,30 @@ a
 section
   padding-top: 3.375rem
   padding-bottom: 3.375rem
-footer
-  padding-top: 3.375rem
-  padding-bottom: 3.375rem
-  background: $brand-primary
-  color: white
-  a
-    color: white
-.navbar-brand
-  padding-top: 0.7rem
-  padding-bottom: 0.7rem
-  img
-    height: 1rem
+
+// Child list
+ul.list-unstyled ul
+  list-style: none
+  padding-left: 1rem
+
+// Navbar
+nav
+  user-select: none
+a
+  cursor: pointer
+.nav-link,
+.dropdown-menu
+  transition: all .3s
+.dropdown-menu
+  opacity: 0
+.open > .dropdown-menu
+  opacity: 1
+
+// Home
 #hero
   background: image-url('hero.jpg')
   background-size: cover
   background-position: center
-  padding-left: 3.375rem
-  padding-right: 3.375rem
   color: white
   position: relative
   padding-top: 30vh
@@ -38,10 +41,23 @@ footer
     position: absolute
     right: 0
     top: 0
-    content: ""
+    content: ''
 html, body, #hero
   height: 100%
 
+
+// Footer
+footer
+  padding-top: 3.375rem
+  padding-bottom: 3.375rem
+  background: $brand-primary
+  color: white
+  a
+    color: rgba(255, 255, 255, 0.5)
+    transition: color .3s
+    &:hover
+      text-decoration: none
+      color: rgba(255, 255, 255, 0.75)
 // Sticky footer
 html, body
   height: 100%
@@ -54,3 +70,14 @@ html, body
 .footer,
 .push
   height: 2.5rem
+// Superpencil tag
+.superpencil
+  .tag-secondary
+    background-color: #FCE400
+    color: #774701
+    font-family: 'Avenir Next', 'Avenir', 'Roboto', 'Helvetica', 'Arial', sans-serif
+    font-weight: bold
+  img
+    width: 17px
+    margin-right: -2px
+    margin-top: -1px
