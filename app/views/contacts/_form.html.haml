@@ -4,10 +4,14 @@
       %a.close{"data-dismiss" => "alert"}
         &times;
       = content_tag :div, msg, :id => "flash_#{name}"
-= simple_form_for @contact do |f|
-  = f.input :name, required: true, placeholder: 'Name'
+= simple_form_for @contact, wrapper: :horizontal_form do |f|
+  = f.input :first_name, required: true, placeholder: 'First name'
+  = f.input :last_name, required: true, placeholder: 'Last name'
   = f.input :email, required: true, placeholder: 'Email'
-  = f.input :message, as: :text, required: true, input_html: {rows: 5}, placeholder: 'Message'
+  = f.input :phone, required: false, placeholder: 'Phone'
+  = f.input :title, required: false, placeholder: 'Title'
+  = f.input :company, required: false, placeholder: 'Company'
+  = f.input :number_of_employees, required: false, placeholder: 'Number of employees', collection: ['1 - 5', '6 - 20', '21 - 100', '101 - 500', '501 - 3,500', '3,501+']
   .hidden
-    = f.input :nickname, hint: 'Leave this field blank!'
+    = f.input :nickname
   = f.button :submit, 'Send message', class: "btn btn-outline-primary btn-block"

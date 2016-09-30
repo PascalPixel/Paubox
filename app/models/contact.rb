@@ -1,12 +1,19 @@
 class Contact < MailForm::Base
-  attribute :name,      :validate => true
-  attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
-  attribute :message
-  attribute :nickname,  :captcha  => true
+  attribute :first_name
+  attribute :last_name
+  attribute :email, validate: /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :phone
+  attribute :title
+  attribute :company
+  attribute :number_of_employees
+  attribute :nickname, captcha: true
+
+  validates :first_name, presence: true
+  validates :last_name, presence: true
 
   def headers
     {
-      :subject => "Paubox Request from #{name} at #{email}",
+      :subject => "Paubox Request #{email}",
       :to => "getstarted@paubox.com",
       :from => "getstarted@paubox.com"
     }
