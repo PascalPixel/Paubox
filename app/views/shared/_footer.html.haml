@@ -4,7 +4,7 @@
       .col-sm-12.m-b-2
         = image_tag 'branding/svg/white/paubox.svg', style: 'height: 1em'
     .row
-      .col-sm-6
+      .col-sm-3
         %h5 Sitemap
         %ul.list-unstyled
           %li= link_to 'Home', root_path
@@ -23,8 +23,33 @@
           %li= link_to 'Help', '/help'
           %li= link_to 'Contact', '/contact'
           %li Login
-      .col-sm-6
+      .col-sm-3
         %h5 Social
+        %ul.list-unstyled
+          %li
+            %a{href: "https://twitter.com/pauboxhq"}
+              %i.mdi.mdi-twitter
+              Twitter
+          %li
+            %a{href: "https://www.facebook.com/PauboxHQ"}
+              %i.mdi.mdi-facebook
+              Facebook
+          %li
+            %a{href: "https://www.youtube.com/channel/UCPEseZRadIWllAF0gdPCNcw"}
+              %i.mdi.mdi-youtube-play
+              Youtube
+          %li
+            %a{href: "https://plus.google.com/+Paubox/"}
+              %i.mdi.mdi-google
+              Google
+          %li
+            %a{href: "https://www.linkedin.com/company/paubox"}
+              %i.mdi.mdi-linkedin
+              Linkedin
+
+      .col-sm-6
+        %h5 Contact
+        = render 'contacts/form'
 
     .row.m-t-3
       .col-sm-6
