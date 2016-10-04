@@ -4,14 +4,16 @@
       .col-xs-12
         %h1.p-t-1 Medical-grade security for existing email
         %h2.p-b-1 No new apps, no plug-ins, just email
-        %button.btn.btn-outline-success{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Get a Demo
-        %button.btn.btn-outline-secondary HIPAA Compliant
+        = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-outline-success'
+        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Demo
 %section#news
   .container
     .row
       .col-sm-12
         %h2 As seen in
+        %hr
     .row
+      .col-sm-2
       .col-sm-2
         = image_tag 'media/techcrunch.png', class: 'img-fluid'
       .col-sm-2
@@ -21,71 +23,38 @@
       .col-sm-2
         = image_tag 'media/entrepreneur.png', class: 'img-fluid'
       .col-sm-2
-        = image_tag 'media/dentistry.png', class: 'img-fluid'
-      .col-sm-2
         = image_tag 'media/cio.png', class: 'img-fluid'
-%hr
 %section#solutions
   .container
     .row
       .col-sm-12
         %h2 Our Solutions
+        %hr
     .row
-      .col-sm-6
-        %h3 Email Encryption
+      .col-md-2
+      .col-md-5
+        = link_to solutions_encrypted_email_path do
+          %h3
+            %i.mdi.mdi-email-secure
+            Encrypted Email
         %p Paubox Encrypted Email insures every email you send is seamlessly delivered with encryption, without the hassle of extra steps. Just send emails as normal from any device.
-      .col-sm-6
-        %h3 Encrypted Forms
+      .col-md-5
+        = link_to solutions_encrypted_form_path do
+          %h3
+            %i.mdi.mdi-fingerprint
+            Encrypted Forms
         %p Let us help you convert your paper forms to achieve HIPAA compliance with encrypted forms. Make tasks like patient intake easier for you and your clients.
     .row
-      .col-sm-6
-        %h3 Branded Storage
+      .col-md-2
+      .col-md-5
+        = link_to solutions_branded_storage_path do
+          %h3
+            %i.mdi.mdi-folder-lock
+            Branded Storage
         %p Paubox Branded Storage gives you a fast, easy way to share data with the security needed to reach HIPAA compliance.
-      .col-sm-6
-        %h3 Email API
+      .col-md-5
+        = link_to solutions_email_api_path do
+          %h3
+            %i.mdi.mdi-cube-send
+            Email API
         %p Paubox's HIPAA compliant encrypted email API allows covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure.
-%hr
-%section#numbers
-  .container
-    .row
-      .col-sm-12
-        %h2 The Numbers
-        %ul
-          %li Over 30,000 emails encrypted with PAUBOX per day.
-          %li More than XXXX daily users.
-          %li XXX Companies join per week.
-%hr
-%section#contact
-  .container
-    .row
-      .col-sm-12
-        %h2 Ask about HIPAA compliant email
-    .row
-      .col-sm-6
-        %p
-          Do you have any questions about our solutions? Please do not hesitate to contact us using this form or the contact info below and we will get back to you within 24 hours.
-        %hr
-        %p
-          %b E:
-          info@paubox.com
-          %br
-          %b P:
-          650-351-9891
-          %br
-        %p
-          2017 Mission Street
-          %br
-          Second Floor
-          %br
-          San Francisco, CA 94110
-        %hr
-        Tech Support:
-        %br
-        %b E:
-        support@paubox.com
-        %br
-        %b P:
-        650-351-9891
-        %br
-      .col-sm-6
-        = render 'contacts/form'

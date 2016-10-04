@@ -4,26 +4,36 @@
       .col-sm-12.m-b-2
         = image_tag 'branding/svg/white/paubox.svg', style: 'height: 1em'
     .row
-      .col-sm-6
+      .col-md-8
         %h5 Sitemap
-        %ul.list-unstyled
-          %li= link_to 'Home', root_path
-          %li= link_to 'About HIPAA', hipaa_compliance_path
-          %li
-            = link_to 'Solutions', solutions_path
-            %ul
-              %li= link_to 'Encrypted Email', solutions_encrypted_email_path
-              %li= link_to 'Encrypted Form', solutions_encrypted_form_path
-              %li= link_to 'Branded Storage', solutions_branded_storage_path
-              %li= link_to 'Email Api', solutions_email_api_path
-          %li= link_to 'Customers', customers_path
-          %li= link_to 'Security', security_path
-          %li= link_to 'Terms', terms_path
-          %li= link_to 'Blog', '/blog'
-          %li= link_to 'Help', '/help'
-          %li= link_to 'Contact', '/contact'
-          %li Login
-      .col-sm-6
+        .row
+          .col-sm-6
+            - unless Rails.env.production?
+              %h6 Rails
+            %ul.list-unstyled
+              %li= link_to 'Home', root_path
+              %li
+                = link_to 'Solutions', solutions_path
+                %ul
+                  %li= link_to 'Encrypted Email', solutions_encrypted_email_path
+                  %li= link_to 'Encrypted Form', solutions_encrypted_form_path
+                  %li= link_to 'Branded Storage', solutions_branded_storage_path
+                  %li= link_to 'Email Api', solutions_email_api_path
+              %li= link_to 'Customers', customers_path
+              %li= link_to 'About', about_path
+              %li= link_to 'Partners', partners_path
+              %li= link_to 'Security', security_path
+              %li= link_to 'Terms', terms_path
+          .col-sm-6
+            - unless Rails.env.production?
+              %h6 Wordpress
+            %ul.list-unstyled
+              %li= link_to 'Blog', 'https://www.paubox.com/blog'
+              %li= link_to 'HIPAA Compliance', 'https://www.paubox.com/blog/hipaa-compliance'
+              %li= link_to 'Help', 'https://www.paubox.com/blog/help'
+              %li= link_to 'Jobs', 'https://www.paubox.com/blog/jobs'
+              %li= link_to 'Press', 'https://www.paubox.com/blog/press'\
+      .col-md-4
         %h5 Social
         %ul.list-unstyled
           %li

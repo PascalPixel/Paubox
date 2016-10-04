@@ -10,6 +10,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body{id: params[:controller], class: params[:action]}
     = render partial: 'shared/menu'
+    = render partial: 'shared/flash'
     .wrapper
       = yield
       .push

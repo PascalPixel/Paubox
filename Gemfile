@@ -38,6 +38,9 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 # Synthax highlighting
 gem 'haml-coderay', '~> 0.2.0'
 
+# Users
+gem 'devise', '~> 4.2.0'
+
 source 'https://rails-assets.org' do
   # Needed for Bootstrap 4 Tooltips and Popovers
   gem 'rails-assets-tether', '>= 1.1.0'

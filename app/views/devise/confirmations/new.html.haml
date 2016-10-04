@@ -1,0 +1,18 @@
+%section#confirmations-new
+  .container
+    .row
+      .col-sm-2
+      .col-sm-8
+        .card
+          .card-block
+            %h4.card-title
+              %i.mdi.mdi-replay
+              = t('.resend_confirmation_instructions')
+            = simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+              = f.error_notification
+              = f.full_error :confirmation_token
+              .form-inputs
+                = f.input :email, required: true, autofocus: true
+              .form-actions
+                = f.button :submit, t('.resend_confirmation_instructions')
+            = render 'devise/shared/links'

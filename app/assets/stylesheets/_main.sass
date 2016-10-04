@@ -17,6 +17,13 @@ section
 .list-group-flush .list-group-item
   border-left: none
   border-right: none
+img.logo
+  height: 0.76em
+  vertical-align: baseline
+
+// Devise
+body[id^="devise"]
+  background: darken($brand-primary, 5%)
 
 // Child list
 ul.list-unstyled ul
@@ -32,6 +39,14 @@ a
   transition: all .3s
 .dropdown-toggle::after
   margin-left: 0
+
+// Alerts
+#flash
+  position: fixed
+  top: 1rem
+  left: 1rem
+  right: 1rem
+  z-index: 9999
 
 // Home
 #hero

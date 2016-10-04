@@ -1,0 +1,16 @@
+%section#passwords-new
+  .container
+    .row
+      .col-sm-2
+      .col-sm-8
+        .card
+          .card-block
+            %h4.card-title
+              = t('.forgot_your_password')
+            = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+              = f.error_notification
+              .form-inputs
+                = f.input :email, required: true, autofocus: true
+              .form-actions
+                = f.button :submit, t('.send_me_reset_password_instructions')
+            = render 'devise/shared/links'
