@@ -2,7 +2,9 @@
   .container
     .row
       .col-sm-12.text-sm-center
-        %h1 Encrypted Email
+        %h1
+          %i.mdi.mdi-email-secure
+          Encrypted Email
         %h4 HIPAA compliant email you'll love to use
         %hr
         %br
@@ -49,10 +51,3 @@
         %h1 Over 30,000 emails a day are encrypted with Paubox
         %p Here's why customers trust us with protecting their email
     = render partial: 'shared/testimonials'
-%section#encrypted-email-quote
-  .container
-    .row
-      .col-sm-12
-        %blockquote "Paubox has solved the HIPAA conundrum for us and really makes our patients feel like they have access to our team to resolve any issue."
-        %h5 Chris Rehm
-        %i CEO of AfterOurs, Inc.

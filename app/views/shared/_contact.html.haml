@@ -1,0 +1,18 @@
+#requestDemo.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "requestDemoLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title Request demo
+      .modal-body
+        = render 'contacts/form'
+#contactForm.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "contactFormLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title Contact us
+      .modal-body
+        Contact form here

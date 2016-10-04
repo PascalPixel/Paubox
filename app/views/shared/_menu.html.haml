@@ -3,7 +3,7 @@
     %li.nav-item
       = link_to root_path, class: 'nav-link' do
         = image_tag 'branding/svg/white/paubox_mini.svg', style: 'height: 1em'
-  %button.navbar-toggler.hidden-sm-up.pull-xs-right{"aria-controls" => "collapseNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#collapseNav", "data-toggle" => "collapse", :type => "button"}
+  %button.navbar-toggler.hidden-sm-up.pull-xs-right{'aria-controls' => 'collapseNav', 'aria-expanded' => 'false', 'aria-label' => 'Toggle navigation', 'data-target' => '#collapseNav', 'data-toggle' => 'collapse', :type => 'button'}
     ☰
   #collapseNav.collapse.navbar-toggleable-xs
     %ul.nav.navbar-nav
@@ -15,9 +15,9 @@
       %li.nav-item
         = link_to 'About HIPAA', hipaa_compliance_path, class: 'nav-link'
       %li.nav-item.dropdown
-        %a.nav-link#solutionsDropdown.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+        %a.nav-link#solutionsDropdown.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown'}
           Solutions
-        .dropdown-menu{"aria-labelledby" => "solutionsDropdown"}
+        .dropdown-menu{'aria-labelledby' => 'solutionsDropdown'}
           = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
             %i.mdi.mdi-email-secure
             Encrypted Email
@@ -38,11 +38,9 @@
           -# %i.mdi.mdi-help
           Help
       %li.nav-item.dropdown
-        %a#contactDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+        %a.nav-link{'data-target' => '#contactForm', 'data-toggle' => 'modal'}
           %span.ss-chat
           = t('.contact')
-        .contactDropdown.dropdown-menu.dropdown-menu-right.dropdown-navbar{"aria-labelledby" => "contactDropdown"}
-          = render 'contacts/form'
       %li.nav-item
         .nav-link
           -# %i.mdi.mdi-person
