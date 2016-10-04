@@ -45,6 +45,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-chosen', '~> 1.6.2'
   # CSS Animations
   gem 'rails-assets-animate.css', '~> 3.5.2'
+  # Animated live charts
+  gem 'rails-assets-chartjs', '~> 2.3.0'
 end
 
 group :development, :test do

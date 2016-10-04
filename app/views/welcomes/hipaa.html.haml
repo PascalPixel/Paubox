@@ -1,25 +1,18 @@
-%section#email-api
+%section#hipaa-header
   .container
     .row
       .col-sm-12.text-sm-center
         %h1 About HIPAA Compliant Email
-        %h4 Last updated August 29, 2016
+        %h4 Last updated October 4, 2016
         %hr
         %br
+%section#hipaa-what-is-it
+  .container
     .row
       .col-sm-12
-        %p
-          The Health Insurance Portability and Accountability Act (HIPAA), sets the standard for protecting sensitive patient data. Any organization dealing with
-          %a{href: 'https://www.paubox.com/blog/protected-health-information-hipaa'} protected health information (PHI)
-          must ensure that all the required physical, network, and process security measures are in place and followed. This of course includes HIPAA compliant email.
-        %p
-          This includes
-          %b Covered Entities
-          %b Business Associates
-          %b HIPAA compliant email
-          baked in when it comes to your email service provider.
-        %p Even subcontractors, or business associates of business associates, must also be in compliance.
         %h4 What is HIPAA Compliant Email?
+    .row
+      .col-md-6
         %p
           The
           %a{href: 'https://www.paubox.com/blog/hipaa-privacy-rule-business-associates'} HIPAA Privacy Rule
@@ -31,7 +24,26 @@
           While there’s no certification that makes an email provider achieve
           %b HIPAA compliant email
           status, meeting the requirements set by the HIPAA Privacy Rule is the best place to start, along with strong technical security measures to make sure PHI is protected inbox to inbox.
+      .col-md-6
+        %p
+          The Health Insurance Portability and Accountability Act (HIPAA), sets the standard for protecting sensitive patient data. Any organization dealing with
+          %a{href: 'https://www.paubox.com/blog/protected-health-information-hipaa'} protected health information (PHI)
+          must ensure that all the required physical, network, and process security measures are in place and followed. This of course includes HIPAA compliant email.
+        %p
+          This includes
+          %b Covered Entities
+          %b Business Associates
+          %b HIPAA compliant email
+          baked in when it comes to your email service provider.
+        %p
+          Even subcontractors, or business associates of business associates, must also be in compliance.
+%section#hipaa-violations-increasing
+  .container
+    .row
+      .col-sm-12
         %h4 HIPAA Compliance Violations are Increasing
+    .row
+      .col-md-6
         %ul
           %li
             %a{href: 'https://www.paubox.com/blog/hipaa-violations-outpace-everything'} HIPAA violations tripled over 10 years.
@@ -48,9 +60,16 @@
           %li
             %a{href: 'https://www.paubox.com/blog/hipaa-fines-unpatched-unsupported-software'} Unpatched and unsupported software
             can also lead to fines.
-        %p
-          %img.img-fluid{:alt => 'HIPAA Violations since 2004 - Paubox', :src => 'https://www.paubox.com/blog/wp-content/uploads/2015/01/HIPAAViolations-new.png'}
+      .col-md-6
+        = render partial: 'shared/hipaa_chart'
+
+%section#hipaa-making-sure
+  .container
+    .row
+      .col-sm-12
         %h4 How can you be sure you have HIPAA compliant Email?
+    .row
+      .col-md-6
         %p
           In order to make sure your organization achieves
           %b HIPAA compliant email
@@ -61,6 +80,7 @@
           %a{href: 'https://www.paubox.com/blog/seamless-encryption-mean'} Seamless encryption
           , HIPAA compliant email
         %p Seamless encryption, like that used in Paubox’s Encrypted Email, reduces the risk of accidentally sending PHI over email. It can be easy to forget to press an encrypt button before pressing send, or simply not realizing there was PHI in an email that was sent. But Paubox’s Encrypted Email allows users to write and send emails as normal from a laptop, desktop and mobile device – Paubox seamlessly works behind the scenes to keep all outbound email within HIPAA compliance.
+      .col-md-6
         %p
           Even better, Paubox’s HIPAA compliant email solution includes robust SPAM, virus and phishing protection.Phishing scams are still the most common way email gets hacked and continues to lead to
           %a{href: 'http://www.healthcareitnews.com/news/phishing-scam-data-breach-compromises-data-39k'} HIPAA violations
@@ -69,36 +89,41 @@
           Additional Resource:
           %a{href: 'http://www.hhs.gov/ocr/office/index.html'} U.S. Department of Health and Human Services
 
-        .row
-          .col-sm-6
-            .card
-              .card-block
-                %h4.card-title Paubox Solutions
-                %p.card-text All our solutions are HIPAA compliant and easy to use.
-                %p.card-text
-                  If you're not sure what to do next, feel free to
-                  %a{href: 'https://www.paubox.com/p_home#contactus'} contact us
-                  today.
-              %ul.list-group.list-group-flush
-                %li.list-group-item
-                  = link_to solutions_encrypted_email_path, class: 'card-link' do
-                    %i.mdi.mdi-email-secure
-                    Encrypted Email
-                %li.list-group-item
-                  = link_to solutions_encrypted_form_path, class: 'card-link' do
-                    %i.mdi.mdi-fingerprint
-                    Encrypted Form
-                %li.list-group-item
-                  = link_to solutions_branded_storage_path, class: 'card-link' do
-                    %i.mdi.mdi-folder-lock
-                    Branded Storage
-                %li.list-group-item
-                  = link_to solutions_email_api_path, class: 'card-link' do
-                    %i.mdi.mdi-cube-send
-                    Email Api
-          .col-sm-6
-            .card
-              .card-block
-                %h4.card-title HIPAA vs. HIPPA
-                %p.card-text Looking for HIPPA Compliant Email?
-                %p.card-text People often get confused between HIPAA email and HIPPA email. HIPAA is commonly misspelled as HIPPA and it’s easy to mistakenly google for “HIPPA compliant email” or “HIPPA email.” Google however, is smart enough to know the correct spelling and will point you to the right pages by default. In a nutshell, “HIPPA compliant email” or “HIPPA email” are not correct. “HIPAA compliant email” or “HIPAA email” are the correct search terms.
+%section#hipaa-next-steps
+  .container
+    .row
+      .col-sm-12
+        %h4 Next steps
+    .row
+      .col-sm-6
+        .card
+          .card-block
+            %h4.card-title Paubox Solutions
+            %p.card-text All our solutions are HIPAA compliant and easy to use.
+            %p.card-text
+              If you're not sure what to do next, feel free to
+              %a{href: 'https://www.paubox.com/p_home#contactus'} contact us
+              today.
+          %ul.list-group.list-group-flush
+            %li.list-group-item
+              = link_to solutions_encrypted_email_path, class: 'card-link' do
+                %i.mdi.mdi-email-secure
+                Encrypted Email
+            %li.list-group-item
+              = link_to solutions_encrypted_form_path, class: 'card-link' do
+                %i.mdi.mdi-fingerprint
+                Encrypted Form
+            %li.list-group-item
+              = link_to solutions_branded_storage_path, class: 'card-link' do
+                %i.mdi.mdi-folder-lock
+                Branded Storage
+            %li.list-group-item
+              = link_to solutions_email_api_path, class: 'card-link' do
+                %i.mdi.mdi-cube-send
+                Email Api
+      .col-sm-6
+        .card
+          .card-block
+            %h4.card-title HIPAA vs. HIPPA
+            %p.card-text Looking for HIPPA Compliant Email?
+            %p.card-text People often get confused between HIPAA email and HIPPA email. HIPAA is commonly misspelled as HIPPA and it’s easy to mistakenly google for “HIPPA compliant email” or “HIPPA email.” Google however, is smart enough to know the correct spelling and will point you to the right pages by default. In a nutshell, “HIPPA compliant email” or “HIPPA email” are not correct. “HIPAA compliant email” or “HIPAA email” are the correct search terms.
