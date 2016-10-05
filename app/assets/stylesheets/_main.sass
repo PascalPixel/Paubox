@@ -22,6 +22,12 @@ section
 img.logo
   height: 0.76em
   vertical-align: baseline
+b, strong
+  font-family: 'Geogrotesque Medium'
+
+// Thick outline buttons
+.btn
+  border-width: 0.125rem
 
 // Devise
 body[id^="devise"]
@@ -105,13 +111,20 @@ section
 
 // Sub Footer
 #sub-footer
-  background: $gray-lighter
+  background: desaturate(darken($brand-primary, 25%), 15%)
+  color: white
+  a:not(.btn)
+    color: rgba(255, 255, 255, 0.5)
+    transition: color .3s
+    &:hover
+      text-decoration: none
+      color: rgba(255, 255, 255, 0.75)
 
 // Footer
 #footer
   background: $brand-primary
   color: white
-  a
+  a:not(.btn)
     color: rgba(255, 255, 255, 0.5)
     transition: color .3s
     &:hover
