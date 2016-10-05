@@ -26,9 +26,10 @@ body[id^="devise"]
   background: darken($brand-primary, 5%)
 
 // Child list
-ul.list-unstyled ul
-  list-style: none
-  padding-left: 1rem
+ul.list-unstyled
+  ul
+    list-style: none
+    padding-left: 1rem
 
 // Navbar
 nav
@@ -48,9 +49,8 @@ a
   right: 1rem
   z-index: 9999
 
-// Home
-#hero
-  background: image-url('hero.jpg')
+// Heroes
+.hero
   background-size: cover
   background-position: center
   color: white
@@ -66,14 +66,23 @@ a
     right: 0
     top: 0
     content: ''
-html, body, #hero
+html,
+body,
+.hero
   height: 100%
 
+// Home
+section
+  &#home-intro
+    &.hero
+      background-image: image-url('hero.jpg')
+
+// Sub Footer
+#sub-footer
+  background: $gray-lighter
 
 // Footer
-footer
-  padding-top: 3.375rem
-  padding-bottom: 3.375rem
+#footer
   background: $brand-primary
   color: white
   a
@@ -82,8 +91,10 @@ footer
     &:hover
       text-decoration: none
       color: rgba(255, 255, 255, 0.75)
+
 // Sticky footer
-html, body
+html,
+body
   height: 100%
 .wrapper
   min-height: 100%
@@ -91,7 +102,7 @@ html, body
   height: 100%
   margin: 0 auto
   padding-top: 3.37rem
-.footer,
+footer,
 .push
   height: 2.5rem
 // Superpencil tag

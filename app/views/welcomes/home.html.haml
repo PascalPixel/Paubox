@@ -1,12 +1,12 @@
-%section#hero
+%section#home-intro.hero
   .container
     .row
       .col-xs-12
-        %h1.p-t-1 Medical-grade security for existing email
+        %h1.p-t-1.m-b-0 Medical-grade security for existing email
         %h2.p-b-1 No new apps, no plug-ins, just email
         = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-outline-success'
-        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Demo
-%section#news
+        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Free Demo
+%section#home-news
   .container
     .row
       .col-sm-12
@@ -24,7 +24,7 @@
         = image_tag 'media/entrepreneur.png', class: 'img-fluid'
       .col-sm-2
         = image_tag 'media/cio.png', class: 'img-fluid'
-%section#solutions
+%section#home-solutions
   .container
     .row
       .col-sm-12

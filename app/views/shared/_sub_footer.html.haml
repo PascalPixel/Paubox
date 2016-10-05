@@ -1,0 +1,11 @@
+%section#sub-footer
+  .container.text-sm-center
+    .row
+      .col-sm-12
+        %h3.m-b-0= image_tag 'branding/blue/paubox.svg', class: 'logo'
+    .row
+      .col-sm-12
+        %h1.m-b-0 Invisible solutions to make you HIPAA compliant
+        %h4.m-b-1 Join thousands of others already sending 30,000 emails every week.
+        = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-outline-success'
+        %button.btn.btn-outline-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Free Demo

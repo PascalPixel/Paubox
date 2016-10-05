@@ -1,14 +1,15 @@
-%section#encrypted-email
+%section#encrypted-email-intro.hero
   .container
     .row
-      .col-sm-12.text-sm-center
-        %h1
+      .col-xs-12
+        %h5.m-b-0
           %i.mdi.mdi-email-secure
           Encrypted Email
-        %h4 HIPAA compliant email you'll love to use
-        %hr
-        %br
-%section#encrypted-email-intro
+        %h1.p-t-1.m-b-0 Medical-grade security for existing email
+        %h2.p-b-1 No new apps, no plug-ins, just email
+        = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-outline-success'
+        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Free Demo
+%section#encrypted-email-problem
   .container
     .row
       .col-sm-12
@@ -19,7 +20,7 @@
           %li Typical email encryption requires 3 to 5 extra steps and focrs users to create logins before viewing content
           %li The experience is even worse on mobile
 %hr
-%section#encrypted-email-detail
+%section#encrypted-email-features
   .container
     .row
       .col-sm-12
@@ -48,6 +49,6 @@
   .container
     .row
       .col-sm-12
-        %h1 Over 30,000 emails a day are encrypted with Paubox
-        %p Here's why customers trust us with protecting their email
+        %h1 Testimonials
+        %h4 Here's why customers trust us with protecting their email
     = render partial: 'shared/testimonials'
