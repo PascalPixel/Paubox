@@ -23,7 +23,29 @@ img.logo
 
 // Devise
 body[id^="devise"]
-  background: darken($brand-primary, 5%)
+  background: darken($brand-primary, 10%)
+
+// Cards
+.card,
+.modal-content
+  background: $brand-primary
+  color: white
+  border-color: darken($brand-primary, 10%)
+  a
+    color: rgba(255,255,255,0.5)
+    &:hover
+      color: rgba(255,255,255,0.75)
+  .form-actions
+    margin-bottom: 1rem
+.modal-header,
+.modal-footer
+  border-bottom-color: darken($brand-primary, 10%)
+.close
+  opacity: 1 !important
+  text-shadow: none
+  color: rgba(255,255,255,0.5)
+  &:hover
+    color: rgba(255,255,255,0.75)
 
 // Child list
 ul.list-unstyled
@@ -40,6 +62,8 @@ a
   transition: all .3s
 .dropdown-toggle::after
   margin-left: 0
+.navbar-toggler
+  color: white
 
 // Alerts
 #flash
