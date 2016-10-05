@@ -9,11 +9,11 @@
 %section#home-news
   .container
     .row
-      .col-sm-12
+      .col-sm-12.text-sm-center
         %h2 As seen in
         %hr
     .row
-      .col-sm-2
+      .col-sm-1
       .col-sm-2
         = image_tag 'media/techcrunch.png', class: 'img-fluid'
       .col-sm-2
@@ -24,37 +24,36 @@
         = image_tag 'media/entrepreneur.png', class: 'img-fluid'
       .col-sm-2
         = image_tag 'media/cio.png', class: 'img-fluid'
+      .col-sm-1
 %section#home-solutions
   .container
     .row
-      .col-sm-12
-        %h2 Our Solutions
+      .col-sm-12.text-sm-center
+        %h2 Solutions
         %hr
     .row
-      .col-md-2
-      .col-md-5
+      .col-md-6
         = link_to solutions_encrypted_email_path do
-          %h3
+          %h4
             %i.mdi.mdi-email-secure
             Encrypted Email
         %p Paubox Encrypted Email insures every email you send is seamlessly delivered with encryption, without the hassle of extra steps. Just send emails as normal from any device.
-      .col-md-5
+      .col-md-6
         = link_to solutions_encrypted_form_path do
-          %h3
+          %h4
             %i.mdi.mdi-fingerprint
             Encrypted Forms
         %p Let us help you convert your paper forms to achieve HIPAA compliance with encrypted forms. Make tasks like patient intake easier for you and your clients.
     .row
-      .col-md-2
-      .col-md-5
+      .col-md-6
         = link_to solutions_branded_storage_path do
-          %h3
+          %h4
             %i.mdi.mdi-folder-lock
             Branded Storage
         %p Paubox Branded Storage gives you a fast, easy way to share data with the security needed to reach HIPAA compliance.
-      .col-md-5
+      .col-md-6
         = link_to solutions_email_api_path do
-          %h3
+          %h4
             %i.mdi.mdi-cube-send
             Email API
         %p Paubox's HIPAA compliant encrypted email API allows covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure.
