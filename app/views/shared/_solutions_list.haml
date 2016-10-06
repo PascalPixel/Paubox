@@ -1,0 +1,31 @@
+%section#home-solutions
+  .container
+    .row
+      .col-sm-12.text-sm-center
+        %h2= t('.title')
+    .row
+      .col-md-6
+        = link_to solutions_encrypted_email_path do
+          %h4
+            %i.mdi.mdi-email-secure
+            = t('.encrypted_email.title')
+        %p= t('.encrypted_email.body')
+      .col-md-6
+        = link_to solutions_encrypted_form_path do
+          %h4
+            %i.mdi.mdi-fingerprint
+            = t('.encrypted_forms.title')
+        %p= t('.encrypted_forms.body')
+    .row
+      .col-md-6
+        = link_to solutions_branded_storage_path do
+          %h4
+            %i.mdi.mdi-folder-lock
+            = t('.branded_storage.title')
+        %p= t('.branded_storage.body')
+      .col-md-6
+        = link_to solutions_email_api_path do
+          %h4
+            %i.mdi.mdi-cube-send
+            = t('.email_api.title')
+        %p= t('.email_api.body')

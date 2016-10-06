@@ -1,23 +1,258 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  welcomes:
+    home:
+      title: Home
+      hero:
+        header: Medical-grade security for existing email
+        sub_header: No new apps, no plug-ins, just email
+        button_info: Request a Free Demo
+        button_cta: Sign Up
+      media:
+        title: As seen in
+        media_logos:
+        - image: techcrunch
+          name: Techcrunch
+          link: ""
+        - image: inc
+          name: Inc
+          link: ""
+        - image: huffpost
+          name: Huffington Post
+          link: ""
+        - image: entrepreneur
+          name: Entrepreneur
+          link: ""
+        - image: cio
+          name: CIO
+          link: ""
+    encrypted_email:
+      header:
+        title: Encrypted Email
+        big_header: Military-grade security for every email
+        sub_header: No downloads, no plug-ins, just secure email
+        button_info: Request a Free Demo
+        button_cta: Sign Up
+      intro:
+        title: The current problem with secure email
+        items:
+        - item: Requires senders to type keywords, install plugins or take other extra steps
+        - item: Huge barriers for recipients to see the email's content
+        - item: Typical email encryption requires 3 to 5 extra steps and forces users to create logins before viewing content
+        - item: The experience is even worse on mobile
+      features:
+        title: Features and Benefits
+        items:
+        - item: Industry leading ease of use email encryption
+        - item: Easy to deploy with low implementation and training requirements or cost
+        - item: Free inbound encryption with SPAM, malware and phishing protection
+        - item: Integrates with business email platforms like Microsoft Exchange, Office 365 and Google Apps
+        - item: Minimum 128-bit AES encryption
+        - item: Up to 256-bit AES end-to-end encryption
+        - item: HIPAA compliant
+        - item: Business Associate Agreements with paid accounts
+        - item: API available to integrate with patient portals and management systems
+        - item: Free 14-Day Trial
+    encrypted_form:
+      header:
+        title: Encrypted Forms
+        big_header: Eliminate the paper and make getting information easier
+        sub_header: HIPAA compliant online forms received straight to your inbox
+        button_info: Request a Free Demo
+        button_cta:
+      intro:
+        title: Secure online forms that can transform your business
+        items:
+        - item: Eliminate paper and optimize your workflow
+        - item: Improve security over sensitive information
+        - item: Save money by making operations more efficient
+      features:
+        title: Features and Benefits
+        items:
+        - item: Branded with your logo
+        - item: All online forms are optimized to work on any device (PC, smartphone, tablet)
+        - item: Completed forms are encrypted and sent directly to your inbox. No portal login required to gain access to the information.
+        - item: No cumbersome portals for patients either. Simply provide a link to your online form on your website or in an email.
+        - item: PDF and CSV file formats included
+        - item: Up to 256-bit AES encryption
+        - item: A+ SSL security
+        - item: Http/2 enabled for increased speed and security
+        - item: HIPAA compliant
+        - item: Business Associate Agreement included
+        - item: Free 14-Day Trial
+    branded_storage:
+      header:
+        title: Branded Storage
+        big_header: HIPAA compliant file sharing and cloud storage
+        sub_header:
+        button_info: Request a Free Demo
+        button_cta: Sign Up
+      intro:
+        title: Secure file sharing the way it should be
+        items:
+        - item: Built on customer feedback
+        - item: Keep control over every file
+        - item: Gain peace of mind knowing your files are secure
+      features:
+        title: Features and Benefits
+        items:
+        - item: Unlimited file sharing and bandwidth
+        - item: 256-bit AES encryption at rest and in transit
+        - item: Malware detection on uploads
+        - item: Encrypted & revocable messaging
+        - item: Admin panel to control folder & file permissions
+        - item: White label solution ready for your branding
+        - item: HIPAA compliant
+        - item: Business Associate Agreements with paid accounts
+    email_api:
+      header:
+        title: Email API
+        big_header: A HIPAA compliant email API for developers and IT professionals
+        sub_header:
+        button_info: Request a Free Demo
+        button_cta:
+      intro:
+        title: An email API for healthcare providers and developers
+        items:
+        - item: Allows hospitals, clinics, doctors and other covered entities to integrate seamless encrypted email with their IT infrastructure
+        - item: Secure communications for healthcare apps from patient portals to website forms
+        - item: Developers can get to market faster by leveraging Paubox’s experience with HIPAA compliant email
+      features:
+        title:
+        items:
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+    partner:
+      header:
+        title: Partner Program
+        big_header: Stand out with Paubox
+        sub_header:
+        button_info:
+        button_cta:
+      intro:
+        title: Benefits of becoming a Paubox Partner
+        items:
+        - item: Access to market leading HIPAA compliant email technology
+        - item: Responsive 24/7 support for Partners and their clients
+        - item: Ongoing training and sales support
+        - item: No program or renewal fees
+        - item: Friendly commission structure to fit your business model
+        - item: White label opportunity for cloud storage and online forms
+      features:
+        title: Our Partners
+        items:
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+        - item: ""
+    solutions:
+      header: Solutions
+      sub_header: Getting encrypted in every way
+  shared:
+    error:
+      title: Oh-oh, that page doesn't exist!
+      subtitle: Our team has been notified and will look into it soon.
+    solutions_list:
+      title: Solutions
+      encrypted_email:
+        title: Encrypted Email
+        body: Paubox Encrypted Email insures every email you send is seamlessly delivered with encryption, without the hassle of extra steps. Just send emails as normal from any device.
+      encrypted_forms:
+        title: Encrypted Forms
+        body: Let us help you convert your paper forms to achieve HIPAA compliance with encrypted forms. Make tasks like patient intake easier for you and your clients.
+      branded_storage:
+        title: Branded Storage
+        body: Paubox Branded Storage gives you a fast, easy way to share data with the security needed to reach HIPAA compliance.
+      email_api:
+        title: Email API
+        body: Paubox's HIPAA compliant encrypted email API allows covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure.
+    testimonials:
+      title: Testimonials
+      items:
+      - body:
+          The great thing about Paubox is they are ahead of the game in terms of their tech behind how they make encryption so easy.
+          They are the only email encryption company out there that’s putting the user experience first.
+        name: Dan Miller
+        title: CEO
+        company: Level Therapy
+      - body:
+          Paubox has allowed me freedom to communicate directly and more broadly with my psychotherapy clients and with other related professionals.
+          With its seamless email encryption and keeping my own email address, Paubox has given me peace of mind.
+        name: Katie McBride
+        title: Ph.D.
+        company: Licensed Clinical Psychologist
+      - body:
+          We now utilize our normal email workflow to communicate with our referring doctors about their patients’ treatment. The information is instantaneous, convenient and most importantly secure.
+        name: Dr. Jim Ellis
+        title: Owner/Surgeon
+        company: Ellis Oral Surgery
+      - body:
+          We’re better now because we’re protecting our clients’ information.
+        name: Bonnie Castonguay
+        title: RN Co-Founder
+        company: Hookele Health Navigators
+    sub_footer:
+      header: Invisible solutions to make you HIPAA compliant
+      sub_header: Join thousands of others already securing 30,000+ emails every day
+      button_info: Request a Free Demo
+      button_cta: Sign Up
+    footer:
+      sitemap:
+        title: Sitemap
+      social:
+        title: Social
+        items:
+        - name: Twitter
+          link: "https://twitter.com/pauboxhq"
+          icon: twitter
+        - name: Facebook
+          link: "https://www.facebook.com/PauboxHQ"
+          icon: facebook
+        - name: Youtube
+          link: "https://www.youtube.com/channel/UCPEseZRadIWllAF0gdPCNcw"
+          icon: youtube-play
+        - name: Google+
+          link: "https://plus.google.com/+Paubox/"
+          icon: google
+        - name: LinkedIn
+          link: "https://www.linkedin.com/company/paubox"
+          icon: linkedin
+      copyright: 2016 © PAUBOX, All Rights Reserved
+      design: Design by
+      superpencil: Superpencil
+    menu:
+      home: Home
+      about_hipaa: About HIPAA
+      solutions: Solutions
+      customers: Customers
+      help: Help
+      contact: Contact
+    contact:
+      button: Contact
+      title: Contact us
+contacts:
+  create:
+    header: Thank you for your message.
+    p: We’ll get back to you soon!
+  form:
+    first_name: First name
+    last_name: Last name
+    email: Email
+    phone: Phone
+    title: Title
+    company: Company
+    number_of_employees:
+      label: Number of employees
+      collection: ["1 - 5", "6 - 20", "21 - 100", "101 - 500", "501 - 3,500", "3,500+"]
+    submit: Send message
+  new:
+    title: Contact us

@@ -2,20 +2,20 @@
   .container
     .row
       .col-md-8
-        %h5 Sitemap
+        %h5= t('.sitemap.title')
         .row
           .col-sm-6
             - unless Rails.env.production?
               %h6 Rails
             %ul.list-unstyled
-              %li= link_to 'Home', root_path
+              %li= link_to t('welcomes.home.title'), root_path
               %li
-                = link_to 'Solutions', solutions_path
+                = link_to t('welcomes.solutions.header'), solutions_path
                 %ul
-                  %li= link_to 'Encrypted Email', solutions_encrypted_email_path
-                  %li= link_to 'Encrypted Form', solutions_encrypted_form_path
-                  %li= link_to 'Branded Storage', solutions_branded_storage_path
-                  %li= link_to 'Email Api', solutions_email_api_path
+                  %li= link_to t('welcomes.encrypted_email.header.title'), solutions_encrypted_email_path
+                  %li= link_to t('welcomes.encrypted_form.header.title'), solutions_encrypted_form_path
+                  %li= link_to t('welcomes.branded_storage.header.title'), solutions_branded_storage_path
+                  %li= link_to t('welcomes.email_api.header.title'), solutions_email_api_path
               %li= link_to 'Customers', customers_path
               %li= link_to 'About', about_path
               %li= link_to 'Partners', partners_path
@@ -31,29 +31,13 @@
               %li= link_to 'Jobs', 'https://www.paubox.com/blog/jobs'
               %li= link_to 'Press', 'https://www.paubox.com/blog/press'\
       .col-md-4
-        %h5 Social
+        %h5= t('.social.header')
         %ul.list-unstyled
-          %li
-            %a{href: "https://twitter.com/pauboxhq"}
-              %i.mdi.mdi-twitter
-              Twitter
-          %li
-            %a{href: "https://www.facebook.com/PauboxHQ"}
-              %i.mdi.mdi-facebook
-              Facebook
-          %li
-            %a{href: "https://www.youtube.com/channel/UCPEseZRadIWllAF0gdPCNcw"}
-              %i.mdi.mdi-youtube-play
-              Youtube
-          %li
-            %a{href: "https://plus.google.com/+Paubox/"}
-              %i.mdi.mdi-google
-              Google
-          %li
-            %a{href: "https://www.linkedin.com/company/paubox"}
-              %i.mdi.mdi-linkedin
-              Linkedin
-
+          - t('.social.items').each do |item|
+            %li
+              %a{href: item[:link], rel: 'nofollow', target: '_blank'}
+                %i.mdi{class: "mdi-#{item[:icon]}"}
+                = item[:name]
     .row.m-t-3
       .col-sm-6
         %small
