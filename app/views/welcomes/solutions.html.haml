@@ -1,8 +1,5 @@
-%section#solutions
-  .row
-    .col-sm-12.text-sm-center
-      %h1= t('.header')
-      %h4= t('.sub_header')
-      %hr
-      %br
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
 = render partial: 'shared/solutions_list'

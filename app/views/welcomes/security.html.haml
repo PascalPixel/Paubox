@@ -1,27 +1,23 @@
-%section#security
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+%section
   .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1 Security Information
-        %h4 Paubox, Inc.
-        %hr
-        %br
     .row
       .col-sm-12
         %p
           The Health Insurance Portability and Accountability Act of 1996 (HIPAA) applies to “covered entities” and “business associates.” Covered entities include health care providers engaged in certain electronic transactions, health plans, and health care clearinghouses. Business associates are entities that provide services to a covered entity that involve access by the business associate to Protected Health Information (PHI), as well as entities that create, receive, maintain, or transmit PHI on behalf of another business associate. HIPAA was expanded in 2009 by the Health Information Technology for Economic and Clinical Health (HITECH) Act. HIPAA and HITECH establish a set of federal standards intended to protect the security and privacy of PHI. HIPAA and HITECH impose requirements related to the use and disclosure of PHI, appropriate safeguards to protect PHI, individual rights, and administrative responsibilities. For additional information on HIPAA and HITECH, visit
-          = succeed "." do
-            %a{:href => "http://www.hhs.gov/ocr/privacy/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://www.hhs.gov/ocr/privacy/', 'http://www.hhs.gov/ocr/privacy/');", :target => "_blank"} http://www.hhs.gov/ocr/privacy/
+          %a{:href => "http://www.hhs.gov/ocr/privacy/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://www.hhs.gov/ocr/privacy/', 'http://www.hhs.gov/ocr/privacy/');", :target => "_blank"} http://www.hhs.gov/ocr/privacy/
+          \.
         %p
           Paubox uses
           %a{:href => "https://aws.amazon.com/security/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'https://aws.amazon.com/security/', 'Amazon Web Services');", :target => "_blank"} Amazon Web Services
           (AWS) as its HIPAA compliant cloud platform.  As such, the Paubox/AWS platform provides industry recognized certifications and audits such
-          = succeed "," do
-            %a{:href => "http://aws.amazon.com/compliance/iso-27001-faqs/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/iso-27001-faqs/', 'ISO 27001');", :target => "_blank"} ISO 27001
-          = succeed "," do
-            %a{:href => "http://aws.amazon.com/compliance/fedramp/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/fedramp/', 'FedRAMP');", :target => "_blank"} FedRAMP
-          = succeed ")." do
-            %a{:href => "http://aws.amazon.com/compliance/soc-faqs/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/soc-faqs/', 'SOC1, SOC2, and SOC3');", :target => "_blank"} SOC1, SOC2, and SOC3
+          %a{:href => "http://aws.amazon.com/compliance/iso-27001-faqs/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/iso-27001-faqs/', 'ISO 27001');", :target => "_blank"} ISO 27001,
+          %a{:href => "http://aws.amazon.com/compliance/fedramp/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/fedramp/', 'FedRAMP');", :target => "_blank"} FedRAMP,
+          %a{:href => "http://aws.amazon.com/compliance/soc-faqs/", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'http://aws.amazon.com/compliance/soc-faqs/', 'SOC1, SOC2, and SOC3');", :target => "_blank"} SOC1, SOC2, and SOC3
+          \)\.
         %h2 Encryption and Protection of PHI in Paubox
         %p
           The HIPAA Security Rule includes addressable implementation specifications for the encryption of PHI in transmission (“in-transit”) and in storage (“at-rest”). Paubox encrypts PHI in accordance with guidance from the Secretary of Health and Human Services (HHS), “

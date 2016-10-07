@@ -1,15 +1,10 @@
-%section#encrypted-email-intro.hero
-  .container
-    .row
-      .col-xs-12
-        %h5.m-b-0
-          %i.mdi.mdi-email-secure
-          Encrypted Email
-        %h1.p-t-1.m-b-0 Medical-grade security for existing email
-        %h2.p-b-1 No new apps, no plug-ins, just email
-        = link_to t('devise.shared.links.sign_up'), new_user_registration_path, class: 'btn btn-outline-success'
-        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'} Request a Free Demo
-%section#encrypted-email-problem
+= render partial: 'shared/hero',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
+%section
   .container
     .row
       .col-sm-12
@@ -20,7 +15,7 @@
           %li Typical email encryption requires 3 to 5 extra steps and focrs users to create logins before viewing content
           %li The experience is even worse on mobile
 %hr
-%section#encrypted-email-features
+%section
   .container
     .row
       .col-sm-12
@@ -45,7 +40,7 @@
           %li
             %small API available to integrate with patient portals and management systems
 %hr
-%section#encrypted-email-testimonials
+%section
   .container
     .row
       .col-sm-12

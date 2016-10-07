@@ -1,12 +1,10 @@
-%section#home-intro.hero
-  .container
-    .row
-      .col-xs-12
-        %h1.p-t-1.m-b-0= t('.hero.header')
-        %h2.p-b-1= t('.hero.sub_header')
-        = link_to t('.hero.button_cta'), new_user_registration_path, class: 'btn btn-outline-success'
-        %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= t('.hero.button_info')
-%section#home-news
+= render partial: 'shared/hero',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
+%section
   .container
     .row
       .col-sm-12.text-sm-center

@@ -1,145 +1,68 @@
-%section#about-header
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1
-          About
-          = image_tag 'branding/blue/paubox.svg', class: 'logo'
-        %h4 Learn more about our company
-        %hr
-%section#about-contact
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+%section
   .container
     .row
       .col-sm-12
-        %h2 Contact us
+        %h2= t('.contact.header')
         %hr
     .row
       .col-sm-6
-        %p
-          Do you have any questions about our solutions? Please do not hesitate to contact us and we will get back to you within 24 hours.
-      .col-sm-6
+        %p= t('.contact.body')
         %p
           %b E:
-          info@paubox.com
+          = t('.contact.email')
           %br
           %b P:
-          650-351-9891
-          %br
+          = t('.contact.phone')
         %p
-          2017 Mission Street
+          = t('.contact.address.street')
           %br
-          Second Floor
+          = t('.contact.address.floor')
           %br
-          San Francisco, CA 94110
-        %hr
-        Tech Support:
-        %br
+          = t('.contact.address.city')
+        %h5= t('.contact.tech_support.title')
         %b E:
-        support@paubox.com
+        = t('.contact.tech_support.email')
         %br
         %b P:
-        650-351-9891
-%section#about-team
+        = t('.contact.tech_support.phone')
+      .col-sm-6
+        %embed{src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.25969559549804!2d-122.4196691477756!3d37.76477943301268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e2375c71b43%3A0x7d7e9b59f663f700!2s2017+Mission+St%2C+San+Francisco%2C+CA+94110!5e0!3m2!1sen!2sus!4v1475816062708", style: "border:0;width:100%;height:400px;"}
+%section
   .container
     .row
       .col-sm-12
-        %h2 Team
+        %h2= t('.team.header')
         %hr
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Hoala Greevy - Founder CEO of Paubox Inc.", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/Hoala-Greevy-thumb.jpg"}
-          .col-xs-8
-            %h5 Hoala Greevy
-            Founder, CEO
-        %p Hoala has 17 years experience in the email industry and is architect of the Paubox platform. He graduated from Portland State University with a BS in Geography and a BS in Social Sciences. He likes to go kayak fishing when possible.
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Rick Kuwahara - CMO of Paubox Inc.", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/RickKuwahara_headshot-150x150.jpeg"}
-          .col-xs-8
-            %h5 Rick Kuwahara
-            CMO
-        %p Rick has over 10 years of sales and marketing experience. He is an expert at building data-driven, integrated marketing campaigns that drive growth. Hegraduated from the University of Hawaii at Manoa with a BAin English and aMBA.
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Roger Manson, Senior Director Customer Excellence - Paubox", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/RogerManson-Mauiheadshot-150x150.png"}
-          .col-xs-8
-            %h5 Roger Manson
-            Senior Director Customer
-        %p Roger has served in technical and business roles in Client Services for online payment processing, enterprise software and Internet messaging companies. Roger has over 20 years’ experience in the high tech industry and has held additional senior level positions with Avatier, Twilio, xMatters, Imanami, Ginix, and Cisco Systems.  Roger holds a BSc Information Systems Management from the University of San Francisco.
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Phuong Tran - Business Development Manager, Paubox", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/PhuongTran-headshot-e1435018024262-150x150.jpg"}
-          .col-xs-8
-            %h5 Phuong Tran
-            Business Development Manager
-        %p Phuong has experience working in various healthcare sectors over the past few years. Due to his experiences, he is well versed in the realm of Healthcare IT. Phuong received his B.S. in Biological Sciences from UC Irvine and his Masters in Healthcare Policy and Management from Carnegie Mellon University. In his spare time, he enjoys a good road trip and cheering on his Golden State Warriors.
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Greg Hoffman - Paubox", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/GregHoffman-Paubox-300x300.jpg"}
-          .col-xs-8
-            %h5 Greg Hoffman
-            Head of Sales
-        %p Greg received his Bachelors degree in Economics from the University of Hawaii at Manoa in 2015. While enrolled, he served two terms as chapter president of Tau Kappa Epsilon, the largest fraternity in America. Under his leadership, they were awarded the nation’s most improved chapter. Greg’s hobbies include photography, golfing, snowboarding, hiking and traveling.
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Mitch Steckbauer - Paubox", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/Mitch_Steckbauer-e1470701044841.png"}
-          .col-xs-8
-            %h5 Mitch Steckbauer
-            Account Executive
-        %p Mitch graduated from the University of Arizona in 2014 with a Bachelor of Science degree in Psychology and a minor in Physiology. He is originally from Los Angeles and prior to working at Paubox, he was a staff accountant at a small CPA firm in Manhattan Beach. When he is not searching for new music and movies, he enjoys snowboarding, golfing, and playing guitar.
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Malcolm Lacey, Executive Assistant - Paubox", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/MalcolmLacey-headshot-150x150.jpg"}
-          .col-xs-8
-            %h5 Malcolm Lacey
-            Executive Assistant
-        %p A San Francisco native… that’s right born and raised; Malcolm has a Bachelor’s degree in Consumer Studies with a focus in Interior Design. His career path has been operations and AP/AR in the fitness and hospitality sector for companies such as San Francisco Bay Club, Le Meridian Hotels and Esquire Deposition Services. With a solid background in operations and logistics, he has an affinity to bring order to chaos as well as solutions to challenges.
-%section#about-advisors
+    - t('.team.items').each_slice(2) do |items|
+      .row
+        - items.each do |item|
+          .col-sm-6
+            .row
+              .col-xs-3
+                = image_tag "about/#{item[:image]}.png", alt: item[:name] + ' ' + item[:title], class: 'img-fluid img-circle'
+              .col-xs-8
+                %h5= item[:name]
+                = item[:title]
+            %br
+            %p= item[:body]
+%section
   .container
     .row
       .col-sm-12
-        %h2 Advisors
+        %h2= t('.advisors.header')
         %hr
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Denis Coleman - Paubox Advisor", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/DenisColeman_PauboxAdvisor.jpg"}
-          .col-xs-8
-            %h5 Denis R. Coleman
-        %p Denis Coleman is an educator and entrepreneur. He offers guidance to student entrepreneurs around the country, delivering his presentation “Lessons from 15 Silicon Valley Startups – 1979 to 2015” and holding subsequent one-on-one meetings with students. Coleman has been operating or board level founder of 15 companies, four of which have had IPOs (Symantec, Visoneer, Neoforma, and Financial Engines). He has angel invested in 55 startups – life science, healthcare, and IT. He has earned three engineering degrees from MIT and a Ph.D. in management from Stanford University.
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Brendan Lane Larson - Paubox Advisor", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/BrendanLarson-682x1024.jpg"}
-          .col-xs-8
-            %h5 Brendan Lane Larson
-        %p Brendan Lane Larson is a seasoned entrepreneur and meteorologist who has started businesses in the weather industry, a pioneer of weather technology who founded the world’s first publicly held on-line weather services business (WeatherLabs) which was later acquired by The Weather Channel. Having had great mentors in his life, Larson “pays forward” as a Virtual Professional in Resident at the Pacific Asian Center for Entrepreneurship. His current entrepreneurial endeavors are focused on weather risk management which he publicly speaks and guest lectures on, including at the University of Hawaii Shidler College of Business. He is also an advocate for privacy, security and good, useful encryption.
-    .row
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Dean Levitt - Paubox Advisor", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/Dean_Levitt_headshot_small-300x300.png"}
-          .col-xs-8
-            %h5 Dean Levitt
-        %p Raised on a farm in Knoppieslaagte, South Africa, Dean moved to the United States to be a pursue a career in music eventually finding his way to the tech world. Dean is currently the Chief of Culture of Mad Mimi Email Marketing and a Director of Online Support at GoDaddy.
-      .col-sm-6
-        .row
-          .col-xs-3
-            %img.img-fluid.img-circle{alt: "Eric Nakagawa - Paubox Adviser", src: "https://www.paubox.com/blog/wp-content/uploads/2015/02/EricNakagawa-PauboxAdviser-300x300.jpg"}
-          .col-xs-8
-            %h5 Eric Nakagawa
-        %p
-          %a{:href => "https://twitter.com/ericnakagawa", :onclick => "__gaTracker('send', 'event', 'outbound-article', 'https://twitter.com/ericnakagawa', 'Eric Nakagawa');", :target => "_blank"} Eric Nakagawa
-          is a serial entrepreneur based in San Francisco. He has wide expertise in consumer mobile applications, travel, humor, and user communities. He currently helps mobile developers build better apps at Facebook.
+    - t('.advisors.items').each_slice(2) do |items|
+      .row
+        - items.each do |item|
+          .col-sm-6
+            .row
+              .col-xs-3
+                = image_tag "about/#{item[:image]}.png", alt: item[:name], class: 'img-fluid img-circle'
+              .col-xs-8
+                %h5= item[:name]
+            %br
+            %p= item[:body]

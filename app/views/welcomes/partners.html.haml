@@ -1,12 +1,8 @@
-%section#partners-header
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1
-          Partner Program
-        %h4 Stand out with Paubox
-        %hr
-%section#partners-intro
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+%section
   .container
     .row
       .col-sm-12.text-sm-center
@@ -22,7 +18,7 @@
           %li No program or renewal fees
           %li Friendly commission structure to fit your business model
           %li White label opportunity for cloud storage and online forms
-%section#partners-list
+%section
   .container
     .row
       .col-sm-12.text-sm-center

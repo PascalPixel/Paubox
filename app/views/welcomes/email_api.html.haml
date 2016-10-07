@@ -1,12 +1,10 @@
-%section#email-api.hero
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1
-          %i.mdi.mdi-cube-send
-          Email API
-        %h4 A HIPAA compliant Email API for developers and IT professionals
-%section#email-api-details
+= render partial: 'shared/hero',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
+%section
   .container
     .row
       .col-sm-12
@@ -17,7 +15,7 @@
           Take advantage of Paubox's experience with maintaining
           = link_to 'HIPAA compliance', hipaa_compliance_path
           with email and focus on innovation.
-%section#email-api-documentation
+%section
   .container
     .row
       .col-sm-12

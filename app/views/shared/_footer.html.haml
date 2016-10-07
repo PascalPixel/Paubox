@@ -5,25 +5,21 @@
         %h5= t('.sitemap.title')
         .row
           .col-sm-6
-            - unless Rails.env.production?
-              %h6 Rails
             %ul.list-unstyled
               %li= link_to t('welcomes.home.title'), root_path
               %li
-                = link_to t('welcomes.solutions.header'), solutions_path
+                = link_to t('welcomes.solutions.title'), solutions_path
                 %ul
-                  %li= link_to t('welcomes.encrypted_email.header.title'), solutions_encrypted_email_path
-                  %li= link_to t('welcomes.encrypted_form.header.title'), solutions_encrypted_form_path
-                  %li= link_to t('welcomes.branded_storage.header.title'), solutions_branded_storage_path
-                  %li= link_to t('welcomes.email_api.header.title'), solutions_email_api_path
-              %li= link_to 'Customers', customers_path
-              %li= link_to 'About', about_path
-              %li= link_to 'Partners', partners_path
-              %li= link_to 'Security', security_path
-              %li= link_to 'Terms', terms_path
+                  %li= link_to t('welcomes.encrypted_email.title'), solutions_encrypted_email_path
+                  %li= link_to t('welcomes.encrypted_form.title'), solutions_encrypted_form_path
+                  %li= link_to t('welcomes.branded_storage.title'), solutions_branded_storage_path
+                  %li= link_to t('welcomes.email_api.title'), solutions_email_api_path
+              %li= link_to t('welcomes.customers.title'), customers_path
+              %li= link_to t('welcomes.about.title'), about_path
+              %li= link_to t('welcomes.partners.title'), partners_path
+              %li= link_to t('welcomes.security.title'), security_path
+              %li= link_to t('welcomes.terms.title'), terms_path
           .col-sm-6
-            - unless Rails.env.production?
-              %h6 Wordpress
             %ul.list-unstyled
               %li= link_to 'Blog', 'https://www.paubox.com/blog'
               %li= link_to 'HIPAA Compliance', 'https://www.paubox.com/blog/hipaa-compliance'

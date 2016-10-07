@@ -1,11 +1,9 @@
-%section#terms
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+%section
   .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1 Terms of Service
-        %h4 Paubox, Inc.
-        %hr
-        %br
     .row
       .col-sm-12
         %h4 Master Subscription Terms and Conditions

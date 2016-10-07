@@ -2,11 +2,10 @@ en:
   welcomes:
     home:
       title: Home
-      hero:
-        header: Medical-grade security for existing email
-        sub_header: No new apps, no plug-ins, just email
-        button_info: Request a Free Demo
-        button_cta: Sign Up
+      header: Medical-grade security for existing email
+      sub_header: No new apps, no plug-ins, just email
+      button_info: Request a Free Demo
+      button_cta: Sign Up
       media:
         title: As seen in
         media_logos:
@@ -25,13 +24,71 @@ en:
         - image: cio
           name: CIO
           link: ""
+    about:
+      title: About
+      header: About us
+      sub_header: Learn more about our team
+      contact:
+        header: Contact us
+        body: Do you have any questions about our solutions? Please do not hesitate to contact us and we will get back to you within 24 hours.
+        email: info@paubox.com
+        phone: 650-351-9891
+        address:
+          street: 2017 Mission Street
+          floor: Second Floor
+          city: San Francisco, CA 94110
+        tech_support:
+          title: Tech Support
+          email: support@paubox.com
+          phone: 650-351-9891
+      team:
+        header: Team
+        items:
+        - name: Hoala Greevy
+          title: Founder, CEO
+          body: Hoala has 17 years experience in the email industry and is architect of the Paubox platform. He graduated from Portland State University with a BS in Geography and a BS in Social Sciences. He likes to go kayak fishing when possible.
+          image: hoala_greevy
+        - name: Rick Kuwahara
+          title: CMO
+          body: Rick has over 10 years of sales and marketing experience. He is an expert at building data-driven, integrated marketing campaigns that drive growth. Hegraduated from the University of Hawaii at Manoa with a BAin English and aMBA.
+          image: rick_kuwahara
+        - name: Roger Manson
+          title: Senior Director Customer
+          body: Roger has served in technical and business roles in Client Services for online payment processing, enterprise software and Internet messaging companies. Roger has over 20 years’ experience in the high tech industry and has held additional senior level positions with Avatier, Twilio, xMatters, Imanami, Ginix, and Cisco Systems.  Roger holds a BSc Information Systems Management from the University of San Francisco.
+          image: roger_manson
+        - name: Phuong Tran
+          title: Business Development Manager
+          body: Phuong has experience working in various healthcare sectors over the past few years. Due to his experiences, he is well versed in the realm of Healthcare IT. Phuong received his B.S. in Biological Sciences from UC Irvine and his Masters in Healthcare Policy and Management from Carnegie Mellon University. In his spare time, he enjoys a good road trip and cheering on his Golden State Warriors.
+          image: phuong_tran
+        - name: Greg Hoffman
+          title: Head of Sales
+          body: Greg received his Bachelors degree in Economics from the University of Hawaii at Manoa in 2015. While enrolled, he served two terms as chapter president of Tau Kappa Epsilon, the largest fraternity in America. Under his leadership, they were awarded the nation’s most improved chapter. Greg’s hobbies include photography, golfing, snowboarding, hiking and traveling.
+          image: greg_hoffman
+        - name: Mitch Steckbauer
+          title: Account Executive
+          body: Mitch graduated from the University of Arizona in 2014 with a Bachelor of Science degree in Psychology and a minor in Physiology. He is originally from Los Angeles and prior to working at Paubox, he was a staff accountant at a small CPA firm in Manhattan Beach. When he is not searching for new music and movies, he enjoys snowboarding, golfing, and playing guitar.
+          image: mitch_steckbauer
+      advisors:
+        header: Advisors
+        items:
+        - name: Denis R. Coleman
+          body: Denis Coleman is an educator and entrepreneur. He offers guidance to student entrepreneurs around the country, delivering his presentation “Lessons from 15 Silicon Valley Startups – 1979 to 2015” and holding subsequent one-on-one meetings with students. Coleman has been operating or board level founder of 15 companies, four of which have had IPOs (Symantec, Visoneer, Neoforma, and Financial Engines). He has angel invested in 55 startups – life science, healthcare, and IT. He has earned three engineering degrees from MIT and a Ph.D. in management from Stanford University.
+          image: denis_coleman
+        - name: Brendan Lane Larson
+          body: Brendan Lane Larson is a seasoned entrepreneur and meteorologist who has started businesses in the weather industry, a pioneer of weather technology who founded the world’s first publicly held on-line weather services business (WeatherLabs) which was later acquired by The Weather Channel. Having had great mentors in his life, Larson “pays forward” as a Virtual Professional in Resident at the Pacific Asian Center for Entrepreneurship. His current entrepreneurial endeavors are focused on weather risk management which he publicly speaks and guest lectures on, including at the University of Hawaii Shidler College of Business. He is also an advocate for privacy, security and good, useful encryption.
+          image: brendan_larson
+        - name: Dean Levitt
+          body: Raised on a farm in Knoppieslaagte, South Africa, Dean moved to the United States to be a pursue a career in music eventually finding his way to the tech world. Dean is currently the Chief of Culture of Mad Mimi Email Marketing and a Director of Online Support at GoDaddy.
+          image: dean_levitt
+        - name: Eric Nakagawa
+          body: Eric Nakagawa is a serial entrepreneur based in San Francisco. He has wide expertise in consumer mobile applications, travel, humor, and user communities. He currently helps mobile developers build better apps at Facebook.
+          image: eric_nakagawa
     encrypted_email:
-      header:
-        title: Encrypted Email
-        big_header: Military-grade security for every email
-        sub_header: No downloads, no plug-ins, just secure email
-        button_info: Request a Free Demo
-        button_cta: Sign Up
+      title: Encrypted Email
+      header: Military-grade security for every email
+      sub_header: No downloads, no plug-ins, just secure email
+      button_info: Request a Free Demo
+      button_cta: Sign Up
       intro:
         title: The current problem with secure email
         items:
@@ -53,12 +110,11 @@ en:
         - item: API available to integrate with patient portals and management systems
         - item: Free 14-Day Trial
     encrypted_form:
-      header:
-        title: Encrypted Forms
-        big_header: Eliminate the paper and make getting information easier
-        sub_header: HIPAA compliant online forms received straight to your inbox
-        button_info: Request a Free Demo
-        button_cta:
+      title: Encrypted Forms
+      header: Eliminate the paper and make getting information easier
+      sub_header: HIPAA compliant online forms received straight to your inbox
+      button_info: Request a Free Demo
+      button_cta:
       intro:
         title: Secure online forms that can transform your business
         items:
@@ -80,12 +136,11 @@ en:
         - item: Business Associate Agreement included
         - item: Free 14-Day Trial
     branded_storage:
-      header:
-        title: Branded Storage
-        big_header: HIPAA compliant file sharing and cloud storage
-        sub_header:
-        button_info: Request a Free Demo
-        button_cta: Sign Up
+      title: Branded Storage
+      header: HIPAA compliant file sharing and cloud storage
+      sub_header: ""
+      button_info: Request a Free Demo
+      button_cta: Sign Up
       intro:
         title: Secure file sharing the way it should be
         items:
@@ -104,12 +159,11 @@ en:
         - item: HIPAA compliant
         - item: Business Associate Agreements with paid accounts
     email_api:
-      header:
-        title: Email API
-        big_header: A HIPAA compliant email API for developers and IT professionals
-        sub_header:
-        button_info: Request a Free Demo
-        button_cta:
+      title: Email API
+      header: A HIPAA compliant email API for developers and IT professionals
+      sub_header: ""
+      button_info: Request a Free Demo
+      button_cta:
       intro:
         title: An email API for healthcare providers and developers
         items:
@@ -117,7 +171,7 @@ en:
         - item: Secure communications for healthcare apps from patient portals to website forms
         - item: Developers can get to market faster by leveraging Paubox’s experience with HIPAA compliant email
       features:
-        title:
+        title: Features
         items:
         - item: ""
         - item: ""
@@ -128,12 +182,11 @@ en:
         - item: ""
         - item: ""
     partner:
-      header:
-        title: Partner Program
-        big_header: Stand out with Paubox
-        sub_header:
-        button_info:
-        button_cta:
+      title: Partner Program
+      big_header: Stand out with Paubox
+      sub_header: ""
+      button_info: ""
+      button_cta: ""
       intro:
         title: Benefits of becoming a Paubox Partner
         items:
@@ -155,12 +208,38 @@ en:
         - item: ""
         - item: ""
     solutions:
-      header: Solutions
+      title: Solutions
+      header: Our Solutions
       sub_header: Getting encrypted in every way
-  shared:
+    customers:
+      title: Customers
+      header: Customer Success Stories
+      sub_header: Our customers all have their own reasons to love Paubox
+    hipaa:
+      title: About HIPAA
+      header: About HIPAA Compliant Email
+      sub_header: Last updated October 4, 2016
     error:
-      title: Oh-oh, that page doesn't exist!
-      subtitle: Our team has been notified and will look into it soon.
+      title: '404'
+      header: Oh-oh, that page doesn't exist!
+      sub_header: Our team has been notified and will look into it soon.
+    security:
+      title: Security
+      header: Security Information
+      sub_header: Paubox, Inc.
+    terms:
+      title: Terms
+      header: Terms of Service
+      sub_header: Paubox, Inc.
+    partners:
+      title: Partners
+      header: Partner Program
+      sub_header: Stand out with Paubox
+    jobs:
+      title: Jobs
+      header: Jobs
+      sub_header: We're currently hiring
+  shared:
     solutions_list:
       title: Solutions
       encrypted_email:

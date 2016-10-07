@@ -1,12 +1,8 @@
-%section#hipaa-header
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1 About HIPAA Compliant Email
-        %h4 Last updated October 4, 2016
-        %hr
-        %br
-%section#hipaa-what-is-it
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+%section
   .container
     .row
       .col-sm-12
@@ -37,7 +33,7 @@
           baked in when it comes to your email service provider.
         %p
           Even subcontractors, or business associates of business associates, must also be in compliance.
-%section#hipaa-violations-increasing
+%section
   .container
     .row
       .col-sm-12
@@ -62,8 +58,7 @@
             can also lead to fines.
       .col-md-6
         = render partial: 'shared/hipaa_chart'
-
-%section#hipaa-making-sure
+%section
   .container
     .row
       .col-sm-12
@@ -88,8 +83,7 @@
         %p
           Additional Resource:
           %a{href: 'http://www.hhs.gov/ocr/office/index.html'} U.S. Department of Health and Human Services
-
-%section#hipaa-next-steps
+%section
   .container
     .row
       .col-sm-12

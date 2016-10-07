@@ -1,14 +1,11 @@
-%section#customer-success-stories
+= render partial: 'shared/header',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header') }
+= render partial: 'shared/testimonials'
+%hr
+%section
   .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1 Customer Success Stories
-        %h4 Our customers all have their own reasons to love Paubox
-        %hr
-        %br
-    = render partial: 'shared/testimonials'
-    %hr
-    %br
     .row
       .col-sm-6
         .row

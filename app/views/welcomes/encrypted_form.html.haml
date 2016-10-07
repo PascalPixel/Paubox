@@ -1,12 +1,10 @@
-%section#encrypted-form.hero
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1
-          %i.mdi.mdi-fingerprint
-          Encrypted Form
-        %h4 Eliminate the paper and make getting information easier. HIPAA compliant online forms received straight to your inbox
-%section#encrypted-form-features
+= render partial: 'shared/hero',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
+%section
   .container
     .row
       .col-sm-4

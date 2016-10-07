@@ -1,12 +1,10 @@
-%section#branded-storage.hero
-  .container
-    .row
-      .col-sm-12.text-sm-center
-        %h1
-          %i.mdi.mdi-folder-lock
-          Branded Storage
-        %h4 Encrypted file sharing under your own brand
-%section#branded-storage-features
+= render partial: 'shared/hero',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
+%section
   .container
     .row
       .col-sm-4
