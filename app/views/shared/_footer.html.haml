@@ -10,10 +10,10 @@
               %li
                 = link_to t('welcomes.solutions.title'), solutions_path
                 %ul
-                  %li= link_to t('welcomes.encrypted_email.title'), solutions_encrypted_email_path
-                  %li= link_to t('welcomes.encrypted_form.title'), solutions_encrypted_form_path
-                  %li= link_to t('welcomes.branded_storage.title'), solutions_branded_storage_path
-                  %li= link_to t('welcomes.email_api.title'), solutions_email_api_path
+                  %li= link_to t('welcomes.solution_encrypted_email.title'), solutions_encrypted_email_path
+                  %li= link_to t('welcomes.solution_encrypted_form.title'), solutions_encrypted_form_path
+                  %li= link_to t('welcomes.solution_branded_storage.title'), solutions_branded_storage_path
+                  %li= link_to t('welcomes.solution_email_api.title'), solutions_email_api_path
               %li= link_to t('welcomes.customers.title'), customers_path
               %li= link_to t('welcomes.about.title'), about_path
               %li= link_to t('welcomes.partners.title'), partners_path
@@ -27,7 +27,7 @@
               %li= link_to 'Jobs', 'https://www.paubox.com/blog/jobs'
               %li= link_to 'Press', 'https://www.paubox.com/blog/press'\
       .col-md-4
-        %h5= t('.social.header')
+        %h5= t('.social.title')
         %ul.list-unstyled
           - t('.social.items').each do |item|
             %li

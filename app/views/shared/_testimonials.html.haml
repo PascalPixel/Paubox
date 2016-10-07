@@ -1,44 +1,15 @@
 %section
   .container
-    .row
-      .col-md-6
-        .row
-          .col-xs-2.col-md-3.col-lg-2
-            = image_tag 'customers/headshots/dan_miller.png', class: 'img-fluid img-circle'
-          .col-xs-10.col-md-9.col-lg-10
-            %blockquote.blockquote
-              %p “The great thing about Paubox is they are ahead of the game in terms of their tech behind how they make encryption so easy. They are the only email encryption company out there that’s putting the user experience first.”
-              %h5 Dan Miller, CEO
-              %h6 Level Therapy
-        %br
-      .col-md-6
-        .row
-          .col-xs-2.col-md-3.col-lg-2
-            = image_tag 'customers/headshots/katie_mcbride.png', class: 'img-fluid img-circle'
-          .col-xs-10.col-md-9.col-lg-10
-            %blockquote.blockquote
-              %p “Paubox has allowed me freedom to communicate directly and more broadly with my psychotherapy clients and with other related professionals. With its seamless email encryption and keeping my own email address, Paubox has given me peace of mind.”
-              %h5 Katie McBride, Ph.D.
-              %h6 Licensed Clinical Psychologist
-        %br
-    .row
-      .col-md-6
-        .row
-          .col-xs-2.col-md-3.col-lg-2
-            = image_tag 'customers/headshots/james_ellis.png', class: 'img-fluid img-circle'
-          .col-xs-10.col-md-9.col-lg-10
-            %blockquote.blockquote
-              %p “We now utilize our normal email workflow to communicate with our referring doctors about their patients’ treatment. The information is instantaneous, convenient and most importantly secure.”
-              %h5 Dr. Jim Ellis, Owner/Surgeon
-              %h6 Ellis Oral Surgery
-        %br
-      .col-md-6
-        .row
-          .col-xs-2.col-md-3.col-lg-2
-            = image_tag 'customers/headshots/bonnie_castonguay.png', class: 'img-fluid img-circle'
-          .col-xs-10.col-md-9.col-lg-10
-            %blockquote.blockquote
-              %p “We’re better now because we’re protecting our clients’ information.”
-              %h5 Bonnie Castonguay, RN Co-Founder
-              %h6 Hookele Health Navigators
-        %br
+    - t('.items').each_slice(2) do |items|
+      .row
+        - items.each do |item|
+          .col-md-6
+            .row
+              .col-xs-2.col-md-3.col-lg-2
+                = image_tag "customers/headshots/#{item[:image]}.png", alt: item[:name], class: 'img-fluid img-circle'
+              .col-xs-10.col-md-9.col-lg-10
+                %blockquote.blockquote
+                  %p= item[:body]
+                  %h5= item[:name] + ', ' + item[:title]
+                  %h6= item[:company]
+            %br

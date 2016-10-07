@@ -261,22 +261,26 @@ en:
           The great thing about Paubox is they are ahead of the game in terms of their tech behind how they make encryption so easy.
           They are the only email encryption company out there that’s putting the user experience first.
         name: Dan Miller
+        image: dan_miller
         title: CEO
         company: Level Therapy
       - body:
           Paubox has allowed me freedom to communicate directly and more broadly with my psychotherapy clients and with other related professionals.
           With its seamless email encryption and keeping my own email address, Paubox has given me peace of mind.
         name: Katie McBride
+        image: katie_mcbride
         title: Ph.D.
         company: Licensed Clinical Psychologist
       - body:
           We now utilize our normal email workflow to communicate with our referring doctors about their patients’ treatment. The information is instantaneous, convenient and most importantly secure.
         name: Dr. Jim Ellis
+        image: jim_ellis
         title: Owner/Surgeon
         company: Ellis Oral Surgery
       - body:
           We’re better now because we’re protecting our clients’ information.
         name: Bonnie Castonguay
+        image: bonnie_castonguay
         title: RN Co-Founder
         company: Hookele Health Navigators
     sub_footer:

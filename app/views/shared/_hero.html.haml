@@ -2,8 +2,9 @@
   .container
     .row
       .col-xs-12
-        %h1.p-t-1.m-b-0= header
-        %h2.p-b-1= sub_header
+        %h6.m-b-0.title= title
+        %h2.p-t-1.m-b-0.m-t-0= header
+        %h4.p-b-1= sub_header
         = link_to button_cta, new_user_registration_path,
           class: 'btn btn-outline-success'
         %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= button_info

@@ -11,27 +11,27 @@
         = link_to root_path, class: 'nav-link' do
           = image_tag 'branding/white/paubox_square_small.svg', style: 'height: 1em'
       %li.nav-item.hidden-sm-down
-        = link_to 'Home', root_path, class: 'nav-link'
+        = link_to t('welcomes.home.title'), root_path, class: 'nav-link'
       %li.nav-item
         = link_to 'About HIPAA', 'https://www.paubox.com/blog/hipaa-compliance', class: 'nav-link'
       %li.nav-item.dropdown
         %a.nav-link#solutionsDropdown.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown'}
-          Solutions
+          = t('welcomes.solutions.title')
         .dropdown-menu{'aria-labelledby' => 'solutionsDropdown'}
           = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
             %i.mdi.mdi-email-secure
-            Encrypted Email
+            = t('welcomes.solution_encrypted_email.title')
           = link_to solutions_encrypted_form_path, class: 'dropdown-item' do
             %i.mdi.mdi-fingerprint
-            Encrypted Form
+            = t('welcomes.solution_encrypted_form.title')
           = link_to solutions_branded_storage_path, class: 'dropdown-item' do
             %i.mdi.mdi-folder-lock
-            Branded Storage
+            = t('welcomes.solution_branded_storage.title')
           = link_to solutions_email_api_path, class: 'dropdown-item' do
             %i.mdi.mdi-cube-send
-            Email Api
+            = t('welcomes.solution_email_api.title')
       %li.nav-item
-        = link_to 'Customers', customers_path, class: 'nav-link'
+        = link_to t('welcomes.customers.title'), customers_path, class: 'nav-link'
     %ul.nav.navbar-nav.pull-sm-right
       %li.nav-item
         = link_to '/help', class: 'nav-link' do
