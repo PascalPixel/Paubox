@@ -22,7 +22,7 @@
         %h2 API Documentation
         %p Paubox API provides two ways to send email: through our SMTP relay or through our Web API.
     .row
-      .col-sm-6
+      .col-sm-12
         %h3 SMTP Relay
         %p If you are integrating Paubox with an existing application, setting up the application to use our SMTP relay is easiest, as it only requires modifying SMTP configuration.
         %ul
@@ -34,7 +34,8 @@
           We strongly discourage users from sending mail directly through a single specific IP address when integrating with Paubox. Always point your traffic to
           %b encrypt.paubox.com
         %p The IP addresses at encrypt.paubox.com are changed often and without notice. If you point your traffic to one specific IP, you will experience interruptions in your service when these IPs are changed.
-      .col-sm-6
+    .row
+      .col-sm-12
         %h3 Web API
         %p
           Here’s how to use the Paubox API with
@@ -79,3 +80,8 @@
               :password  => "<password>",
               :enable_starttls_auto => true,
             }
+= render partial: 'shared/solution_intro',
+         locals: { intro: t('.intro') }
+= render partial: 'shared/solution_features',
+         locals: { features: t('.features') }
+= render partial: 'shared/testimonials'

@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 
   # Solutions
   get "solutions", to: "welcomes#solutions"
-  get "solutions/encrypted-email", to: "welcomes#encrypted_email"
-  get "solutions/encrypted-form", to: "welcomes#encrypted_form"
-  get "solutions/branded-storage", to: "welcomes#branded_storage"
-  get "solutions/email-api", to: "welcomes#email_api"
+  get "solutions/encrypted-email", to: "welcomes#solution_encrypted_email"
+  get "solutions/encrypted-form", to: "welcomes#solution_encrypted_form"
+  get "solutions/branded-storage", to: "welcomes#solution_branded_storage"
+  get "solutions/email-api", to: "welcomes#solution_email_api"
 
   get "hipaa-compliance", to: "welcomes#hipaa"
   get "partners", to: "welcomes#partners"

@@ -12,7 +12,7 @@
     .row
       .col-sm-1
       - t('.media.media_logos').each do |item|
-        .col-sm-2
+        .col-xs-4.col-sm-2
           %a{href: item[:link], rel: 'nofollow', target: '_blank'}
             = image_tag "media/#{item[:image]}.png", alt: item[:name], class: 'img-fluid'
 = render partial: 'shared/solutions_list'

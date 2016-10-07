@@ -106,18 +106,31 @@ body,
 // Home
 .home
   .hero
-    background-image: image-url('hero.jpg')
+    background-image: image-url('heroes/home.jpg')
+
+// Encrypted Email
+.solution_encrypted_email
+  .hero
+    background-image: image-url('heroes/encrypted_email.jpg')
+
+// Encrypted Forms
+.solution_encrypted_form
+  .hero
+    background-image: image-url('heroes/encrypted_form.jpg')
+
+// Branded Storage
+.solution_branded_storage
+  .hero
+    background-image: image-url('heroes/branded_storage.jpg')
+
+// Email API
+.solution_email_api
+  .hero
+    background-image: image-url('heroes/email_api.jpg')
 
 // Sub Footer
 #sub-footer
-  background: desaturate(darken($brand-primary, 25%), 15%)
-  color: rgba(255, 255, 255, 0.75)
-  a:not(.btn)
-    color: rgba(255, 255, 255, 0.5)
-    transition: color .3s
-    &:hover
-      text-decoration: none
-      color: rgba(255, 255, 255, 0.75)
+  background: $gray-lighter
 
 // Footer
 #footer

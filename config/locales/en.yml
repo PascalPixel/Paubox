@@ -83,7 +83,7 @@ en:
         - name: Eric Nakagawa
           body: Eric Nakagawa is a serial entrepreneur based in San Francisco. He has wide expertise in consumer mobile applications, travel, humor, and user communities. He currently helps mobile developers build better apps at Facebook.
           image: eric_nakagawa
-    encrypted_email:
+    solution_encrypted_email:
       title: Encrypted Email
       header: Military-grade security for every email
       sub_header: No downloads, no plug-ins, just secure email
@@ -109,12 +109,12 @@ en:
         - item: Business Associate Agreements with paid accounts
         - item: API available to integrate with patient portals and management systems
         - item: Free 14-Day Trial
-    encrypted_form:
+    solution_encrypted_form:
       title: Encrypted Forms
       header: Eliminate the paper and make getting information easier
       sub_header: HIPAA compliant online forms received straight to your inbox
       button_info: Request a Free Demo
-      button_cta:
+      button_cta: Sign Up
       intro:
         title: Secure online forms that can transform your business
         items:
@@ -135,7 +135,7 @@ en:
         - item: HIPAA compliant
         - item: Business Associate Agreement included
         - item: Free 14-Day Trial
-    branded_storage:
+    solution_branded_storage:
       title: Branded Storage
       header: HIPAA compliant file sharing and cloud storage
       sub_header: ""
@@ -158,12 +158,12 @@ en:
         - item: White label solution ready for your branding
         - item: HIPAA compliant
         - item: Business Associate Agreements with paid accounts
-    email_api:
+    solution_email_api:
       title: Email API
       header: A HIPAA compliant email API for developers and IT professionals
       sub_header: ""
       button_info: Request a Free Demo
-      button_cta:
+      button_cta: Sign Up
       intro:
         title: An email API for healthcare providers and developers
         items:
@@ -186,7 +186,7 @@ en:
       big_header: Stand out with Paubox
       sub_header: ""
       button_info: ""
-      button_cta: ""
+      button_cta: Sign Up
       intro:
         title: Benefits of becoming a Paubox Partner
         items:
