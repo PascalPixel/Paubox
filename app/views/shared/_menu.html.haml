@@ -18,24 +18,26 @@
         %a.nav-link#solutionsDropdown.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown'}
           = t('welcomes.solutions.title')
         .dropdown-menu{'aria-labelledby' => 'solutionsDropdown'}
-          = link_to solutions_encrypted_email_path, class: 'dropdown-item' do
-            %i.mdi.mdi-email-secure
-            = t('welcomes.solution_encrypted_email.title')
-          = link_to solutions_encrypted_form_path, class: 'dropdown-item' do
-            %i.mdi.mdi-fingerprint
-            = t('welcomes.solution_encrypted_form.title')
-          = link_to solutions_branded_storage_path, class: 'dropdown-item' do
-            %i.mdi.mdi-folder-lock
-            = t('welcomes.solution_branded_storage.title')
-          = link_to solutions_email_api_path, class: 'dropdown-item' do
-            %i.mdi.mdi-cube-send
-            = t('welcomes.solution_email_api.title')
+          = link_to t('welcomes.solution_encrypted_email.title'), solutions_encrypted_email_path, class: 'dropdown-item'
+          = link_to t('welcomes.solution_encrypted_form.title'), solutions_encrypted_form_path, class: 'dropdown-item'
+          = link_to t('welcomes.solution_branded_storage.title'), solutions_branded_storage_path, class: 'dropdown-item'
+          = link_to t('welcomes.solution_email_api.title'), solutions_email_api_path, class: 'dropdown-item'
       %li.nav-item
         = link_to t('welcomes.customers.title'), customers_path, class: 'nav-link'
+      %li.nav-item.dropdown
+        %a#dropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+          More
+        .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
+          = link_to t('welcomes.about.title'), about_path, class: 'dropdown-item'
+          = link_to t('welcomes.partners.title'), partners_path, class: 'dropdown-item'
+          = link_to t('welcomes.security.title'), security_path, class: 'dropdown-item'
+          = link_to t('welcomes.terms.title'), terms_path, class: 'dropdown-item'
+          .dropdown-divider
+          = link_to 'Blog', 'https://www.paubox.com/blog', class: 'dropdown-item'
+          = link_to 'Help', 'https://www.paubox.com/blog/help', class: 'dropdown-item'
+          = link_to 'Jobs', 'https://www.paubox.com/blog/jobs', class: 'dropdown-item'
+          = link_to 'Press', 'https://www.paubox.com/blog/press', class: 'dropdown-item'
     %ul.nav.navbar-nav.pull-sm-right
-      %li.nav-item
-        = link_to '/help', class: 'nav-link' do
-          Help
       %li.nav-item
         %a.nav-link{'data-target' => '#contactForm', 'data-toggle' => 'modal'}
           = t('.contact')
