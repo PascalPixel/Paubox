@@ -41,7 +41,7 @@
                   .col-xs-9.col-md-8.col-lg-9
                     %h6.text-primary.m-b-0= item[:title]
                     %h5= item[:name]
-                    %p= simple_format(item[:body])
+                    %p= simple_format item[:body]
                     %br
         %h2= t('.advisors.header')
         %hr
@@ -55,5 +55,5 @@
                   .col-xs-9.col-md-8.col-lg-9
                     %h6.text-primary.m-b-0= item[:title]
                     %h5= item[:name]
-                    %p= simple_format(item[:body])
+                    %p= simple_format item[:body] 
                     %br
