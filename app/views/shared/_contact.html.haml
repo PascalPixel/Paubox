@@ -13,6 +13,27 @@
       .modal-header
         %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
           %span{"aria-hidden" => "true"} ×
-        %h4#myModalLabel.modal-title Contact us
+        %h4#myModalLabel.modal-title= t('.title')
       .modal-body
-        Contact form here
+        .row
+          .col-md-6
+            %p= t('.body')
+          .col-md-6
+            %p
+              %b E:
+              = t('.email')
+              %br
+              %b P:
+              = t('.phone')
+            %p
+              = t('.address.street')
+              %br
+              = t('.address.floor')
+              %br
+              = t('.address.city')
+            %h5= t('.tech_support.title')
+            %b E:
+            = t('.tech_support.email')
+            %br
+            %b P:
+            = t('.tech_support.phone')

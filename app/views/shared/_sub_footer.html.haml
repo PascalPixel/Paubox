@@ -1,10 +1,8 @@
+%hr
 %section#sub-footer
   .container
     .row
-      .col-sm-4
-        %h3.m-b-0= image_tag 'branding/blue/paubox.svg', class: 'logo'
-      .col-sm-8
-        %h3.m-b-0= t('.header')
-        %h5.m-b-1= t('.sub_header')
-        = link_to t('.button_cta'), new_user_registration_path, class: 'btn btn-outline-success'
-        %button.btn.btn-outline-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= t('.button_info')
+      .col-sm-12.text-xs-center
+        %h3= t('.header')
+        %h5.m-b-2= t('.sub_header')
+        %button.btn.btn-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= t('.button_info')

@@ -23,8 +23,15 @@ img.logo
   height: 0.76em
   vertical-align: baseline
 b,
-strong
-  font-family: 'Geogrotesque Medium'
+strong,
+h6
+  font-family: 'Geogrotesque Medium', $font-family-sans-serif
+.container-fluid
+  @media (min-width: 544px)
+    padding-left: 2.5rem
+    padding-right: 2.5rem
+.btn
+  transition: all .3s
 
 // Thick outline buttons
 .btn
@@ -37,6 +44,8 @@ body[id^="devise"]
 // Card Inverse
 .card-inverse
   color: white
+  .list-group-item
+    background: transparent
 
 // Modals blue
 .modal-content
@@ -134,20 +143,15 @@ body,
   .hero
     background-image: image-url('heroes/email_api.jpg')
 
-// Sub Footer
-#sub-footer
-  background: $gray-lighter
-
 // Footer
 #footer
-  background: $brand-primary
-  color: white
+  background: $gray-lighter
   a:not(.btn)
-    color: rgba(255, 255, 255, 0.5)
+    color: rgba(0, 0, 0, 0.5)
     transition: color .3s
     &:hover
       text-decoration: none
-      color: rgba(255, 255, 255, 0.75)
+      color: rgba(0, 0, 0, 0.75)
 
 // Sticky footer
 html,

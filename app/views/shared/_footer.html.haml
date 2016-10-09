@@ -1,34 +1,36 @@
 %section#footer
   .container
     .row
-      .col-md-8
-        %h5= t('.sitemap.title')
-        .row
-          .col-sm-6
-            %ul.list-unstyled
-              %li= link_to t('welcomes.home.title'), root_path
-              %li
-                = link_to t('welcomes.solutions.title'), solutions_path
-                %ul
-                  %li= link_to t('welcomes.solution_encrypted_email.title'), solutions_encrypted_email_path
-                  %li= link_to t('welcomes.solution_encrypted_form.title'), solutions_encrypted_form_path
-                  %li= link_to t('welcomes.solution_branded_storage.title'), solutions_branded_storage_path
-                  %li= link_to t('welcomes.solution_email_api.title'), solutions_email_api_path
-              %li= link_to t('welcomes.customers.title'), customers_path
-              %li= link_to t('welcomes.about.title'), about_path
-              %li= link_to t('welcomes.partners.title'), partners_path
-              %li= link_to t('welcomes.security.title'), security_path
-              %li= link_to t('welcomes.terms.title'), terms_path
-          .col-sm-6
-            %ul.list-unstyled
-              %li= link_to 'Blog', 'https://www.paubox.com/blog'
-              %li= link_to 'HIPAA Compliance', 'https://www.paubox.com/blog/hipaa-compliance'
-              %li= link_to 'Help', 'https://www.paubox.com/blog/help'
-              %li= link_to 'Jobs', 'https://www.paubox.com/blog/jobs'
-              %li= link_to 'Press', 'https://www.paubox.com/blog/press'
-      .col-md-4
-        %h5= t('.social.title')
+      .col-md-3
+        %h6= t('welcomes.solutions.title')
         %ul.list-unstyled
+          %li= link_to t('welcomes.solution_encrypted_email.title'), solutions_encrypted_email_path
+          %li= link_to t('welcomes.solution_encrypted_form.title'), solutions_encrypted_form_path
+          %li= link_to t('welcomes.solution_branded_storage.title'), solutions_branded_storage_path
+          %li= link_to t('welcomes.solution_email_api.title'), solutions_email_api_path
+      .col-md-3
+        %h6= t('.about')
+        %ul.list-unstyled
+          %li= link_to t('welcomes.about.title'), about_path
+          %li= link_to t('welcomes.customers.title'), customers_path
+          %li= link_to 'Jobs', 'https://www.paubox.com/blog/jobs'
+          %li= link_to t('welcomes.partners.title'), partners_path
+          %li= link_to 'Press', 'https://www.paubox.com/blog/press'
+      .col-md-3
+        %h6= t('.documentation')
+        %ul.list-unstyled
+          %li= link_to 'Help', 'https://www.paubox.com/blog/help'
+          %li= link_to 'What is HIPAA', 'https://www.paubox.com/blog/hipaa-compliance'
+          -# %li= link_to 'What is HIPAA', hipaa_compliance_path
+          %li= link_to t('welcomes.security.title'), security_path
+          %li= link_to t('welcomes.terms.title'), terms_path
+      .col-md-3
+        %h6= t('.social.title')
+        %ul.list-unstyled
+          %li
+            = link_to 'https://www.paubox.com/blog' do
+              %i.mdi.mdi-newspaper
+              Blog
           - t('.social.items').each do |item|
             %li
               %a{href: item[:link], rel: 'nofollow', target: '_blank'}

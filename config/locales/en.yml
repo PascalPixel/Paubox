@@ -25,22 +25,9 @@ en:
           name: CIO
           link: ""
     about:
-      title: About
-      header: About us
-      sub_header: Learn more about our team
-      contact:
-        header: Contact us
-        body: Do you have any questions about our solutions? Please do not hesitate to contact us and we will get back to you within 24 hours.
-        email: info@paubox.com
-        phone: 650-351-9891
-        address:
-          street: 2017 Mission Street
-          floor: Second Floor
-          city: San Francisco, CA 94110
-        tech_support:
-          title: Tech Support
-          email: support@paubox.com
-          phone: 650-351-9891
+      title: About us
+      header: Our Mission, Team & Advisors
+      sub_header: Learn more about who we are
       team:
         header: Team
         items:
@@ -249,7 +236,7 @@ en:
       header: Our Solutions
       sub_header: Getting encrypted in every way
     customers:
-      title: Customers
+      title: Our Customers
       header: Customer Success Stories
       sub_header: Our customers all have their own reasons to love Paubox
       links: Read more
@@ -407,7 +394,7 @@ en:
       sub_header: We're currently hiring
   shared:
     solutions_list:
-      title: Solutions
+      title: Our Solutions
       encrypted_email:
         title: Encrypted Email
         body: Paubox Encrypted Email insures every email you send is seamlessly delivered with encryption, without the hassle of extra steps. Just send emails as normal from any device.
@@ -450,13 +437,12 @@ en:
         title: RN Co-Founder
         company: Hookele Health Navigators
     sub_footer:
-      header: Invisible solutions to make you HIPAA compliant
-      sub_header: Join thousands of others already securing 30,000+ emails every day
+      header: Become HIPAA compliant
+      sub_header: Our customers secure 30,000+ emails every day
       button_info: Request a Free Demo
-      button_cta: Sign Up
     footer:
-      sitemap:
-        title: Sitemap
+      documentation: Documentation
+      about: About
       social:
         title: Social
         items:
@@ -475,7 +461,7 @@ en:
         - name: LinkedIn
           link: "https://www.linkedin.com/company/paubox"
           icon: linkedin
-      copyright: 2016 © PAUBOX, All Rights Reserved
+      copyright: © 2016 PAUBOX
       design: Design by
       superpencil: Superpencil
     menu:
@@ -486,8 +472,18 @@ en:
       help: Help
       contact: Contact
     contact:
-      button: Contact
       title: Contact us
+      body: Do you have any questions about our solutions? Please do not hesitate to contact us and we will get back to you within 24 hours.
+      email: info@paubox.com
+      phone: 650-351-9891
+      address:
+        street: 2017 Mission Street
+        floor: Second Floor
+        city: San Francisco, CA 94110
+      tech_support:
+        title: Tech Support
+        email: support@paubox.com
+        phone: 650-351-9891
 contacts:
   create:
     header: Thank you for your message.

@@ -5,30 +5,7 @@
 %section
   .container
     .row
-      .col-lg-3
-        .card.card-inverse.card-primary
-          %h5.card-header= t('.contact.header')
-          .card-block
-            %p= t('.contact.body')
-            %p
-              %b E:
-              = t('.contact.email')
-              %br
-              %b P:
-              = t('.contact.phone')
-            %p
-              = t('.contact.address.street')
-              %br
-              = t('.contact.address.floor')
-              %br
-              = t('.contact.address.city')
-            %h5= t('.contact.tech_support.title')
-            %b E:
-            = t('.contact.tech_support.email')
-            %br
-            %b P:
-            = t('.contact.tech_support.phone')
-      .col-lg-9
+      .col-sm-12
         %h2= t('.team.header')
         %hr
         - t('.team.items').each_slice(2) do |items|
@@ -55,5 +32,5 @@
                   .col-xs-9.col-md-8.col-lg-9
                     %h6.text-primary.m-b-0= item[:title]
                     %h5= item[:name]
-                    %p= simple_format item[:body] 
+                    %p= simple_format item[:body]
                     %br
