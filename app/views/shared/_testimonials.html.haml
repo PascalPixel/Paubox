@@ -1,5 +1,10 @@
 %section
   .container
+    .row
+      .col-sm-12.text-xs-center
+        %h2 Professionals use Paubox
+        %br
+        %br
     - t('.items').each_slice(2) do |items|
       .row
         - items.each do |item|
@@ -15,3 +20,6 @@
                     %span.text-primary= item[:title]
                   %h6= item[:company]
             %br
+    .row
+      .col-sm-12.text-xs-center
+        = link_to 'View more customers', customers_path, class: 'btn btn-primary'
