@@ -6,6 +6,18 @@
                    button_cta: t('.button_cta') }
 = render partial: 'shared/solution_intro',
          locals: { intro: t('.intro') }
+
+%section.bg-primary
+  .container
+    .row
+      .col-sm-12
+        %ol
+          %li HIPAA sets the standard for protecting sensitive patient data. This includes securing data that's emailed from inbox to inbox.
+          %li Other solutions secure email by keeping everything on a closed network that requires both the sender and recipient to log in to see their messages.
+          %li This is not convenient and is a big reason why so much email is still sent unencrypted. Other solutions even give the option to send unencrypted email because they know their process is cumbersome.
+          %li Paubox makes HIPAA compliant email simple to send and simple to receive, like normal email.
+        = image_tag 'heroes/encrypted_email_illu.png', class: 'img-fluid'
+
 = render partial: 'shared/solution_features',
          locals: { features: t('.features') }
 = render partial: 'shared/testimonials'
