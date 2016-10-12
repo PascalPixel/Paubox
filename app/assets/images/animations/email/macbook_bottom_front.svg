@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="528px" height="369px" viewBox="0 0 528 369" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>macbook_bottom_front</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="518" height="359" rx="23"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="528" height="369">
+            <rect x="-5" y="-5" width="528" height="369" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <rect id="path-3" x="178" y="229" width="162" height="114" rx="9"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="162" height="114" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="29" y="29" width="461" height="185" rx="7"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="461" height="185" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="macbook_bottom_front" transform="translate(5.000000, 5.000000)">
+            <g>
+                <g id="Combined-Shape">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#0247DC" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+                </g>
+                <use id="Combined-Shape-Copy" stroke="#0247DC" mask="url(#mask-4)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-3"></use>
+                <use id="Combined-Shape-Copy-41" stroke="#0247DC" mask="url(#mask-6)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-5"></use>
+                <g id="Group-3" transform="translate(35.000000, 176.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-2" x="0" y="0" width="27" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-3" x="32" y="0" width="27" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-4" x="64" y="0" width="27" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-5" x="96" y="0" width="33" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-8" x="328" y="0" width="27" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-9" x="360" y="17" width="27" height="14" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-10" x="391" y="17" width="27" height="14" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-24" x="391" y="0" width="27" height="14" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-11" x="422" y="17" width="27" height="14" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-7" x="290" y="0" width="33" height="31" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-6" x="133" y="0" width="152" height="31" rx="4"></rect>
+                </g>
+                <g id="Group-2" transform="translate(35.000000, 146.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-12" x="289" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-13" x="320" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-23" x="352" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-15" x="227" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-14" x="258" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-19" x="164" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-18" x="195" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-17" x="102" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-16" x="133" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="71" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-21" x="0" y="0" width="66" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-22" x="383" y="0" width="66" height="26" rx="4"></rect>
+                </g>
+                <g id="Group-2" transform="translate(35.000000, 115.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-12" x="304" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-13" x="335" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-23" x="367" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-15" x="242" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-14" x="273" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-19" x="179" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-18" x="210" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-17" x="117" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-16" x="148" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="86" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="55" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-21" x="0" y="0" width="51" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-22" x="398" y="0" width="51" height="26" rx="4"></rect>
+                </g>
+                <g id="Group-2-Copy-2" transform="translate(35.000000, 54.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-12" x="312" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-13" x="343" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-23" x="375" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-15" x="250" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-14" x="281" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-19" x="187" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-18" x="218" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-17" x="125" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-16" x="156" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="94" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="63" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-21" x="0" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-27" x="31" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-22" x="406" y="0" width="43" height="26" rx="4"></rect>
+                </g>
+                <g id="Group-2-Copy-3" transform="translate(35.000000, 35.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-22" x="421" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-28" x="389" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-30" x="356" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-29" x="324" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-34" x="291" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-33" x="259" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-32" x="226" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-31" x="194" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-38" x="162" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-37" x="130" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-36" x="97" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-35" x="65" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-40" x="32" y="0" width="28" height="15" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-39" x="0" y="0" width="28" height="15" rx="4"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(35.000000, 85.000000)" fill="#0247DC">
+                    <rect id="Combined-Shape-Copy-12" x="296" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-13" x="327" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-23" x="359" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-26" x="390" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-25" x="422" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-15" x="234" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-14" x="265" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-19" x="171" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-18" x="202" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-17" x="109" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-16" x="140" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="78" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-20" x="47" y="0" width="27" height="26" rx="4"></rect>
+                    <rect id="Combined-Shape-Copy-21" x="0" y="0" width="43" height="26" rx="4"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

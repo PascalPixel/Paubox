@@ -127,7 +127,7 @@ body,
 // Encrypted Email
 .solution_encrypted_email
   .hero
-    background-image: image-url('heroes/encrypted_email.jpg')
+    // background-image: image-url('heroes/encrypted_email.jpg')
 
 // Encrypted Forms
 .solution_encrypted_form
@@ -178,3 +178,34 @@ footer,
     width: 17px
     margin-right: -2px
     margin-top: -1px
+
+.macbook
+  position: relative
+  height: 300px
+  .top,
+  .bottom
+    height: 140px
+    width: 200px
+    position: absolute
+    transform-style: preserve-3d
+    transition: all .6s
+  .top
+    transform-origin: 0% 100%
+    transform: translateX(0) translateY(0) rotate(-30deg) rotateY(38deg) rotateX(-136deg)
+  .bottom
+    transform-origin: 0% 0%
+    transform: translateX(0) translateY(141px) rotate(-30deg) rotateY(38deg) rotateX(44deg)
+  .front,
+  .back
+    transform-origin: 50% 50%
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+    position: absolute
+  .front
+    transform: rotateY(180deg)
+  .back
+    transform: rotateY(0deg)
+
+  &:hover
+    .top
+      transform: translateX(0) translateY(0) rotate(-30deg) rotateY(38deg) rotateX(-43deg)
