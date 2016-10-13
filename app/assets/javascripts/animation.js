@@ -1,13 +1,5 @@
 $(document).ready(function() {
   if ($(".animation").length) {
-    wrapper = function() {
-      var wWidth = $('.animation-wrap').width();
-      var wHeight = wWidth / 2.8;
-      return $('.animation').width(wWidth).height(wHeight);
-    };
-    $(window).resize(function() {
-      return wrapper();
-    });
     // text1 = $('.animation .text-1');
     // text2 = $('.animation .text-2');
     // text3 = $('.animation .text-3');
@@ -23,7 +15,6 @@ $(document).ready(function() {
     //   opacity: 1
     // });
     animation = function() {
-      wrapper();
       // sequence = [
       //   {
       //     e: text1,

@@ -1,27 +1,28 @@
-.row
-  .col-sm-12
-    .texts><
-      %h5.text.text-1
-        %span.tag.tag-default 1
-        = t('.text1')
-      %h5.text.text-2
-        %span.tag.tag-default 2
-        = t('.text2')
-      %h5.text.text-3
-        %span.tag.tag-default 3
-        = t('.text3')
-      %h5.text.text-4
-        %span.tag.tag-default 4
-        = t('.text4')
-    .animation-wrap
-      .animation><
-        .laptop><
-          .bottom><
-            .back><= image_tag 'animations/email/macbook_bottom_front.svg'
-            .front><= image_tag 'animations/email/macbook_bottom_back.svg'
-          .top><
-            .back><= image_tag 'animations/email/macbook_top_back.svg'
-            .front><= image_tag 'animations/email/macbook_top_front.svg'
-        .inbox-sender><= image_tag 'animations/email/inbox_sender.svg'
-        .inbox-recipient><= image_tag 'animations/email/inbox_recipient.svg'
-        .phone><= image_tag 'animations/email/phone.svg'
+.animation-wrap
+  .animation><
+    .laptop><
+      .bottom><
+        .back><= image_tag 'animations/email/macbook_bottom_front.svg'
+        .front><= image_tag 'animations/email/macbook_bottom_back.svg'
+      .top><
+        .back><= image_tag 'animations/email/macbook_top_back.svg'
+        .front><= image_tag 'animations/email/macbook_top_front.svg'
+    -# .inbox-sender><= image_tag 'animations/email/inbox_sender.svg'
+    -# .inbox-recipient><= image_tag 'animations/email/inbox_recipient.svg'
+    -# .phone><= image_tag 'animations/email/phone.svg'
+.container-fluid
+  .row
+    .col-sm-12
+      %ul.list-unstyled.texts><
+        %li.text.text-1
+          %span.tag.tag-default 1
+          = t('.text1')
+        %li.text.text-2
+          %span.tag.tag-default 2
+          = t('.text2')
+        %li.text.text-3
+          %span.tag.tag-default 3
+          = t('.text3')
+        %li.text.text-4
+          %span.tag.tag-default 4
+          = t('.text4')

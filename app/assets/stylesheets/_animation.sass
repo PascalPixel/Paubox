@@ -3,58 +3,69 @@
 
 .animation-wrap
   position: relative
-  transform-style: preserve-3d
   overflow: hidden
-
-  img
-    max-width: 100%
-    height: auto
+  height: 35vw
+  box-shadow: inset 0vw 0vw 20vw $gray-lighter
 
   .animation
     position: relative
-
-  .inbox-sender
-    height: 50%
-    width: 25%
-    float: left
-
-  .inbox-recipient
-    height: 50%
-    width: 25%
-    float: left
-
-  .phone
-    height: 50%
-    width: 25%
-    float: left
-
-  .laptop
-    height: 50%
-    width: 25%
-    float: left
     transform-style: preserve-3d
-    transform: translateX(2em) translateY(6em) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
+    transform: translateX(0vw) translateY(-32.5vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
+    height: 100vw
+    width: 100vw
+    background-image: image-url('animations/email/grid.svg')
+    background-size: 3vw
+    box-shadow: inset 0vw 0vw 20vw $gray-lighter
 
-    .top,
-    .bottom
-      height: 140px
-      width: 200px
-      position: absolute
+    img
+      max-width: 100%
+      height: auto
+
+    .inbox-sender
+      height: 50vw
+      width: 25vw
+      float: left
+
+    .inbox-recipient
+      height: 50vw
+      width: 25vw
+      float: left
+
+    .phone
+      height: 50vw
+      width: 25vw
+      float: left
+
+    .laptop
+      height: 50vw
+      width: 25vw
+      float: left
+      transform: translateX(20vw) translateY(35vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
       transform-style: preserve-3d
-      transition: all 1s
-    .top
-      transform-origin: 0% 0%
-      transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
-    .bottom
-      transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
-    .front,
-    .back
-      backface-visibility: hidden
-      position: absolute
-    .front
-      transform: rotateY(180deg)
-    .back
-      transform: rotateY(0deg)
-    &:hover
+
+      .top,
+      .bottom
+        height: 14vw
+        width: 20vw
+        position: absolute
+        transform-style: preserve-3d
+        transition: all 1s
+
+        .front,
+        .back
+          backface-visibility: hidden
+          position: absolute
+        .front
+          transform: rotateY(180deg)
+        .back
+          transform: rotateY(0deg)
+
       .top
-        transform: translateX(0) translateY(0) rotateY(0deg) rotateX(90deg) rotateZ(0deg)
+        transform-origin: 0% 0%
+        transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
+      .bottom
+        transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
+
+      &:hover
+        .top
+          transform: translateX(0) translateY(0) rotateY(0deg) rotateX(90deg) rotateZ(0deg)
