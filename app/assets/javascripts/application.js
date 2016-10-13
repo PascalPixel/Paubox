@@ -1,6 +1,10 @@
-//= require jquery
+//= require jquery2
 //= require jquery_ujs
 //= require turbolinks
 //= require tether
 //= require bootstrap-sprockets
 //= require chartjs.js
+//= require velocity/velocity
+//= require velocity/velocity.ui
+//= require jquery-visible
+//= require animation

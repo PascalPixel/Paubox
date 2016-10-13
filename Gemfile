@@ -50,6 +50,10 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-animate.css', '~> 3.5.2'
   # Animated live charts
   gem 'rails-assets-chartjs', '~> 2.3.0'
+  # Trigger JS functions if element is in viewport
+  gem 'rails-assets-jquery-visible', '~> 1.2.0'
+  # Super fast animation with JS
+  gem 'rails-assets-velocity', '~> 1.2.3'
 end
 
 group :development, :test do

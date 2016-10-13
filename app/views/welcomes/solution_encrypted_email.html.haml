@@ -4,29 +4,9 @@
 -#                    sub_header: t('.sub_header'),
 -#                    button_info: t('.button_info'),
 -#                    button_cta: t('.button_cta') }
-%h6 hero temp disabled
-%section
-  .container
-    .macbook
-      .bottom
-        .back
-          = image_tag 'animations/email/macbook_bottom_front.svg', class: 'img-fluid'
-        .front
-          = image_tag 'animations/email/macbook_bottom_back.svg', class: 'img-fluid'
-      .top
-        .back
-          = image_tag 'animations/email/macbook_top_front.svg', class: 'img-fluid'
-        .front
-          = image_tag 'animations/email/macbook_top_back.svg', class: 'img-fluid'
-    .row
-      .col-sm-12
-        = image_tag 'animations/email/encrypted_email.svg', class: 'img-fluid'
-        %br
-        %ol
-          %li HIPAA sets the standard for protecting sensitive patient data. This includes securing data that's emailed from inbox to inbox.
-          %li Other solutions secure email by keeping everything on a closed network that requires both the sender and recipient to log in to see their messages.
-          %li This is not convenient and is a big reason why so much email is still sent unencrypted. Other solutions even give the option to send unencrypted email because they know their process is cumbersome.
-          %li Paubox makes HIPAA compliant email simple to send and simple to receive, like normal email.
+%section#animation
+  .container-fluid
+    = render partial: "shared/animation"
 = render partial: 'shared/solution_intro',
          locals: { intro: t('.intro') }
 = render partial: 'shared/solution_features',

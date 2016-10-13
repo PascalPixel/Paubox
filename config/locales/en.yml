@@ -393,6 +393,11 @@ en:
       header: Jobs
       sub_header: We're currently hiring
   shared:
+    animation:
+      text1: HIPAA sets the standard for protecting sensitive patient data. This includes securing data that's emailed from inbox to inbox.
+      text2: Other solutions secure email by keeping everything on a closed network that requires both the sender and recipient to log in to see their messages.
+      text3: This is not convenient and is a big reason why so much email is still sent unencrypted. Other solutions even give the option to send unencrypted email because they know their process is cumbersome.
+      text4: Paubox makes HIPAA compliant email simple to send and simple to receive, like normal email.
     solutions_list:
       title: Our Solutions
       encrypted_email:
