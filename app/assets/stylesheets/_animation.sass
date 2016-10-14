@@ -7,10 +7,30 @@
   height: 35vw
   box-shadow: inset 0vw 0vw 20vw $gray-lighter
 
+  &:hover
+    .animation
+      .laptop
+        .top
+          transform: translate3d(0, 0, 1vw) rotateX(90deg) rotateY(0deg) rotateZ(0deg)
+
+  .foreground,
+  .background,
   .animation
-    position: relative
+    position: absolute
+
+    img
+      max-width: 100%
+
+  .foreground
+    z-index: 3
+
+  .background
+    z-index: 1
+
+  .animation
+    z-index: 2
     transform-style: preserve-3d
-    transform: translateX(0vw) translateY(-32.5vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
+    transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
     width: 100vw
     background-image: image-url('animations/email/grid.svg')
@@ -22,34 +42,22 @@
       height: auto
 
     .inbox-sender
-      height: 50vw
-      width: 25vw
-      float: left
 
     .inbox-recipient
-      height: 50vw
-      width: 25vw
-      float: left
 
     .phone
-      height: 50vw
-      width: 25vw
-      float: left
 
     .laptop
-      height: 50vw
-      width: 25vw
-      float: left
-      transform: translateX(20vw) translateY(35vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+      transform: translate3d(4.84vw, 33.1vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0)
       transform-style: preserve-3d
 
-      .top,
-      .bottom
-        height: 14vw
-        width: 20vw
+      .top
+        width: 17.65vw
         position: absolute
+        transition: transform 1s
+        transform: translate3d(0, 0, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+        transform-origin: 0% 0%
         transform-style: preserve-3d
-        transition: all 1s
 
         .front,
         .back
@@ -59,13 +67,3 @@
           transform: rotateY(180deg)
         .back
           transform: rotateY(0deg)
-
-      .top
-        transform-origin: 0% 0%
-        transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
-      .bottom
-        transform: translateX(0) translateY(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg)
-
-      &:hover
-        .top
-          transform: translateX(0) translateY(0) rotateY(0deg) rotateX(90deg) rotateZ(0deg)
