@@ -1,24 +1,14 @@
 #animation
   background: $gray-lighter
 
-.animation-wrap
+.animation
   position: relative
   overflow: hidden
   height: 35vw
-  box-shadow: inset 0vw 0vw 20vw $gray-lighter
-
-  &:hover
-    .animation
-      .laptop
-        .top
-          transform: translate3d(0, 0, 1vw) rotateX(90deg) rotateY(0deg) rotateZ(0deg)
-      .envelope
-        transform: translate3d(42vw, 35.7vw, 8vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
-        opacity: 1
 
   .foreground,
   .background,
-  .animation
+  .middleground
     position: absolute
 
     img
@@ -30,7 +20,7 @@
   .background
     z-index: 1
 
-  .animation
+  .middleground
     z-index: 2
     transform-style: preserve-3d
     transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
@@ -38,7 +28,6 @@
     width: 100vw
     background-image: image-url('animations/email/grid.svg')
     background-size: 3vw
-    box-shadow: inset 0vw 0vw 20vw $gray-lighter
 
     img
       max-width: 100%

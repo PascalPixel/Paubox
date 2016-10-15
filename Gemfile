@@ -53,7 +53,7 @@ source 'https://rails-assets.org' do
   # Trigger JS functions if element is in viewport
   gem 'rails-assets-jquery-visible', '~> 1.2.0'
   # Super fast animation with JS
-  gem 'rails-assets-velocity', '~> 1.2.3'
+  gem 'rails-assets-velocity', '~> 1.3.1'
 end
 
 group :development, :test do
