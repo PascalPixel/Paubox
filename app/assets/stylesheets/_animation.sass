@@ -37,13 +37,13 @@
     width: 100%
 
   .foreground
-    z-index: 3
+    z-index: 30
 
   .background
-    z-index: 1
+    z-index: 10
 
   .middleground
-    z-index: 2
+    z-index: 20
     transform-style: preserve-3d
     transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
@@ -71,20 +71,22 @@
         top: 39.5vw
         left: 27vw
       &.line-2
-        top: 47.5vw
-        left: 46.2vw
-      &.line-3
-        top: 60.5vw
-        left: 46.2vw
-      &.line-4
         top: 68vw
         left: 68vw
-      &.line-5
+      &.line-3
         top: 39.5vw
         left: 55vw
-      &.line-6
+      &.line-4
         top: 39.5vw
         left: 68vw
+      &.line-5
+        top: 60.5vw
+        left: 46.2vw
+        border-color: $brand-danger
+      &.line-6
+        top: 47.5vw
+        left: 46.2vw
+        border-color: $brand-danger
 
     .envelope
       transform: translate3d(9vw, 30.4vw, 8vw) rotateX(-90deg) rotateY(0deg) rotateZ(0)
@@ -122,3 +124,17 @@
             top: 3vw
             left: 4.825vw
             font-weight: bold
+
+    .phone
+      // opacity: 0
+      width: 3vw
+      height: 5.7vw
+      border: 0.5vw solid $brand-danger
+      border-radius: 0.5vw
+      color: $brand-danger
+      text-align: center
+      position: absolute
+      top: 0vw
+      left: 2.8vw
+      font-weight: bold
+      transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
