@@ -13,28 +13,8 @@ $( document ).on('turbolinks:load', function() {
     envelope4 =           $('.animation .envelope-4');
     envelope5 =           $('.animation .envelope-5');
     envelope6 =           $('.animation .envelope-6');
-    texts.css({
-      position:          'absolute',
-      bottom:            '6vw',
-      width:             '100%',
-    });
-    text.css({
-      position:          'absolute',
-      width:             '100%',
-    });
-    text1.css({
-      opacity:           0,
-    });
-    text2.css({
-      opacity:           0,
-    });
-    text3.css({
-      opacity:           0,
-    });
-    text4.css({
-      opacity:           0,
-    });
     var mailSequence = [
+      // Sadly have to set up 3D explicitly as force-feeding existing CSS doesnt' work in Velocity for 3D transforms
       {
         e: envelope1,
         p: {
@@ -70,22 +50,6 @@ $( document ).on('turbolinks:load', function() {
         }
       },
       {
-        e: laptopTop,
-        p: {
-          translateX:    '0vw',
-          translateY:    '0vw',
-          translateZ:    '1vw',
-          rotateX:       '0deg',
-          rotateY:       '0deg',
-          rotateZ:       '0deg',
-        },
-        o: {
-          duration:      0,
-          delay:         0,
-          sequenceQueue: false,
-        }
-      },
-      {
         e: envelope3,
         p: {
           translateX:    '9vw',
@@ -101,6 +65,23 @@ $( document ).on('turbolinks:load', function() {
           sequenceQueue: false,
         }
       },
+      {
+        e: laptopTop,
+        p: {
+          translateX:    '0vw',
+          translateY:    '0vw',
+          translateZ:    '1vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      0,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      // Animation start
       {
         e: text1,
         p: {
@@ -153,9 +134,80 @@ $( document ).on('turbolinks:load', function() {
         },
         o: {
           duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '8vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '64vw',
+          translateY:    '58vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '8vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '64.5vw',
+          translateY:    '83vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '0vw',
+          scale:         0.5,
+        },
+        o: {
+          duration:      600,
           delay:         0,
         }
-      }
+      },
     ];
     $.Velocity.RunSequence(mailSequence);
   }
