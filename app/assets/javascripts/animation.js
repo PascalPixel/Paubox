@@ -1,19 +1,19 @@
 $( document ).on('turbolinks:load', function() {
   if ($('.animation').length && $('.preserve3d').length) {
-    texts =              $('.animation .texts');
-    text =               $('.animation .text');
-    text1 =              $('.animation .text-1');
-    text2 =              $('.animation .text-2');
-    text3 =              $('.animation .text-3');
-    text4 =              $('.animation .text-4');
-    laptopTop =          $('.animation .laptop .top');
-    envelope1 =           $('.animation .envelope-1');
-    envelope2 =           $('.animation .envelope-2');
-    envelope3 =           $('.animation .envelope-3');
-    envelope4 =           $('.animation .envelope-4');
-    envelope5 =           $('.animation .envelope-5');
-    envelope6 =           $('.animation .envelope-6');
-    var mailSequence = [
+    texts                = $('.animation .texts');
+    text                 = $('.animation .text');
+    text1                = $('.animation .text-1');
+    text2                = $('.animation .text-2');
+    text3                = $('.animation .text-3');
+    text4                = $('.animation .text-4');
+    laptopTop            = $('.animation .laptop .top');
+    envelope1            = $('.animation .envelope-1');
+    envelope2            = $('.animation .envelope-2');
+    envelope3            = $('.animation .envelope-3');
+    envelope4            = $('.animation .envelope-4');
+    envelope5            = $('.animation .envelope-5');
+    envelope6            = $('.animation .envelope-6');
+    var mailSequence     = [
       // Sadly have to set up 3D explicitly as force-feeding existing CSS doesnt' work in Velocity for 3D transforms
       {
         e: envelope1,
@@ -134,7 +134,7 @@ $( document ).on('turbolinks:load', function() {
         },
         o: {
           duration:      600,
-          delay:         600,
+          delay:         0,
         }
       },
       {
@@ -151,6 +151,21 @@ $( document ).on('turbolinks:load', function() {
         e: envelope3,
         p: {
           translateX:    '64vw',
+          translateY:    '35.7vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '45deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '64vw',
           translateY:    '58vw',
           translateZ:    '8vw',
           rotateX:       '0deg',
@@ -159,7 +174,7 @@ $( document ).on('turbolinks:load', function() {
         },
         o: {
           duration:      600,
-          delay:         600,
+          delay:         0,
         }
       },
       {
@@ -169,7 +184,7 @@ $( document ).on('turbolinks:load', function() {
         },
         o: {
           duration:      600,
-          delay:         600,
+          delay:         0,
         }
       },
       {
@@ -194,7 +209,7 @@ $( document ).on('turbolinks:load', function() {
         },
         o: {
           duration:      600,
-          delay:         600,
+          delay:         0,
         }
       },
       {

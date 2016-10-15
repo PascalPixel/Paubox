@@ -14,8 +14,8 @@
 .animation
   position: relative
   height: 35vw
-  margin-top: -2rem
-  margin-bottom: 2rem
+  // margin-top: -2rem
+  // margin-bottom: 2rem
 
   img
     max-width: 100%
@@ -55,11 +55,36 @@
       max-width: 100%
       height: auto
 
-    .inbox-sender
-
-    .inbox-recipient
-
-    .phone
+    .line
+      position: absolute
+      &.line-1,
+      &.line-3,
+      &.line-5
+        border-top: 0.5vw dashed $brand-primary
+        width: 13vw
+      &.line-2,
+      &.line-4,
+      &.line-6
+        border-left: 0.5vw dashed $brand-primary
+        height: 13vw
+      &.line-1
+        top: 39.5vw
+        left: 27vw
+      &.line-2
+        top: 47.5vw
+        left: 46.2vw
+      &.line-3
+        top: 60.5vw
+        left: 46.2vw
+      &.line-4
+        top: 68vw
+        left: 68vw
+      &.line-5
+        top: 39.5vw
+        left: 55vw
+      &.line-6
+        top: 39.5vw
+        left: 68vw
 
     .envelope
       transform: translate3d(9vw, 30.4vw, 8vw) rotateX(-90deg) rotateY(0deg) rotateZ(0)
