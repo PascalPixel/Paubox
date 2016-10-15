@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  if ($('.animation').length) {
+$( document ).on('turbolinks:load', function() {
+  if ($('.animation').length && $('.preserve3d').length) {
     text1 =              $('.animation .text-1');
     text2 =              $('.animation .text-2');
     text3 =              $('.animation .text-3');

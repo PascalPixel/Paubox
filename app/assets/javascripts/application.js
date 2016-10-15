@@ -3,6 +3,7 @@
 //= require turbolinks
 //= require tether
 //= require bootstrap-sprockets
+//= require modernizr
 //= require chartjs.js
 //= require velocity/velocity
 //= require velocity/velocity.ui
