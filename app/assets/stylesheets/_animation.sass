@@ -1,3 +1,13 @@
+.fallback
+  display: inherit
+.animation
+  display: none
+.preserve3d
+  .fallback
+    display: none
+  .animation
+    display: inherit
+
 #animation
   background: $gray-lighter
 
@@ -27,8 +37,8 @@
     transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
     width: 100vw
-    background-image: image-url('animations/email/grid.svg')
-    background-size: 3vw
+    // background-image: image-url('animations/email/grid.svg')
+    // background-size: 3vw
 
     img
       max-width: 100%
@@ -44,6 +54,7 @@
       transform: translate3d(9vw, 30.4vw, 8vw) rotateX(-90deg) rotateY(0deg) rotateZ(0)
       width: 9vw
       opacity: 0
+      position: absolute
 
     .laptop
       transform: translate3d(4.84vw, 33.1vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0)

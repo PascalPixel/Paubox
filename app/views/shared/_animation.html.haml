@@ -1,3 +1,4 @@
+.fallback><= image_tag 'animations/email/encrypted_email.svg'
 .animation
   .animation-wrap
     .foreground><= image_tag 'animations/email/foreground.svg'
@@ -5,22 +6,26 @@
       .laptop><
         .top><
           .back><= image_tag 'animations/email/macbook_top_back.svg'
-          .front><= image_tag 'animations/email/macbook_top_front.svg'
-      .envelope><= image_tag 'animations/email/envelope.svg'
+          .front><
+            = image_tag 'animations/email/macbook_top_front.svg'
+
+      .envelope.envelope-1><= image_tag 'animations/email/envelope.svg'
+      .envelope.envelope-2><= image_tag 'animations/email/envelope.svg'
+      .envelope.envelope-3><= image_tag 'animations/email/envelope.svg'
+      .envelope.envelope-4><= image_tag 'animations/email/envelope.svg'
+      .envelope.envelope-5><= image_tag 'animations/email/envelope.svg'
+      .envelope.envelope-6><= image_tag 'animations/email/envelope.svg'
     .background><= image_tag 'animations/email/background.svg'
-  .container-fluid
-    .row
-      .col-sm-12
-        %ul.list-unstyled.texts><
-          %li.text.text-1
-            %span.tag.tag-default 1
-            = t('.text1')
-          %li.text.text-2
-            %span.tag.tag-default 2
-            = t('.text2')
-          %li.text.text-3
-            %span.tag.tag-default 3
-            = t('.text3')
-          %li.text.text-4
-            %span.tag.tag-default 4
-            = t('.text4')
+    %ul.list-unstyled.texts.text-xs-center
+      %li.text.text-1
+        %span.tag.tag-default 1
+        = simple_format t('.text1')
+      %li.text.text-2
+        %span.tag.tag-default 2
+        = simple_format t('.text2')
+      %li.text.text-3
+        %span.tag.tag-default 3
+        = simple_format t('.text3')
+      %li.text.text-4
+        %span.tag.tag-default 4
+        = simple_format t('.text4')
