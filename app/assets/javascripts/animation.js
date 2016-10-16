@@ -6,7 +6,20 @@ $( document ).on('turbolinks:load', function() {
     text2                = $('.animation .text-2');
     text3                = $('.animation .text-3');
     text4                = $('.animation .text-4');
+    line1                = $('.animation .line-1');
+    line2                = $('.animation .line-2');
+    line3                = $('.animation .line-3');
+    line4                = $('.animation .line-4');
+    line5                = $('.animation .line-5');
+    line6                = $('.animation .line-6');
+    foregroundRed        = $('.animation .foreground .red');
+    foregroundBlue       = $('.animation .foreground .blue');
+    backgroundRed        = $('.animation .background .red');
+    backgroundBlue       = $('.animation .background .blue');
     laptopTop            = $('.animation .laptop .top');
+    phoneWindow          = $('.animation .phone-window');
+    laptopWindow         = $('.animation .laptop .laptop-window');
+    envelope             = $('.animation .envelope');
     envelope1            = $('.animation .envelope-1');
     envelope1blue        = $('.animation .envelope-1 .blue');
     envelope1red         = $('.animation .envelope-1 .red');
@@ -28,7 +41,7 @@ $( document ).on('turbolinks:load', function() {
     var mailSequence     = [
       // Sadly have to set up 3D explicitly as force-feeding existing CSS doesnt' work in Velocity for 3D transforms
       {
-        e: envelope1,
+        e: envelope,
         p: {
           translateX:    '9vw',
           translateY:    '33.4vw',
@@ -59,7 +72,7 @@ $( document ).on('turbolinks:load', function() {
           sequenceQueue: false,
         }
       },
-      // Animation start
+      // Scene 1
       {
         e: text1,
         p: {
@@ -151,8 +164,8 @@ $( document ).on('turbolinks:load', function() {
       {
         e: envelope1,
         p: {
-          translateX:    '64vw',
-          translateY:    '35.7vw',
+          translateX:    '65.5vw',
+          translateY:    '37.7vw',
           translateZ:    '8vw',
           rotateX:       '0deg',
           rotateY:       '0deg',
@@ -204,7 +217,7 @@ $( document ).on('turbolinks:load', function() {
         e: envelope1,
         p: {
           translateX:    '64.5vw',
-          translateY:    '84.5vw',
+          translateY:    '84.6vw',
           translateZ:    '10vw',
           rotateX:       '0deg',
           rotateY:       '0deg',
@@ -224,6 +237,690 @@ $( document ).on('turbolinks:load', function() {
         o: {
           duration:      600,
           delay:         0,
+        }
+      },
+      {
+        e: envelope1red,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: text1,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
+      // Scene 2
+      {
+        e: text2,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: phoneWindow,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: laptopWindow,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: backgroundBlue,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: backgroundRed,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: foregroundBlue,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: foregroundRed,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line2,
+        p: {
+          borderColor:   '#0247DC',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line3,
+        p: {
+          borderColor:   '#0247DC',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope2blue,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateX:    '44.2vw',
+          translateY:    '39.5vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '90deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateZ:    '8vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateX:    '65.5vw',
+          translateY:    '37.7vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '45deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-in',
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateX:    '64vw',
+          translateY:    '58vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-out',
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateZ:    '10vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateX:    '64.5vw',
+          translateY:    '84.6vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope2,
+        p: {
+          translateZ:    '0vw',
+          scale:         0.5,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope1blue,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: text2,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
+      // Scene 3
+      {
+        e: text3,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: line5,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line6,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope3blue,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '44.2vw',
+          translateY:    '39.5vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '90deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '8vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3blue,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      300,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope3red,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      300,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '44.5vw',
+          translateY:    '58.7vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '45deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-in',
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '64vw',
+          translateY:    '58vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-out',
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '10vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateX:    '64.7vw',
+          translateY:    '84.4vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope3,
+        p: {
+          translateZ:    '0.1vw',
+          scale:         0.5,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope2blue,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope3red,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: text3,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
+      // Scene 4
+      {
+        e: text4,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: phoneWindow,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: laptopWindow,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line5,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line6,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope4blue,
+        p: {
+          opacity:       1,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateX:    '44.2vw',
+          translateY:    '39.5vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '90deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateZ:    '8vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateX:    '65.5vw',
+          translateY:    '37.7vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '45deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-in',
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateX:    '64vw',
+          translateY:    '58vw',
+          translateZ:    '8vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+          easing:        'ease-out',
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateZ:    '0.2vw',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateZ:    '10vw',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateX:    '64.5vw',
+          translateY:    '84.6vw',
+          translateZ:    '10vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope4,
+        p: {
+          translateZ:    '0vw',
+          scale:         0.5,
+        },
+        o: {
+          duration:      600,
+          delay:         0,
+        }
+      },
+      {
+        e: envelope4blue,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: laptopTop,
+        p: {
+          rotateX:       '0deg',
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: text4,
+        p: {
+          opacity:       0,
+        },
+        o: {
+          duration:      600,
+          delay:         600,
+          sequenceQueue: false,
         }
       },
     ];
