@@ -109,7 +109,7 @@ en:
           image: eric_nakagawa
     solution_encrypted_email:
       title: Encrypted Email
-      header: Military-grade security for every email
+      header: Medical-grade security for existing email
       sub_header: No downloads, no plug-ins, just secure email
       button_info: Request a Free Demo
       button_cta: Sign Up
@@ -401,11 +401,11 @@ en:
         Other solutions secure email by keeping everything on a closed network.
         Requiring both the sender and recipient to log in to see their messages.
       text3: |
-        This is not convenient and is a big reason why so much email is still sent unencrypted.
-        Other solutions even give the option to send unencrypted email because they know their process is cumbersome.
+        This inconvenience is the reason why email is still sent unencrypted.
+        It is so cumbersome, other solutions even give the option to send email unencrypted.
       text4: |
-        Paubox makes HIPAA compliant email simple to send and simple to receive.
-        Like normal email.
+        Paubox makes regular email HIPAA compliant by securing servers and transmission.
+        No closed network, no logins, no plug-ins.
     solutions_list:
       title: Our Solutions
       encrypted_email:

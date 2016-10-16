@@ -8,6 +8,7 @@ $( document ).on('turbolinks:load', function() {
     var text2            = $('.animation .text-2');
     var text3            = $('.animation .text-3');
     var text4            = $('.animation .text-4');
+    var text5            = $('.animation .text-5');
     var line1            = $('.animation .line-1');
     var line2            = $('.animation .line-2');
     var line3            = $('.animation .line-3');
@@ -49,6 +50,7 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '-90deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
+      scale:             1,
     }
     var emailInbox = {
       translateX:        '44.2vw',
@@ -105,7 +107,42 @@ $( document ).on('turbolinks:load', function() {
 
     // Main sequence
     var mailSequence     = [
-      // Sadly have to set up 3D explicitly as force-feeding existing CSS doesnt' work in Velocity for 3D transforms
+      // Reset
+      {
+        e: text5,
+        p: hideIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: backgroundBlue,
+        p: hideIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: backgroundRed,
+        p: showIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: foregroundBlue,
+        p: hideIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: foregroundRed,
+        p: showIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
       {
         e: envelope,
         p: emailLaptop,
@@ -612,7 +649,18 @@ $( document ).on('turbolinks:load', function() {
           sequenceQueue: false,
         }
       },
+      {
+        e: text5,
+        p: showIt,
+        o: {
+          delay:         600,
+          sequenceQueue: false,
+        }
+      },
     ];
     $.Velocity.RunSequence(mailSequence);
   }
+  $('.animation .replay').click(function() {
+    $.Velocity.RunSequence(mailSequence);
+  });
 });

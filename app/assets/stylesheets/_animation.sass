@@ -10,6 +10,8 @@
 
 #animation
   background: $gray-lighter
+  // Firefox fix
+  overflow: hidden
 
 .animation
   position: relative
@@ -35,6 +37,9 @@
   .middleground
     position: absolute
     width: 100%
+
+  .texts
+    z-index: 40
 
   .foreground
     z-index: 30

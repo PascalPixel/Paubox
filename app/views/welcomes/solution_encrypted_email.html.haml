@@ -4,8 +4,12 @@
 -#                    sub_header: t('.sub_header'),
 -#                    button_info: t('.button_info'),
 -#                    button_cta: t('.button_cta') }
-%section#animation
-  = render partial: "shared/animation"
+= render partial: 'shared/animation',
+         locals: { title: t('.title'),
+                   header: t('.header'),
+                   sub_header: t('.sub_header'),
+                   button_info: t('.button_info'),
+                   button_cta: t('.button_cta') }
 = render partial: 'shared/solution_intro',
          locals: { intro: t('.intro') }
 = render partial: 'shared/solution_features',
