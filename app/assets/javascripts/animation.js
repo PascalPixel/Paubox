@@ -54,7 +54,7 @@ $( document ).on('turbolinks:load', function() {
       rotateY:           '0deg',
       rotateZ:           '0deg',
       scale:             1,
-    }
+    };
     var emailInbox = {
       translateX:        '44.2vw',
       translateY:        '39.5vw',
@@ -62,7 +62,7 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '90deg',
-    }
+    };
     var emailSafe = {
       translateX:        '65.5vw',
       translateY:        '37.7vw',
@@ -70,7 +70,7 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
-    }
+    };
     var emailUnsafe = {
       translateX:        '44.5vw',
       translateY:        '58.7vw',
@@ -78,7 +78,7 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
-    }
+    };
     var emailOutbox = {
       translateX:        '64vw',
       translateY:        '58vw',
@@ -86,7 +86,7 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
-    }
+    };
     var emailPhone = {
       translateX:        '64.5vw',
       translateY:        '84.6vw',
@@ -94,19 +94,19 @@ $( document ).on('turbolinks:load', function() {
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
-    }
+    };
     var moveUp = {
       translateZ:        '10vw',
-    }
+    };
     var moveDown = {
       translateZ:        '0vw',
-    }
+    };
     var showIt = {
       opacity:           1,
-    }
+    };
     var hideIt = {
       opacity:           0,
-    }
+    };
 
     // Main sequence
     var mailSequence     = [
@@ -664,10 +664,10 @@ $( document ).on('turbolinks:load', function() {
 
     // Run animation
     $.Velocity.RunSequence(mailSequence);
-  }
 
-  // If Replay is clicked in CTA, start again
-  $('.animation .replay').click(function() {
-    $.Velocity.RunSequence(mailSequence);
-  });
+    // If Replay is clicked in CTA, start again
+    $('.animation .replay').click(function() {
+      $.Velocity.RunSequence(mailSequence);
+    });
+  };
 });
