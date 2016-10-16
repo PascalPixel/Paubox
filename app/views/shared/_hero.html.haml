@@ -9,6 +9,6 @@
         - unless sub_header.blank?
           %h4.p-b-1= sub_header
         - unless button_cta.blank?
-          = link_to button_cta, new_user_registration_path, class: 'btn btn-outline-success'
+          = link_to button_cta, new_user_registration_path, class: 'btn btn-success'
         - unless button_info.blank?
-          %button.btn.btn-outline-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= button_info
+          %button.btn.btn-secondary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= button_info

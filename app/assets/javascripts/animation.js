@@ -1,4 +1,7 @@
+// On Turbolinks load, not on Ready.
 $( document ).on('turbolinks:load', function() {
+
+  // Use Modernizr to test if browser supports 3D, if not, show fallback (done in CSS already).
   if ($('.animation').length && $('.preserve3d').length) {
 
     // Pre-set elements to variables
@@ -658,8 +661,12 @@ $( document ).on('turbolinks:load', function() {
         }
       },
     ];
+
+    // Run animation
     $.Velocity.RunSequence(mailSequence);
   }
+
+  // If Replay is clicked in CTA, start again
   $('.animation .replay').click(function() {
     $.Velocity.RunSequence(mailSequence);
   });
