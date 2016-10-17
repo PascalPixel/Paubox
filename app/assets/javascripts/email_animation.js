@@ -13,15 +13,9 @@ $( document ).on('turbolinks:load', function() {
     var text4            = $('.animation .text-4');
     var text5            = $('.animation .text-5');
     var line1            = $('.animation .line-1');
-    var line2            = $('.animation .line-2');
-    var line3            = $('.animation .line-3');
     var line4            = $('.animation .line-4');
     var line5            = $('.animation .line-5');
     var line6            = $('.animation .line-6');
-    var foregroundRed    = $('.animation .foreground .red');
-    var foregroundBlue   = $('.animation .foreground .blue');
-    var backgroundRed    = $('.animation .background .red');
-    var backgroundBlue   = $('.animation .background .blue');
     var laptopTop        = $('.animation .laptop .top');
     var phoneWindow      = $('.animation .phone-window');
     var laptopWindow     = $('.animation .laptop .laptop-window');
@@ -38,62 +32,41 @@ $( document ).on('turbolinks:load', function() {
     var envelope4        = $('.animation .envelope-4');
     var envelope4blue    = $('.animation .envelope-4 .blue');
     var envelope4red     = $('.animation .envelope-4 .red');
-    var envelope5        = $('.animation .envelope-5');
-    var envelope5blue    = $('.animation .envelope-5 .blue');
-    var envelope5red     = $('.animation .envelope-5 .red');
-    var envelope6        = $('.animation .envelope-6');
-    var envelope6blue    = $('.animation .envelope-6 .blue');
-    var envelope6red     = $('.animation .envelope-6 .red');
 
     // Move locations into variables
     var emailLaptop = {
-      translateX:        '9vw',
-      translateY:        '33.4vw',
-      translateZ:        '11.5vw',
+      translateX:        '37.5vw',
+      translateY:        '61.4vw',
+      translateZ:        '11vw',
       rotateX:           '-90deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
       scale:             1,
     };
-    var emailInbox = {
-      translateX:        '44.2vw',
-      translateY:        '39.5vw',
-      translateZ:        '10vw',
-      rotateX:           '0deg',
-      rotateY:           '0deg',
-      rotateZ:           '90deg',
-    };
     var emailSafe = {
       translateX:        '65.5vw',
-      translateY:        '37.7vw',
-      translateZ:        '8vw',
+      translateY:        '66.5vw',
+      translateZ:        '3vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
     };
     var emailUnsafe = {
-      translateX:        '44.5vw',
-      translateY:        '58.7vw',
-      translateZ:        '8vw',
+      translateX:        '43.5vw',
+      translateY:        '84.6vw',
+      translateZ:        '3vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
     };
-    var emailOutbox = {
-      translateX:        '64vw',
-      translateY:        '58vw',
-      translateZ:        '8vw',
-      rotateX:           '0deg',
-      rotateY:           '0deg',
-      rotateZ:           '0deg',
-    };
     var emailPhone = {
       translateX:        '64.5vw',
       translateY:        '84.6vw',
-      translateZ:        '10vw',
+      translateZ:        '0vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
+      scale:             0.5,
     };
     var moveUp = {
       translateZ:        '10vw',
@@ -106,12 +79,6 @@ $( document ).on('turbolinks:load', function() {
     };
     var hideIt = {
       opacity:           0,
-    };
-    var lineRed = {
-      borderColor:   '#FF447F',
-    };
-    var lineBlue = {
-      borderColor:   '#0247DC',
     };
 
     // Main sequence
@@ -126,55 +93,27 @@ $( document ).on('turbolinks:load', function() {
       },
       {
         e: line1,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line2,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line3,
-        p: lineRed,
+        p: hideIt,
         o: {
           sequenceQueue: false,
         }
       },
       {
         e: line4,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: backgroundBlue,
         p: hideIt,
         o: {
           sequenceQueue: false,
         }
       },
       {
-        e: backgroundRed,
+        e: line5,
         p: showIt,
         o: {
           sequenceQueue: false,
         }
       },
       {
-        e: foregroundBlue,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: foregroundRed,
+        e: line6,
         p: showIt,
         o: {
           sequenceQueue: false,
@@ -206,6 +145,7 @@ $( document ).on('turbolinks:load', function() {
         e: text1,
         p: showIt,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -215,6 +155,7 @@ $( document ).on('turbolinks:load', function() {
           rotateX:       '90deg',
         },
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -222,13 +163,15 @@ $( document ).on('turbolinks:load', function() {
         e: envelope1blue,
         p: showIt,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
       {
         e: envelope1,
-        p: emailInbox,
+        p: emailUnsafe,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -244,60 +187,21 @@ $( document ).on('turbolinks:load', function() {
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1,
-        p: moveDown,
-      },
-      {
-        e: envelope1,
-        p: moveUp,
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1,
-        p: emailSafe,
-        o: {
-          easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope1,
-        p: emailOutbox,
-        o: {
-          easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope1,
-        p: moveDown,
-      },
-      {
-        e: envelope1,
-        p: moveUp,
-        o: {
-          delay:         600,
         }
       },
       {
         e: envelope1,
         p: emailPhone,
-      },
-      {
-        e: envelope1,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
       },
       {
         e: envelope1red,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -305,14 +209,18 @@ $( document ).on('turbolinks:load', function() {
         e: text1,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
-          sequenceQueue: false,
         }
       },
       // Scene 2
       {
         e: text2,
         p: showIt,
+        o: {
+          duration:      600,
+          delay:         600,
+        }
       },
       {
         e: phoneWindow,
@@ -329,57 +237,15 @@ $( document ).on('turbolinks:load', function() {
         }
       },
       {
-        e: backgroundBlue,
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: backgroundRed,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: foregroundBlue,
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: foregroundRed,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
         e: line1,
-        p: lineBlue,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line2,
-        p: lineBlue,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line3,
-        p: lineBlue,
+        p: showIt,
         o: {
           sequenceQueue: false,
         }
       },
       {
         e: line4,
-        p: lineBlue,
+        p: showIt,
         o: {
           sequenceQueue: false,
         }
@@ -388,24 +254,7 @@ $( document ).on('turbolinks:load', function() {
         e: envelope2blue,
         p: showIt,
         o: {
-          delay:         2000,
-        }
-      },
-      {
-        e: envelope2,
-        p: emailInbox,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope2,
-        p: moveDown,
-      },
-      {
-        e: envelope2,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -413,42 +262,23 @@ $( document ).on('turbolinks:load', function() {
         e: envelope2,
         p: emailSafe,
         o: {
-          easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope2,
-        p: emailOutbox,
-        o: {
-          easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope2,
-        p: moveDown,
-      },
-      {
-        e: envelope2,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
         }
       },
       {
         e: envelope2,
         p: emailPhone,
+        o: {
+          duration:      600,
+          delay:         600,
+        }
       },
       {
-        e: envelope2,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
-      },
-      {
-        e: envelope1blue,
+        e: envelope2blue,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -456,108 +286,54 @@ $( document ).on('turbolinks:load', function() {
         e: text2,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
-          sequenceQueue: false,
         }
       },
       // Scene 3
       {
         e: text3,
         p: showIt,
-      },
-      {
-        e: line5,
-        p: showIt,
         o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line6,
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope3blue,
-        p: showIt,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope3,
-        p: emailInbox,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope3,
-        p: moveDown,
-      },
-      {
-        e: envelope3,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
         }
       },
       {
         e: envelope3blue,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope3red,
         p: showIt,
         o: {
-          sequenceQueue: false,
+          duration:      600,
+          delay:         600,
         }
       },
       {
         e: envelope3,
         p: emailUnsafe,
         o: {
-          easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope3,
-        p: emailOutbox,
-        o: {
-          easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope3,
-        p: moveDown,
-      },
-      {
-        e: envelope3,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
+        }
+      },
+      {
+        e: envelope3blue,
+        p: hideIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: envelope3red,
+        p: showIt,
+        o: {
+          sequenceQueue: false,
         }
       },
       {
         e: envelope3,
         p: emailPhone,
-      },
-      {
-        e: envelope3,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
-      },
-      {
-        e: envelope2blue,
-        p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -565,22 +341,26 @@ $( document ).on('turbolinks:load', function() {
         e: envelope3red,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
-          sequenceQueue: false,
         }
       },
       {
         e: text3,
         p: hideIt,
         o: {
+          duration:      600,
           delay:         600,
-          sequenceQueue: false,
         }
       },
       // Scene 4
       {
         e: text4,
         p: showIt,
+        o: {
+          duration:      600,
+          delay:         600,
+        }
       },
       {
         e: phoneWindow,
@@ -614,24 +394,7 @@ $( document ).on('turbolinks:load', function() {
         e: envelope4blue,
         p: showIt,
         o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope4,
-        p: emailInbox,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope4,
-        p: moveDown,
-      },
-      {
-        e: envelope4,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -639,42 +402,40 @@ $( document ).on('turbolinks:load', function() {
         e: envelope4,
         p: emailSafe,
         o: {
-          easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope4,
-        p: emailOutbox,
-        o: {
-          easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope4,
-        p: moveDown,
-      },
-      {
-        e: envelope4,
-        p: moveUp,
-        o: {
+          duration:      600,
           delay:         600,
         }
       },
       {
         e: envelope4,
         p: emailPhone,
-      },
-      {
-        e: envelope4,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
+        o: {
+          duration:      600,
+          delay:         600,
+        }
       },
       {
         e: envelope4blue,
         p: hideIt,
         o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      {
+        e: text4,
+        p: hideIt,
+        o: {
+          duration:      600,
+          delay:         600,
+        }
+      },
+      // Scene 5
+      {
+        e: text5,
+        p: showIt,
+        o: {
+          duration:      600,
           delay:         600,
         }
       },
@@ -684,23 +445,6 @@ $( document ).on('turbolinks:load', function() {
           rotateX:       '0deg',
         },
         o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: text4,
-        p: hideIt,
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: text5,
-        p: showIt,
-        o: {
-          delay:         600,
           sequenceQueue: false,
         }
       },

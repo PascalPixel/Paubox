@@ -20,9 +20,11 @@
     max-width: 100%
 
   .texts
+    z-index: 40
     position: absolute
     bottom: 10vw
     width: 100%
+    text-align: center
 
     .text
       position: absolute
@@ -34,9 +36,6 @@
   .middleground
     position: absolute
     width: 100%
-
-  .texts
-    z-index: 40
 
   .foreground
     z-index: 30
@@ -125,7 +124,7 @@
         opacity: 0
 
     .envelope
-      transform: translate3d(9vw, 33.4vw, 11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0)
+      transform: translate3d(9vw, 33.4vw, 11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
       position: absolute
       width: 9vw
       .blue,
@@ -135,11 +134,11 @@
         opacity: 0
 
     .laptop
-      transform: translate3d(4.84vw, 33.1vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0)
+      transform: translate3d(4.84vw, 33.1vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
       transform-style: preserve-3d
 
       .top
-        width: 17.5vw
+        width: 17.6vw
         position: relative
         transform: translate3d(0, 0, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
         transform-origin: 0% 100%
@@ -180,3 +179,34 @@
       left: 2.8vw
       font-weight: bold
       transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
+
+.email_animation
+  .background
+    .base
+      top: 20.3vw
+      left: 46.5vw
+  .middleground
+    .line
+      &.line-1
+        top: 68vw
+        left: 55.5vw
+      &.line-4
+        top: 68vw
+        left: 68vw
+      &.line-5
+        top: 87vw
+        left: 45.5vw
+      &.line-6
+        top: 75vw
+        left: 45.5vw
+        height: 12vw
+    .envelope
+      transform: translate3d(9vw, 33.4vw, 11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
+    .laptop
+      transform: translate3d(33.1vw, 61.4vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+  .texts
+    position: absolute
+    bottom: 12vw
+    width: 45vw
+    left: 5vw
+    text-align: left
