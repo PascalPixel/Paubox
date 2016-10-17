@@ -10,8 +10,75 @@
                    sub_header: t('.sub_header'),
                    button_info: t('.button_info'),
                    button_cta: t('.button_cta') }
-= render partial: 'shared/solution_intro',
-         locals: { intro: t('.intro') }
-= render partial: 'shared/solution_features',
-         locals: { features: t('.features') }
+-# = render partial: 'shared/solution_intro',
+-#          locals: { intro: t('.intro') }
+-# = render partial: 'shared/solution_features',
+-#          locals: { features: t('.features') }
+%section#intro
+  .container
+    .row
+      .col-sm-4
+      .col-sm-8
+        %h2 How it works
+        %p Paubox' Encrypted Email system is the easiest way to become HIPAA compliant using your current email and servers, we secure the servers without requiring both you and the recepient of your email to install plugins or take extra steps to send and view email.
+        %p We do this by levaraging existing security systems in email that are turned off by default, our changes to your system ensure security is always on, and if a recipient can't recieve these forced-secure messages, we provide them with a link instead. Never endangering sensitive information.
+%section#features
+  .container
+    .row
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-emoticon-excited
+          .col-xs-10
+            %h5
+              %b User Friendly Encryption
+            %p At Paubox we believe in making robust encryption simple for anyone to use. Unlike other providers who force users to take additional steps, Paubox makes things simple and easy for both senders and recipients of encrypted messages.
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-cards-outline
+          .col-xs-10
+            %h5
+              %b All-inclusive Price
+            %p Not only are your outbound emails secure, but Paubox also includes free inbound encryption and protection against spam, malware, virus and phishing attacks.
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-email-open-outline
+          .col-xs-10
+            %h5
+              %b Work with Existing Email
+            %p You can choose to host your email with Paubox or you can seamlessly integrate Paubox with your current email provider and keep your email address. Including Microsoft Exchange, Office 365 and Google Suite.
+    %br
+    .row
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-tablet-android
+          .col-xs-10
+            %h5
+              %b Works on Any Device
+            %p There are no downloads required or software to install. Use your favorite email apps. This makes using Paubox simple and easy to use from any device; desktops, laptops, cell phones, and even smartwatches.
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-code-greater-than-or-equal
+          .col-xs-10
+            %h5
+              %b API
+            %p Developing an application that uses email push notifications? Want to secure your patient portal communications? Paubox helps developers secure their projects with Encrypted Email API. Now any application that uses email can be secured with Paubox's seamless email encryption.
+      .col-sm-4
+        .row
+          .col-xs-2.text-xs-right.text-primary
+            %h3
+              %i.mdi.mdi-file-document
+          .col-xs-10
+            %h5
+              %b Business Associate Agreements
+            %p Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
 = render partial: 'shared/testimonials'
