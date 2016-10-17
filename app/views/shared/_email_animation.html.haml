@@ -60,17 +60,29 @@
       .base= image_tag 'animations/email/laptop_base.svg'
     .texts
       .text.text-1
-        %h1.m-b-0.text-primary 1
-        = simple_format t('.text1')
+        .row
+          .col-xs-2.col-md-1
+            %h1.text-primary 1
+          .col-xs-10.col-md-11
+            = simple_format t('.text1')
       .text.text-2
-        %h1.m-b-0.text-primary 2
-        = simple_format t('.text2')
+        .row
+          .col-xs-2.col-md-1
+            %h1.text-primary 2
+          .col-xs-10.col-md-11
+            = simple_format t('.text2')
       .text.text-3
-        %h1.m-b-0.text-primary 3
-        = simple_format t('.text3')
+        .row
+          .col-xs-2.col-md-1
+            %h1.text-primary 3
+          .col-xs-10.col-md-11
+            = simple_format t('.text3')
       .text.text-4
-        %h1.m-b-0.text-primary 4
-        = simple_format t('.text4')
+        .row
+          .col-xs-2.col-md-1
+            %h1.text-primary 4
+          .col-xs-10.col-md-11
+            = simple_format t('.text4')
       .text.text-5
         .m-b-1= simple_format t('.text5')
         %button.btn.btn-secondary.replay Play again

@@ -77,6 +77,9 @@ $( document ).on('turbolinks:load', function() {
     var showIt = {
       opacity:           1,
     };
+    var halfHideIt = {
+      opacity:           0.1,
+    };
     var hideIt = {
       opacity:           0,
     };
@@ -86,7 +89,7 @@ $( document ).on('turbolinks:load', function() {
       // Reset
       {
         e: text5,
-        p: hideIt,
+        p: halfHideIt,
         o: {
           sequenceQueue: false,
         }
@@ -207,7 +210,7 @@ $( document ).on('turbolinks:load', function() {
       },
       {
         e: text1,
-        p: hideIt,
+        p: halfHideIt,
         o: {
           duration:      600,
           delay:         600,
@@ -284,7 +287,7 @@ $( document ).on('turbolinks:load', function() {
       },
       {
         e: text2,
-        p: hideIt,
+        p: halfHideIt,
         o: {
           duration:      600,
           delay:         600,
@@ -347,7 +350,7 @@ $( document ).on('turbolinks:load', function() {
       },
       {
         e: text3,
-        p: hideIt,
+        p: halfHideIt,
         o: {
           duration:      600,
           delay:         600,
@@ -424,7 +427,7 @@ $( document ).on('turbolinks:load', function() {
       },
       {
         e: text4,
-        p: hideIt,
+        p: halfHideIt,
         o: {
           duration:      600,
           delay:         600,

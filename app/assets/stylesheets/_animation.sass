@@ -10,11 +10,11 @@
 
 #animation
   background: $gray-lighter
-  overflow: hidden
+  overflow-x: hidden
 
 .animation
   position: relative
-  height: 35vw
+  min-height: 35vw
 
   img
     max-width: 100%
@@ -205,8 +205,14 @@
     .laptop
       transform: translate3d(33.1vw, 61.4vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
   .texts
-    position: absolute
-    bottom: 12vw
+    position: relative
+    bottom: inherit
     width: 45vw
-    left: 5vw
+    padding-left: 2.5rem
     text-align: left
+    .text
+      position: relative
+      opacity: 0.1
+      h1
+        margin-top: -.3rem
+        margin-right: 1rem
