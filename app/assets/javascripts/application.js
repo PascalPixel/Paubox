@@ -8,4 +8,5 @@
 //= require velocity/velocity
 //= require velocity/velocity.ui
 //= require jquery-visible
-//= require animation
+//= require email_animation
+//= require security_animation

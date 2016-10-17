@@ -19,7 +19,11 @@
         .col-sm-6
           %h1.m-b-0.text-primary 4
           = simple_format t('.text4')
-  .animation
+      .row
+        .col-sm-12
+          .m-b-1= simple_format t('.text5')
+          %button.btn.btn-secondary.replay Play again
+  .animation.security_animation
     .foreground
       .blue
         .left= image_tag 'animations/email/inbox_left_blue_front.svg'
@@ -82,9 +86,5 @@
         %h1.m-b-0.text-primary 4
         = simple_format t('.text4')
       .text.text-5
-        = header
-        %br
-        .m-b-1= sub_header
+        .m-b-1= simple_format t('.text5')
         %button.btn.btn-secondary.replay Play again
-        = link_to button_cta, new_user_registration_path, class: 'btn btn-success'
-        %button.btn.btn-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= button_info

@@ -2,7 +2,7 @@
 $( document ).on('turbolinks:load', function() {
 
   // Use Modernizr to test if browser supports 3D, if not, show fallback (done in CSS already).
-  if ($('.animation').length && $('.preserve3d').length) {
+  if ($('.email_animation').length && $('.preserve3d').length) {
 
     // Pre-set elements to variables
     var texts            = $('.animation .texts');
@@ -107,6 +107,12 @@ $( document ).on('turbolinks:load', function() {
     var hideIt = {
       opacity:           0,
     };
+    var lineRed = {
+      borderColor:   '#FF447F',
+    };
+    var lineBlue = {
+      borderColor:   '#0247DC',
+    };
 
     // Main sequence
     var mailSequence     = [
@@ -114,6 +120,34 @@ $( document ).on('turbolinks:load', function() {
       {
         e: text5,
         p: hideIt,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line1,
+        p: lineRed,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line2,
+        p: lineRed,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line3,
+        p: lineRed,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line4,
+        p: lineRed,
         o: {
           sequenceQueue: false,
         }
@@ -199,10 +233,6 @@ $( document ).on('turbolinks:load', function() {
         }
       },
       {
-        e: envelope1,
-        p: moveDown,
-      },
-      {
         e: envelope1blue,
         p: hideIt,
         o: {
@@ -215,6 +245,10 @@ $( document ).on('turbolinks:load', function() {
         o: {
           sequenceQueue: false,
         }
+      },
+      {
+        e: envelope1,
+        p: moveDown,
       },
       {
         e: envelope1,
@@ -323,19 +357,29 @@ $( document ).on('turbolinks:load', function() {
         }
       },
       {
+        e: line1,
+        p: lineBlue,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
         e: line2,
-        p: {
-          borderColor:   '#0247DC',
-        },
+        p: lineBlue,
         o: {
           sequenceQueue: false,
         }
       },
       {
         e: line3,
-        p: {
-          borderColor:   '#0247DC',
-        },
+        p: lineBlue,
+        o: {
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: line4,
+        p: lineBlue,
         o: {
           sequenceQueue: false,
         }
