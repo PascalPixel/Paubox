@@ -7,27 +7,76 @@
         %br
     .row
       .col-md-6
-        = link_to solutions_encrypted_email_path do
-          %h4
-            %i.mdi.mdi-email-secure
-            = t('.encrypted_email.title')
-        %p= t('.encrypted_email.body')
+        .row.feature
+          .col-xs-2.text-xs-right
+            = link_to solutions_encrypted_email_path do
+              %i.mdi.mdi-email-secure
+          .col-xs-10
+            = link_to solutions_encrypted_email_path do
+              %h5
+                %b= t('.encrypted_email.title')
+            %p= t('.encrypted_email.body')
       .col-md-6
-        = link_to solutions_encrypted_form_path do
-          %h4
-            %i.mdi.mdi-fingerprint
-            = t('.encrypted_forms.title')
-        %p= t('.encrypted_forms.body')
+        %ul.list-unstyled
+          - t('welcomes.solution_encrypted_email.features.items').each do |item|
+            %li
+              %i.mdi{class: "mdi-#{item[:icon]} #{item[:color]}"}
+              = item[:title]
+    %br
+    %br
     .row
       .col-md-6
-        = link_to solutions_branded_storage_path do
-          %h4
-            %i.mdi.mdi-folder-lock
-            = t('.branded_storage.title')
-        %p= t('.branded_storage.body')
+        .row.feature
+          .col-xs-2.text-xs-right
+            = link_to solutions_encrypted_form_path do
+              %i.mdi.mdi-fingerprint
+          .col-xs-10
+            = link_to solutions_encrypted_form_path do
+              %h5
+                %b= t('.encrypted_form.title')
+            %p= t('.encrypted_form.body')
       .col-md-6
-        = link_to solutions_email_api_path do
-          %h4
-            %i.mdi.mdi-cube-send
-            = t('.email_api.title')
-        %p= t('.email_api.body')
+        %ul.list-unstyled
+          - t('welcomes.solution_encrypted_form.features.items').each do |item|
+            %li
+              %i.mdi{class: "mdi-#{item[:icon]} #{item[:color]}"}
+              = item[:title]
+    %br
+    %br
+    .row
+      .col-md-6
+        .row.feature
+          .col-xs-2.text-xs-right
+            = link_to solutions_branded_storage_path do
+              %i.mdi.mdi-folder-lock
+          .col-xs-10
+            = link_to solutions_branded_storage_path do
+              %h5
+                %b= t('.branded_storage.title')
+            %p= t('.branded_storage.body')
+      .col-md-6
+        %ul.list-unstyled
+          - t('welcomes.solution_branded_storage.features.items').each do |item|
+            %li
+              %i.mdi{class: "mdi-#{item[:icon]} #{item[:color]}"}
+              = item[:title]
+    %br
+    %br
+    .row
+      .col-md-6
+        .row.feature
+          .col-xs-2.text-xs-right
+            = link_to solutions_email_api_path do
+              %i.mdi.mdi-code-greater-than-or-equal
+          .col-xs-10
+            = link_to solutions_email_api_path do
+              %h5
+                %b= t('.email_api.title')
+            %p= t('.email_api.body')
+      .col-md-6
+        %ul.list-unstyled
+          - t('welcomes.solution_email_api.features.items').each do |item|
+            %li
+              %i.mdi{class: "mdi-#{item[:icon]} #{item[:color]}"}
+              = item[:title]
+%hr

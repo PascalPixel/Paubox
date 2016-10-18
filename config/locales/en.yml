@@ -490,7 +490,7 @@ en:
       encrypted_email:
         title: Encrypted Email
         body: Paubox Encrypted Email insures every email you send is seamlessly delivered with encryption, without the hassle of extra steps. Just send emails as normal from any device.
-      encrypted_forms:
+      encrypted_form:
         title: Encrypted Forms
         body: Let us help you convert your paper forms to achieve HIPAA compliance with encrypted forms. Make tasks like patient intake easier for you and your clients.
       branded_storage:

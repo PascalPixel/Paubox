@@ -8,11 +8,10 @@
     - features[:items].each_slice(3) do |items|
       .row
         - items.each do |item|
-          .col-sm-4
-            .row
+          .col-md-4
+            .row.feature
               .col-xs-2.text-xs-right{class: item[:color]}
-                %h3
-                  %i.mdi{class: "mdi-#{item[:icon]}"}
+                %i.mdi{class: "mdi-#{item[:icon]}"}
               .col-xs-10
                 %h5
                   %b= item[:title]
