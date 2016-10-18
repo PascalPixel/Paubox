@@ -1,8 +1,21 @@
-%section
+%section#features
   .container
     .row
-      .col-sm-12
-        %h5= features[:title]
-        %ul
-          - features[:items].each do |item|
-            %li= item[:item]
+      .col-sm-12.text-xs-center
+        %h2= features[:title]
+        %br
+        %br
+    - features[:items].each_slice(3) do |items|
+      .row
+        - items.each do |item|
+          .col-sm-4
+            .row
+              .col-xs-2.text-xs-right{class: item[:color]}
+                %h3
+                  %i.mdi{class: "mdi-#{item[:icon]}"}
+              .col-xs-10
+                %h5
+                  %b= item[:title]
+                %p= simple_format item[:body]
+            %br
+%hr

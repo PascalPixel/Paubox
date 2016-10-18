@@ -4,84 +4,87 @@
                    sub_header: t('.sub_header'),
                    button_info: t('.button_info'),
                    button_cta: t('.button_cta') }
-%section
-  .container
-    .row
-      .col-sm-12
-        %h2 An Email API For Healthcare Providers and Developers
-        %p Paubox's HIPAA compliant encrypted email API allows hospitals, health management organizations (HMOs), clinics, doctors, and other covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure. The uses range from integrating with patient portals to securing website contact forms.
-        %p This API also allows third-party developers who are creating innovative healthcare IT solutions to focus on their applications instead of building and maintaining a HIPAA compliant email server. This can help developers get to market faster and quickly integrate a seamless email product that works on desktops, laptops, smartphones, tablets and wearables.
-        %p
-          Take advantage of Paubox's experience with maintaining
-          = link_to 'HIPAA compliance', hipaa_compliance_path
-          with email and focus on innovation.
-%section
-  .container
-    .row
-      .col-sm-12
-        %h2 API Documentation
-        %p Paubox API provides two ways to send email: through our SMTP relay or through our Web API.
-    .row
-      .col-sm-12
-        %h3 SMTP Relay
-        %p If you are integrating Paubox with an existing application, setting up the application to use our SMTP relay is easiest, as it only requires modifying SMTP configuration.
-        %ul
-          %li
-            Set the server host name to
-            %b encrypt.paubox.com
-          %li Use port 25 for TLS connections. Unencrypted connections are not allowed.
-        %p
-          We strongly discourage users from sending mail directly through a single specific IP address when integrating with Paubox. Always point your traffic to
-          %b encrypt.paubox.com
-        %p The IP addresses at encrypt.paubox.com are changed often and without notice. If you point your traffic to one specific IP, you will experience interruptions in your service when these IPs are changed.
-    .row
-      .col-sm-12
-        %h3 Web API
-        %p
-          Here’s how to use the Paubox API with
-          = link_to 'nodemailer', 'https://www.npmjs.com/package/nodemailer'
-          :coderay
-            #!javascript
-
-            var nodemailer = require('nodemailer');
-            var smtpTransport = require('nodemailer-smtp-transport');
-            var transporter = nodemailer.createTransport(smtpTransport({
-              "port": 587,
-              "host": "api.paubox.com",
-              "auth": {
-                "user": "user@api.paubox.com",
-                "pass": "password"
-              },
-              "tls": {
-                "rejectUnauthorized": false
-              }
-            }));
-
-            transporter.sendMail({
-              from: 'from@server.com',
-              to: 'to@server.com',
-              subject: 'Subject',
-              html: 'html body',
-              text: 'text body'
-              // etc
-            }, function (err) {
-              // error handling
-            });
-        %p
-          and here’s how to use the Paubox API with Ruby on Rails Action Mailer
-          :coderay
-            #!ruby
-
-            config.action_mailer.delivery_method = :smtp
-            config.action_mailer.smtp_settings = {
-              :address   => "api.paubox.com",
-              :port      => 587,
-              :user_name => "username@api.paubox.com",
-              :password  => "<password>",
-              :enable_starttls_auto => true,
-            }
 = render partial: 'shared/solution_intro',
          locals: { intro: t('.intro') }
 = render partial: 'shared/solution_features',
          locals: { features: t('.features') }
+%section#documentation
+  .container
+    .row
+      .col-sm-12.text-xs-center
+        %h2 Documentation
+        %p Paubox API provides two ways to send email: through our SMTP relay or through our Web API.
+        %br
+        %br
+    .row
+      .col-md-4
+        .row
+          .col-xs-1.text-xs-right
+            %h3
+              %i.mdi.mdi-lan-connect
+          .col-xs-11
+            %h3
+              %b SMTP Relay
+            %p If you are integrating Paubox with an existing application, setting up the application to use our SMTP relay is easiest, as it only requires modifying SMTP configuration.
+            %ul
+              %li
+                Set the server host name to
+                %b encrypt.paubox.com
+              %li Use port 25 for TLS connections. Unencrypted connections are not allowed.
+            %p
+              We strongly discourage users from sending mail directly through a single specific IP address when integrating with Paubox. Always point your traffic to
+              %b encrypt.paubox.com
+            %p The IP addresses at encrypt.paubox.com are changed often and without notice. If you point your traffic to one specific IP, you will experience interruptions in your service when these IPs are changed.
+      .col-md-8
+        .row
+          .col-xs-1.text-xs-right
+            %h3
+              %i.mdi.mdi-code-array
+          .col-xs-11
+            %h3
+              %b Web API
+            %p
+              Here’s how to use the Paubox API with
+              = link_to 'nodemailer', 'https://www.npmjs.com/package/nodemailer'
+              :coderay
+                #!javascript
+
+                var nodemailer = require('nodemailer');
+                var smtpTransport = require('nodemailer-smtp-transport');
+                var transporter = nodemailer.createTransport(smtpTransport({
+                  "port": 587,
+                  "host": "api.paubox.com",
+                  "auth": {
+                    "user": "user@api.paubox.com",
+                    "pass": "password"
+                  },
+                  "tls": {
+                    "rejectUnauthorized": false
+                  }
+                }));
+
+                transporter.sendMail({
+                  from: 'from@server.com',
+                  to: 'to@server.com',
+                  subject: 'Subject',
+                  html: 'html body',
+                  text: 'text body'
+                  // etc
+                }, function (err) {
+                  // error handling
+                });
+            %p
+              and here’s how to use the Paubox API with Ruby on Rails Action Mailer
+              :coderay
+                #!ruby
+
+                config.action_mailer.delivery_method = :smtp
+                config.action_mailer.smtp_settings = {
+                  :address   => "api.paubox.com",
+                  :port      => 587,
+                  :user_name => "username@api.paubox.com",
+                  :password  => "<password>",
+                  :enable_starttls_auto => true,
+                }
+%hr
 = render partial: 'shared/testimonials'

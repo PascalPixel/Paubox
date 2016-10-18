@@ -114,25 +114,52 @@ en:
       button_info: Request a Free Demo
       button_cta: Sign Up
       intro:
-        title: The current problem with secure email
-        items:
-        - item: Requires senders to type keywords, install plugins or take other extra steps
-        - item: Huge barriers for recipients to see the email's content
-        - item: Typical email encryption requires 3 to 5 extra steps and forces users to create logins before viewing content
-        - item: The experience is even worse on mobile
+        title: How it works
+        body: |
+          Paubox Encrypted Email is the easiest way to send and receive HIPAA compliant email. You can just write and send emails as normal and Paubox seamlessly secures your message from end-to-end. No software to download, plugins to install or extra steps to take.
+
+          It’s just as easy for recipients to view your secure messages. No passwords to remember or portals to login to. Just email.
+
+          We do this through our patent-pending process that includes encrypting all outbound email through our servers with industry-standard Transport Layer Security (TLS) and up to 256-bit AES encryption.
       features:
-        title: Features and Benefits
+        title: Features & Benefits
         items:
-        - item: Industry leading ease of use email encryption
-        - item: Easy to deploy with low implementation and training requirements or cost
-        - item: Free inbound encryption with SPAM, malware and phishing protection
-        - item: Integrates with business email platforms like Microsoft Exchange, Office 365 and Google Apps
-        - item: Minimum 128-bit AES encryption
-        - item: Up to 256-bit AES end-to-end encryption
-        - item: HIPAA compliant
-        - item: Business Associate Agreements with paid accounts
-        - item: API available to integrate with patient portals and management systems
-        - item: Free 14-Day Trial
+        - title: No plugins
+          body: Remove the need for plugins that only work with some email platforms. Paubox can seamlessly integrate with commercial email platforms including Microsoft Exchange, Office 365 and Google Suite.
+          icon: power-plug-off
+          color: text-success
+        - title: No new apps
+          body: Send email the way you want from any device. Paubox allows for flexibility and doesn’t require special apps to use.
+          icon: apps
+          color: text-success
+        - title: No extra logins
+          body: Once you and your recipients login to your email account, you’re ready to send and receive HIPAA compliant email. No additional logins necessary.
+          icon: cards-outline
+          color: text-success
+        - title: User Friendly Encryption
+          body: At Paubox we believe in making robust encryption simple for anyone to use. Unlike other providers who force users to take additional steps, Paubox makes things easy for both senders AND recipients of secure email.
+          icon: emoticon-excited
+          color: text-primary
+        - title: Fully Protect Your Inbox
+          body: Not only are your outbound emails secure, but Paubox also includes FREE inbound encryption and protection against SPAM, malware, virus and phishing attacks.
+          icon: umbrella
+          color: text-primary
+        - title: Secure Email on Your Terms
+          body: You can choose to host your email with Paubox or you can seamlessly integrate Paubox with your current email provider and keep your email address.
+          icon: email-open-outline
+          color: text-primary
+        - title: Works on Any Device
+          body: With no downloads required or software to install, Paubox works with your favorite email apps. Send secure email from any device; desktops, laptops, cell phones, and even smartwatches.
+          icon: tablet-android
+          color: text-info
+        - title: API
+          body: Developing an application that uses email push notifications? Want to secure your patient portal communications? Paubox helps developers secure their projects with Encrypted Email API. Now any application that uses email can be secured with Paubox's seamless email encryption.
+          icon: code-greater-than-or-equal
+          color: text-info
+        - title: Business Associate Agreements
+          body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
+          icon: file-document
+          color: text-info
     solution_encrypted_form:
       title: Encrypted Forms
       header: Eliminate the paper and make getting information easier
@@ -141,24 +168,34 @@ en:
       button_cta: ""
       intro:
         title: Secure online forms that can transform your business
-        items:
-        - item: Eliminate paper and optimize your workflow
-        - item: Improve security over sensitive information
-        - item: Save money by making operations more efficient
+        body: Save money by making operations more efficient
       features:
-        title: Features and Benefits
+        title: Features & Benefits
         items:
-        - item: Branded with your logo
-        - item: All online forms are optimized to work on any device (PC, smartphone, tablet)
-        - item: Completed forms are encrypted and sent directly to your inbox. No portal login required to gain access to the information.
-        - item: No cumbersome portals for patients either. Simply provide a link to your online form on your website or in an email.
-        - item: PDF and CSV file formats included
-        - item: Up to 256-bit AES encryption
-        - item: A+ SSL security
-        - item: Http/2 enabled for increased speed and security
-        - item: HIPAA compliant
-        - item: Business Associate Agreement included
-        - item: Free 14-Day Trial
+        - title: Forms to Your Inbox
+          body: No more checking for notifications or logging into a portal to retrieve completed forms. Receive forms straight to your inbox and streamline your workflows. PDF and CSV file formats included.
+          icon: file-document
+          color: text-primary
+        - title: Your Branding
+          body: Customize your form with your logo.
+          icon: file-document
+          color: text-primary
+        - title: Optimized for Mobile
+          body: All online forms are optimized to work on any device; desktop, laptops, tablets and smartphones.
+          icon: file-document
+          color: text-primary
+        - title: Security
+          body: Paubox Encrypted Forms meet rigorous security requirements, including up to 256-bit AES encryption, A+ SSL, and is Http/2 enabled for increased speed and security.
+          icon: file-document
+          color: text-info
+        - title: Business Associate Agreements
+          body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
+          icon: file-document
+          color: text-info
+        - title: No Risk
+          body: Every Paubox product comes with a no risk, free 14-day trial.
+          icon: file-document
+          color: text-info
     solution_branded_storage:
       title: Branded Storage
       header: HIPAA compliant file sharing and cloud storage
@@ -167,21 +204,34 @@ en:
       button_cta: ""
       intro:
         title: Secure file sharing the way it should be
-        items:
-        - item: Built on customer feedback
-        - item: Keep control over every file
-        - item: Gain peace of mind knowing your files are secure
+        body: Built on customer feedback. Keep control over every file. Gain peace of mind knowing your files are secure
       features:
-        title: Features and Benefits
+        title: Features & Benefits
         items:
-        - item: Unlimited file sharing and bandwidth
-        - item: 256-bit AES encryption at rest and in transit
-        - item: Malware detection on uploads
-        - item: Encrypted & revocable messaging
-        - item: Admin panel to control folder & file permissions
-        - item: White label solution ready for your branding
-        - item: HIPAA compliant
-        - item: Business Associate Agreements with paid accounts
+        - title: Unlimited Bandwidth
+          body: Don’t get slowed down when uploading or sharing large files. Paubox allows for unlimited bandwidth and file sharing.
+          icon: file-document
+          color: text-primary
+        - title: Complete Control
+          body: Paubox allows you to manage who can access and edit your files and folders, including encrypted and revocable messaging.
+          icon: file-document
+          color: text-primary
+        - title: Security
+          body: Not only are files secure at rest and in transit with 256-bit AES encryption, but files are scanned for malware and viruses when uploaded.
+          icon: file-document
+          color: text-primary
+        - title: Your Branding
+          body: Customize your account with your logo and backgrounds.
+          icon: file-document
+          color: text-info
+        - title: Business Associate Agreements
+          body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
+          icon: file-document
+          color: text-info
+        - title: No Risk
+          body: Every Paubox product comes with a no risk, free 14-day trial.
+          icon: file-document
+          color: text-info
     solution_email_api:
       title: Email API
       header: A HIPAA compliant email API for developers and IT professionals
@@ -190,21 +240,31 @@ en:
       button_cta: ""
       intro:
         title: An email API for healthcare providers and developers
-        items:
-        - item: Allows hospitals, clinics, doctors and other covered entities to integrate seamless encrypted email with their IT infrastructure
-        - item: Secure communications for healthcare apps from patient portals to website forms
-        - item: Developers can get to market faster by leveraging Paubox’s experience with HIPAA compliant email
+        body: |
+          Paubox's HIPAA compliant encrypted email API allows hospitals, health management organizations (HMOs), clinics, doctors, and other covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure. The uses range from integrating with patient portals to securing website contact forms.
+
+          This API also allows third-party developers who are creating innovative healthcare IT solutions to focus on their applications instead of building and maintaining a HIPAA compliant email server. This can help developers get to market faster and quickly integrate a seamless email product that works on desktops, laptops, smartphones, tablets and wearables.
+
+          Take advantage of Paubox's experience with maintaining HIPAA compliance with email and focus on innovation.
       features:
-        title: Features
+        title: Features & Benefits
         items:
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
+        - title: Optimize Your IT
+          body: Paubox can secure every email sent from EHRs and patient portals seamlessly so recipients can view messages without the inconvenience of logging into web portals or downloading apps. Any IT system that sends email can be secured, even scanners.
+          icon: file-document
+          color: text-primary
+        - title: Focus on Innovation
+          body: Third-party developers creating innovative healthcare solutions can focus on their apps instead of building and maintaining a HIPAA compliant email server.
+          icon: file-document
+          color: text-primary
+        - title: Leverage our Tech
+          body: Use Paubox’s industry expertise and patent-pending email encryption that makes it easy to send and receive HIPAA compliant email. No plug-ins. No software. Just email.
+          icon: file-document
+          color: text-primary
+        - title: Business Associate Agreements
+          body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
+          icon: file-document
+          color: text-primary
     partner:
       title: Partner Program
       big_header: Stand out with Paubox
