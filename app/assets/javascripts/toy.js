@@ -5,13 +5,11 @@ $( document ).on('turbolinks:load', function() {
   if ($('.toy').length && $('.preserve3d').length) {
 
     // Pre-set elements to variables
-    var texts            = $('.toy .texts');
-    var text             = $('.toy .text');
-    var text1            = $('.toy .text-1');
-    var text2            = $('.toy .text-2');
-    var text3            = $('.toy .text-3');
-    var text4            = $('.toy .text-4');
-    var text5            = $('.toy .text-5');
+    var texts            = $('.toy .scenes');
+    var text             = $('.toy .scene');
+    var text1            = $('.toy .scene-1');
+    var text2            = $('.toy .scene-2');
+    var text3            = $('.toy .scene-3');
     var line1            = $('.toy .line-1');
     var line2            = $('.toy .line-2');
     var line3            = $('.toy .line-3');
@@ -114,76 +112,13 @@ $( document ).on('turbolinks:load', function() {
       borderColor:   '#0247DC',
     };
 
-    // Main sequence
-    var sequence = [
-      // Reset
-      {
-        e: text5,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line1,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line2,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line3,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line4,
-        p: lineRed,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: backgroundBlue,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: backgroundRed,
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: foregroundBlue,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: foregroundRed,
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
+    var aniScene1 = [
       {
         e: envelope,
         p: emailLaptop,
         o: {
+          duration:      0,
+          delay:         0,
           sequenceQueue: false,
         }
       },
@@ -198,15 +133,9 @@ $( document ).on('turbolinks:load', function() {
           rotateZ:       '0deg',
         },
         o: {
+          duration:      0,
+          delay:         0,
           sequenceQueue: false,
-        }
-      },
-      // Scene 1
-      {
-        e: text1,
-        p: showIt,
-        o: {
-          delay:         600,
         }
       },
       {
@@ -294,25 +223,42 @@ $( document ).on('turbolinks:load', function() {
           scale:         0.5,
         },
       },
+    ];
+
+    var aniScene2 = [
       {
-        e: envelope1red,
-        p: hideIt,
+        e: envelope,
+        p: emailLaptop,
         o: {
-          delay:         600,
-        }
-      },
-      {
-        e: text1,
-        p: hideIt,
-        o: {
-          delay:         600,
+          duration:      0,
+          delay:         0,
           sequenceQueue: false,
         }
       },
-      // Scene 2
       {
-        e: text2,
-        p: showIt,
+        e: laptopTop,
+        p: {
+          translateX:    '0vw',
+          translateY:    '0vw',
+          translateZ:    '1vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
+        o: {
+          duration:      0,
+          delay:         0,
+          sequenceQueue: false,
+        }
+      },
+      {
+        e: laptopTop,
+        p: {
+          rotateX:       '90deg',
+        },
+        o: {
+          delay:         600,
+        }
       },
       {
         e: phoneWindow,
@@ -453,19 +399,6 @@ $( document ).on('turbolinks:load', function() {
         }
       },
       {
-        e: text2,
-        p: hideIt,
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      // Scene 3
-      {
-        e: text3,
-        p: showIt,
-      },
-      {
         e: line5,
         p: showIt,
         o: {
@@ -554,33 +487,43 @@ $( document ).on('turbolinks:load', function() {
           scale:         0.5,
         },
       },
+    ];
+
+    // Main sequence
+    var aniScene3 = [
       {
-        e: envelope2blue,
-        p: hideIt,
+        e: envelope,
+        p: emailLaptop,
         o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope3red,
-        p: hideIt,
-        o: {
-          delay:         600,
+          duration:      0,
+          delay:         0,
           sequenceQueue: false,
         }
       },
       {
-        e: text3,
-        p: hideIt,
+        e: laptopTop,
+        p: {
+          translateX:    '0vw',
+          translateY:    '0vw',
+          translateZ:    '1vw',
+          rotateX:       '0deg',
+          rotateY:       '0deg',
+          rotateZ:       '0deg',
+        },
         o: {
-          delay:         600,
+          duration:      0,
+          delay:         0,
           sequenceQueue: false,
         }
       },
-      // Scene 4
       {
-        e: text4,
-        p: showIt,
+        e: laptopTop,
+        p: {
+          rotateX:       '90deg',
+        },
+        o: {
+          delay:         600,
+        }
       },
       {
         e: phoneWindow,
@@ -671,47 +614,54 @@ $( document ).on('turbolinks:load', function() {
           scale:         0.5,
         },
       },
-      {
-        e: envelope4blue,
-        p: hideIt,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: laptopTop,
-        p: {
-          rotateX:       '0deg',
-        },
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: text4,
-        p: hideIt,
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: text5,
-        p: showIt,
-        o: {
-          delay:         600,
-          sequenceQueue: false,
-        }
-      },
     ];
 
     // Run toy
-    $.Velocity.RunSequence(sequence);
+    $('.toy .sceneStarter1').removeClass('btn-outline-danger').addClass('btn-danger');
+    $('.scene-1').fadeIn();
+    $.Velocity.RunSequence(aniScene1);
 
-    // If Replay is clicked in CTA, start again
-    $('.toy .replay').click(function() {
-      $.Velocity.RunSequence(sequence);
+    // Scene Switcher
+    $('.toy .sceneStarter1').click(function() {
+      $('.velocity-animating').velocity('stop', true);
+      $('div[style]').removeAttr('style');
+      $('.toy .sceneStarter2').removeClass('btn-info').addClass('btn-outline-info')
+      $('.toy .sceneStarter3').removeClass('btn-primary').addClass('btn-outline-primary')
+      $(this).removeClass('btn-outline-danger').addClass('btn-danger');
+      $('.scene-1').fadeIn();
+      $('.scene-2').fadeOut();
+      $('.scene-3').fadeOut();      $.Velocity.RunSequence(aniScene1);
+    });
+    $('.toy .sceneStarter2').click(function() {
+      $('.velocity-animating').velocity('stop', true);
+      $('div[style]').removeAttr('style');
+      $('.toy .sceneStarter1').removeClass('btn-danger').addClass('btn-outline-danger')
+      $('.toy .sceneStarter3').removeClass('btn-primary').addClass('btn-outline-primary')
+      $(this).removeClass('btn-outline-info').addClass('btn-info');
+      $('.scene-1').fadeOut();
+      $('.scene-2').fadeIn();
+      $('.scene-3').fadeOut();      $.Velocity.RunSequence(aniScene2);
+    });
+    $('.toy .sceneStarter3').click(function() {
+      $('.velocity-animating').velocity('stop', true);
+      $('div[style]').removeAttr('style')
+      $('.toy .sceneStarter1').removeClass('btn-danger').addClass('btn-outline-danger')
+      $('.toy .sceneStarter2').removeClass('btn-info').addClass('btn-outline-info')
+      $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+      $('.scene-1').fadeOut();
+      $('.scene-2').fadeOut();
+      $('.scene-3').fadeIn();
+      $.Velocity.RunSequence(aniScene3);
+    });
+
+    // Popups
+    $('.toy .dot').click(function(){
+      if ($(this).parent().hasClass('active')) {
+        $(this).parent().removeClass('active');
+      } else {
+        $('.toy .dot').parent().removeClass('active');
+        $(this).parent().addClass('active');
+      }
     });
   };
 });

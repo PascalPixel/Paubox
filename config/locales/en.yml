@@ -469,6 +469,30 @@ en:
       text5: |
         Medical-grade security for existing email
         No new apps, no plug-ins, just email
+      scene1:
+        popup1: User sends email using regular apps.
+        popup2: Connection to the server is insecure, information can be intercepted.
+        popup3: Server is insecure, if it is hacked into, information can be stolen.
+        popup4: Email sent to the receiving server can be intercepted, speed is prioritized.
+        popup5: Receiving server can be insecure.
+        popup6: Connection from recipient server to device can be insecure.
+        popup7: If device has no password it is insecure.
+      scene2:
+        popup1: User needs to log in to a special server online.
+        popup2: Connection is secure.
+        popup3: Server is secure, but hard to get to.
+        popup4: Actual email is never sent, just a notification.
+        popup5: Only a notification is received.
+        popup6: Connection is secure.
+        popup7: User gets a cumbersome login to see your message.
+      scene3:
+        popup1: User sends email using regular apps.
+        popup2: Connection to the server is secure.
+        popup3: Server is secure.
+        popup4: Email is sent securely.
+        popup5: If recieving server is unable to handle secure email, a notification is sent.
+        popup6: Connection from recipient server to device can be insecure.
+        popup7: User reads secure email like normal email
     solutions_list:
       title: Our Solutions
       encrypted_email:

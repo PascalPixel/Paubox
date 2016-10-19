@@ -30,6 +30,18 @@
           %button.btn.btn-secondary.replay Play again
   .toy
     .foreground
+      .controls
+        %button.btn.btn-outline-danger.sceneStarter1 Current Email
+        %button.btn.btn-outline-info.sceneStarter2 Other Solutions
+        %button.btn.btn-outline-primary.sceneStarter3 Paubox Email
+      .scenes
+        - (1..3).each do |scene|
+          .scene{class: "scene-#{scene}"}
+            - (1..7).each do |popup|
+              .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
+                .dot
+                  %i.mdi.mdi-help
+                .content= t(".scene#{scene}.popup#{popup}")
       .blue
         .left= image_tag 'toy/inbox_left_blue_front.svg'
         .right= image_tag 'toy/inbox_right_blue_front.svg'
@@ -37,36 +49,18 @@
         .left= image_tag 'toy/inbox_left_red_front.svg'
         .right= image_tag 'toy/inbox_right_red_front.svg'
     .middleground
-      .line.line-1
-      .line.line-2
-      .line.line-3
-      .line.line-4
-      .line.line-5
-      .line.line-6
+      - (1..6).each do |line|
+        .line{class: "line-#{line}"}
       .laptop><
         .top><
           .back><= image_tag 'toy/laptop_back.svg'
           .front><
             = image_tag 'toy/laptop_front.svg'
             .laptop-window>< !
-      .envelope.envelope-1><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
-      .envelope.envelope-2><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
-      .envelope.envelope-3><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
-      .envelope.envelope-4><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
-      .envelope.envelope-5><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
-      .envelope.envelope-6><
-        .blue= image_tag 'toy/envelope_blue.svg'
-        .red= image_tag 'toy/envelope_red.svg'
+      - (1..6).each do |envelope|
+        .envelope{class: "envelope-#{envelope}"}><
+          .blue= image_tag 'toy/envelope_blue.svg'
+          .red= image_tag 'toy/envelope_red.svg'
       .phone-window>< !
     .background
       .phone= image_tag 'toy/phone.svg'
@@ -77,19 +71,3 @@
       .red
         .left= image_tag 'toy/inbox_left_red_back.svg'
         .right= image_tag 'toy/inbox_right_red_back.svg'
-    .texts.text-xs-center
-      .text.text-1
-        %h1.m-b-0.text-primary 1
-        = simple_format t('.text1')
-      .text.text-2
-        %h1.m-b-0.text-primary 2
-        = simple_format t('.text2')
-      .text.text-3
-        %h1.m-b-0.text-primary 3
-        = simple_format t('.text3')
-      .text.text-4
-        %h1.m-b-0.text-primary 4
-        = simple_format t('.text4')
-      .text.text-5
-        .m-b-1= simple_format t('.text5')
-        %button.btn.btn-secondary.replay Play again
