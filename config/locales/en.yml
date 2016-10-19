@@ -453,23 +453,7 @@ en:
       header: Jobs
       sub_header: We're currently hiring
   shared:
-    email_animation:
-      text1: |
-        HIPAA sets the standard for protecting patient data.
-        Including how to secure data sent in email.
-      text2: |
-        Other solutions secure email using a closed network
-        that require logins and cumbersome extra steps.
-      text3: |
-        This inconvenience is a big reason why
-        so much email is still sent unencrypted.
-      text4: |
-        Paubox makes it easy to send and receive secure email
-        by removing extra steps for senders and recipients.
-      text5: |
-        Medical-grade security for existing email
-        No new apps, no plug-ins, just email
-    security_animation:
+    toy:
       text1: |
         HIPAA sets the standard for protecting patient data.
         Including how to secure data sent in email.

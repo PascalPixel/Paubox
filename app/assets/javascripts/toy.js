@@ -2,48 +2,48 @@
 $( document ).on('turbolinks:load', function() {
 
   // Use Modernizr to test if browser supports 3D, if not, show fallback (done in CSS already).
-  if ($('.security_animation').length && $('.preserve3d').length) {
+  if ($('.toy').length && $('.preserve3d').length) {
 
     // Pre-set elements to variables
-    var texts            = $('.animation .texts');
-    var text             = $('.animation .text');
-    var text1            = $('.animation .text-1');
-    var text2            = $('.animation .text-2');
-    var text3            = $('.animation .text-3');
-    var text4            = $('.animation .text-4');
-    var text5            = $('.animation .text-5');
-    var line1            = $('.animation .line-1');
-    var line2            = $('.animation .line-2');
-    var line3            = $('.animation .line-3');
-    var line4            = $('.animation .line-4');
-    var line5            = $('.animation .line-5');
-    var line6            = $('.animation .line-6');
-    var foregroundRed    = $('.animation .foreground .red');
-    var foregroundBlue   = $('.animation .foreground .blue');
-    var backgroundRed    = $('.animation .background .red');
-    var backgroundBlue   = $('.animation .background .blue');
-    var laptopTop        = $('.animation .laptop .top');
-    var phoneWindow      = $('.animation .phone-window');
-    var laptopWindow     = $('.animation .laptop .laptop-window');
-    var envelope         = $('.animation .envelope');
-    var envelope1        = $('.animation .envelope-1');
-    var envelope1blue    = $('.animation .envelope-1 .blue');
-    var envelope1red     = $('.animation .envelope-1 .red');
-    var envelope2        = $('.animation .envelope-2');
-    var envelope2blue    = $('.animation .envelope-2 .blue');
-    var envelope2red     = $('.animation .envelope-2 .red');
-    var envelope3        = $('.animation .envelope-3');
-    var envelope3blue    = $('.animation .envelope-3 .blue');
-    var envelope3red     = $('.animation .envelope-3 .red');
-    var envelope4        = $('.animation .envelope-4');
-    var envelope4blue    = $('.animation .envelope-4 .blue');
-    var envelope4red     = $('.animation .envelope-4 .red');
-    var envelope5        = $('.animation .envelope-5');
-    var envelope5blue    = $('.animation .envelope-5 .blue');
-    var envelope5red     = $('.animation .envelope-5 .red');
-    var envelope6        = $('.animation .envelope-6');
-    var envelope6blue    = $('.animation .envelope-6 .blue');
-    var envelope6red     = $('.animation .envelope-6 .red');
+    var texts            = $('.toy .texts');
+    var text             = $('.toy .text');
+    var text1            = $('.toy .text-1');
+    var text2            = $('.toy .text-2');
+    var text3            = $('.toy .text-3');
+    var text4            = $('.toy .text-4');
+    var text5            = $('.toy .text-5');
+    var line1            = $('.toy .line-1');
+    var line2            = $('.toy .line-2');
+    var line3            = $('.toy .line-3');
+    var line4            = $('.toy .line-4');
+    var line5            = $('.toy .line-5');
+    var line6            = $('.toy .line-6');
+    var foregroundRed    = $('.toy .foreground .red');
+    var foregroundBlue   = $('.toy .foreground .blue');
+    var backgroundRed    = $('.toy .background .red');
+    var backgroundBlue   = $('.toy .background .blue');
+    var laptopTop        = $('.toy .laptop .top');
+    var phoneWindow      = $('.toy .phone-window');
+    var laptopWindow     = $('.toy .laptop .laptop-window');
+    var envelope         = $('.toy .envelope');
+    var envelope1        = $('.toy .envelope-1');
+    var envelope1blue    = $('.toy .envelope-1 .blue');
+    var envelope1red     = $('.toy .envelope-1 .red');
+    var envelope2        = $('.toy .envelope-2');
+    var envelope2blue    = $('.toy .envelope-2 .blue');
+    var envelope2red     = $('.toy .envelope-2 .red');
+    var envelope3        = $('.toy .envelope-3');
+    var envelope3blue    = $('.toy .envelope-3 .blue');
+    var envelope3red     = $('.toy .envelope-3 .red');
+    var envelope4        = $('.toy .envelope-4');
+    var envelope4blue    = $('.toy .envelope-4 .blue');
+    var envelope4red     = $('.toy .envelope-4 .red');
+    var envelope5        = $('.toy .envelope-5');
+    var envelope5blue    = $('.toy .envelope-5 .blue');
+    var envelope5red     = $('.toy .envelope-5 .red');
+    var envelope6        = $('.toy .envelope-6');
+    var envelope6blue    = $('.toy .envelope-6 .blue');
+    var envelope6red     = $('.toy .envelope-6 .red');
 
     // Move locations into variables
     var emailLaptop = {
@@ -115,7 +115,7 @@ $( document ).on('turbolinks:load', function() {
     };
 
     // Main sequence
-    var mailSequence     = [
+    var sequence = [
       // Reset
       {
         e: text5,
@@ -706,12 +706,12 @@ $( document ).on('turbolinks:load', function() {
       },
     ];
 
-    // Run animation
-    $.Velocity.RunSequence(mailSequence);
+    // Run toy
+    $.Velocity.RunSequence(sequence);
 
     // If Replay is clicked in CTA, start again
-    $('.animation .replay').click(function() {
-      $.Velocity.RunSequence(mailSequence);
+    $('.toy .replay').click(function() {
+      $.Velocity.RunSequence(sequence);
     });
   };
 });

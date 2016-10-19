@@ -1,18 +1,18 @@
 .fallback
   display: inherit
-.animation
+.toy
   display: none
 .preserve3d
   .fallback
     display: none
-  .animation
+  .toy
     display: inherit
 
-#animation
+#toy
   background: $gray-lighter
   overflow: hidden
 
-.animation
+.toy
   position: relative
   min-height: 35vw
 
@@ -81,7 +81,7 @@
     transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
     width: 100vw
-    // background-image: image-url('animations/email/grid.svg')
+    // background-image: image-url('toy/grid.svg')
     // background-size: 3vw
 
     img
@@ -179,40 +179,3 @@
       left: 2.8vw
       font-weight: bold
       transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
-
-.email_animation
-  .background
-    .base
-      top: 20.3vw
-      left: 46.5vw
-  .middleground
-    .line
-      &.line-1
-        top: 68vw
-        left: 55.5vw
-      &.line-4
-        top: 68vw
-        left: 68vw
-      &.line-5
-        top: 87vw
-        left: 45.5vw
-      &.line-6
-        top: 75vw
-        left: 45.5vw
-        height: 12vw
-    .envelope
-      transform: translate3d(9vw, 33.4vw, 11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
-    .laptop
-      transform: translate3d(33.1vw, 61.4vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-  .texts
-    position: relative
-    bottom: inherit
-    width: 45vw
-    padding-left: 2.5rem
-    text-align: left
-    .text
-      position: relative
-      opacity: 0.1
-      h1
-        margin-top: -.3rem
-        margin-right: 1rem
