@@ -1,0 +1,10 @@
+$font-weights: 100 200 300 400 500 600 700 800 900
+$font-types: normal italic
+
+@each $font-type in $font-types
+  @each $font-weight in $font-weights
+    @font-face
+      font-family: 'Geogrotesque'
+      src: font-url("woff2/geogrotesque-#{$font-weight}-#{$font-type}.woff2") format('woff2'), font-url("woff/geogrotesque-#{$font-weight}-#{$font-type}.woff") format('woff')
+      font-weight: $font-weight
+      font-style: $font-type

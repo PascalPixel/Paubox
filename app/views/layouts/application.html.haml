@@ -1,23 +1,12 @@
 !!! 5
 %html{lang: 'en'}
   %head
-    :javascript
-      (function() {
-          var path = '//easy.myfonts.net/v2/js?sid=169900(font-family=Geogrotesque+Light)&sid=169901(font-family=Geogrotesque+Regular)&sid=169904(font-family=Geogrotesque+Medium)&sid=175379(font-family=Geogrotesque+Bold+Italic)&key=PdGgd5c4Cr',
-              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-              trial = document.createElement('script');
-          trial.type = 'text/javascript';
-          trial.async = true;
-          trial.src = protocol + path;
-          var head = document.getElementsByTagName("head")[0];
-          head.appendChild(trial);
-      })();
     %title Paubox
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
     %meta{:'http-equiv' => 'x-ua-compatible', content: 'ie=edge'}
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body{id: params[:controller], class: params[:action]}
     = render partial: 'shared/menu'
