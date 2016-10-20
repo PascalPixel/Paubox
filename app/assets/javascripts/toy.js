@@ -660,7 +660,7 @@ $( document ).on('turbolinks:load', function() {
     ];
 
     // Run toy
-    $('.toy .sceneStarter1').removeClass('btn-outline-danger').addClass('btn-danger');
+    $('.toy .sceneStarter1').removeClass('btn-outline-info').addClass('btn-info');
     $('.scene-1').fadeIn();
     $.Velocity.RunSequence(aniScene1);
 
@@ -671,9 +671,8 @@ $( document ).on('turbolinks:load', function() {
         scene1Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style');
-        $('.toy .sceneStarter2').removeClass('btn-info').addClass('btn-outline-info')
-        $('.toy .sceneStarter3').removeClass('btn-primary').addClass('btn-outline-primary')
-        $(this).removeClass('btn-outline-danger').addClass('btn-danger');
+        $('.toy .sceneStarter2, .toy .sceneStarter3').removeClass('active');
+        $(this).addClass('active');
         $('.scene-1').fadeIn();
         $('.scene-2').fadeOut();
         $('.scene-3').fadeOut();
@@ -689,9 +688,8 @@ $( document ).on('turbolinks:load', function() {
         scene2Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style');
-        $('.toy .sceneStarter1').removeClass('btn-danger').addClass('btn-outline-danger')
-        $('.toy .sceneStarter3').removeClass('btn-primary').addClass('btn-outline-primary')
-        $(this).removeClass('btn-outline-info').addClass('btn-info');
+        $('.toy .sceneStarter1, .toy .sceneStarter3').removeClass('active');
+        $(this).addClass('active');
         $('.scene-1').fadeOut();
         $('.scene-2').fadeIn();
         $('.scene-3').fadeOut();
@@ -707,9 +705,8 @@ $( document ).on('turbolinks:load', function() {
         scene3Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style')
-        $('.toy .sceneStarter1').removeClass('btn-danger').addClass('btn-outline-danger')
-        $('.toy .sceneStarter2').removeClass('btn-info').addClass('btn-outline-info')
-        $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+        $('.toy .sceneStarter1, .toy .sceneStarter2').removeClass('active');
+        $(this).addClass('active');
         $('.scene-1').fadeOut();
         $('.scene-2').fadeOut();
         $('.scene-3').fadeIn();
