@@ -21,7 +21,7 @@
     max-width: 100%
 
   .texts
-    z-index: 40
+    z-index: 4
     position: absolute
     bottom: 10vw
     width: 100%
@@ -38,8 +38,12 @@
     position: absolute
     width: 100%
 
+  .container-fluid
+    z-index: 4
+    position: relative
+
   .foreground
-    z-index: 30
+    z-index: 3
     .controls
       position: absolute
       bottom: -34vw
@@ -62,7 +66,12 @@
       height: 100%
       position: relative
       display: none
-
+      .body
+        position: absolute
+        left: 30vw
+        top: 26vw
+        width: 50vw
+        text-align: center
       .popup
         position: absolute
         .dot
@@ -82,8 +91,8 @@
           position: absolute
           top: 2.2vw
           left: 2.2vw
-          z-index: 60
-          width: 15vw
+          z-index: 6
+          width: 20vw
           display: none
           background: white
           color: $brand-info
@@ -126,7 +135,7 @@
           top: 25.5vw
 
   .background
-    z-index: 10
+    z-index: 1
     .left,
     .right
       position: absolute
@@ -150,9 +159,9 @@
       left: 83.7vw
 
   .middleground
-    z-index: 20
+    z-index: 2
     transform-style: preserve-3d
-    transform: translate3d(0vw, -32.5vw, 1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
+    transform: translateX(0vw) translateY(-32.5vw) translateZ(1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
     width: 100vw
     // background-image: image-url('toy/grid.svg')
@@ -188,17 +197,17 @@
         top: 62vw
         left: 45.5vw
         border-top: 0.5vw dashed $brand-danger
-        width: 15vw
+        width: 13vw
         opacity: 0
       &.line-6
-        top: 47vw
+        top: 49vw
         left: 45.5vw
         border-left: 0.5vw dashed $brand-danger
-        height: 15vw
+        height: 13vw
         opacity: 0
 
     .envelope
-      transform: translate3d(9vw, 33.4vw, 11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
+      transform: translateX(9vw) translateY(33.4vw) translateZ(11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
       position: absolute
       width: 9vw
       .blue,
@@ -208,13 +217,13 @@
         opacity: 0
 
     .laptop
-      transform: translate3d(4.84vw, 33.1vw, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+      transform: translateX(5.85vw) translateY(32.2vw) translateZ(1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
       transform-style: preserve-3d
 
       .top
         width: 17.6vw
         position: relative
-        transform: translate3d(0, 0, 1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+        transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
         transform-origin: 0% 100%
         transform-style: preserve-3d
 
