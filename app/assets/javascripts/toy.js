@@ -630,7 +630,8 @@ $( document ).on('turbolinks:load', function() {
       $(this).removeClass('btn-outline-danger').addClass('btn-danger');
       $('.scene-1').fadeIn();
       $('.scene-2').fadeOut();
-      $('.scene-3').fadeOut();      $.Velocity.RunSequence(aniScene1);
+      $('.scene-3').fadeOut();
+      $.Velocity.RunSequence(aniScene1);
     });
     $('.toy .sceneStarter2').click(function() {
       $('.velocity-animating').velocity('stop', true);
@@ -640,7 +641,8 @@ $( document ).on('turbolinks:load', function() {
       $(this).removeClass('btn-outline-info').addClass('btn-info');
       $('.scene-1').fadeOut();
       $('.scene-2').fadeIn();
-      $('.scene-3').fadeOut();      $.Velocity.RunSequence(aniScene2);
+      $('.scene-3').fadeOut();
+      $.Velocity.RunSequence(aniScene2);
     });
     $('.toy .sceneStarter3').click(function() {
       $('.velocity-animating').velocity('stop', true);
