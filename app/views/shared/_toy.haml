@@ -12,20 +12,20 @@
       .row
         .col-sm-6
           %h1.m-b-0.text-primary 1
-          = simple_format t('.text1')
+          = simple_format t('.fallback.text1')
         .col-sm-6
           %h1.m-b-0.text-primary 2
-          = simple_format t('.text2')
+          = simple_format t('.fallback.text2')
       .row
         .col-sm-6
           %h1.m-b-0.text-primary 3
-          = simple_format t('.text3')
+          = simple_format t('.fallback.text3')
         .col-sm-6
           %h1.m-b-0.text-primary 4
-          = simple_format t('.text4')
+          = simple_format t('.fallback.text4')
       .row
         .col-sm-12
-          .m-b-1= simple_format t('.text5')
+          .m-b-1= simple_format t('.fallback.text5')
           %button.btn.btn-secondary.replay Play again
   .toy
     .container-fluid

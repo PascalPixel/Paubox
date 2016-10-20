@@ -11,8 +11,8 @@
         = link_to root_path, class: 'nav-link' do
           = image_tag 'branding/white/paubox_square_small.svg', style: 'height: 1em'
       %li.nav-item
-        = link_to 'About HIPAA', 'https://www.paubox.com/blog/hipaa-compliance', class: 'nav-link'
-        -# %li= link_to 'About HIPAA', hipaa_compliance_path
+        = link_to t('.about_hipaa'), 'https://www.paubox.com/blog/hipaa-compliance', class: 'nav-link'
+        -# %li= link_to t('.about_hipaa'), hipaa_compliance_path
       %li.nav-item.dropdown
         %a.nav-link#solutionsDropdown.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown'}
           = t('welcomes.solutions.title')
