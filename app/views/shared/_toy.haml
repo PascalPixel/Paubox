@@ -1,52 +1,27 @@
 %section#toy
+  .container
+    .row
+      .col-sm-6
+        %h4 Encrypted Email
+        %h1
+          %b Explained
+      .col-sm-3
+        %p
+          %span.text-primary Click the buttons
+          below to compare Paubox to Regular Email and Traditional Solutions.
+      .col-sm-3
+        %p
+          %span.text-primary Mouseover or tap
+          the questionmarks to view more detail about an element.
+    %br
   .fallback
     .container
-      %h5.text-primary
-        %b
-          %i.mdi.mdi-email-secure
-          = title
       = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
-      %br
-      %hr
-      %br
-      .row
-        .col-sm-6
-          %h1.m-b-0.text-primary 1
-          = simple_format t('.fallback.text1')
-        .col-sm-6
-          %h1.m-b-0.text-primary 2
-          = simple_format t('.fallback.text2')
-      .row
-        .col-sm-6
-          %h1.m-b-0.text-primary 3
-          = simple_format t('.fallback.text3')
-        .col-sm-6
-          %h1.m-b-0.text-primary 4
-          = simple_format t('.fallback.text4')
-      .row
-        .col-sm-12
-          .m-b-1= simple_format t('.fallback.text5')
-          %button.btn.btn-secondary.replay Play again
   .toy
-    .container-fluid
-      .clearfix
-        .pull-md-left
-          %h5.text-primary
-            %b
-              %i.mdi.mdi-email-secure
-              = title
-        .pull-md-right
-          Click to compare:
-          &nbsp;
-          .btn-group
-            %button.btn.btn-outline-info.btn-sm.sceneStarter1 Current Email
-            %button.btn.btn-outline-info.btn-sm.sceneStarter2 Traditional Solutions
-            %button.btn.btn-outline-info.btn-sm.sceneStarter3 Paubox Encrypted Email
     .foreground
       .scenes
         - (1..3).each do |scene|
           .scene{class: "scene-#{scene}"}
-            .body= simple_format t(".scene#{scene}.body")
             - (1..7).each do |popup|
               .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
                 .dot
@@ -81,3 +56,37 @@
       .red
         .left= image_tag 'toy/inbox_left_red_back.svg'
         .right= image_tag 'toy/inbox_right_red_back.svg'
+  .container
+    %br
+    %br
+    .row
+      .col-lg-4
+        .clearfix
+          .pull-xs-left
+            %h4.text-danger
+              %i.mdi.mdi-email-open
+              Regular Email
+          .pull-xs-right
+            %button.btn.btn-outline-danger.btn-sm.m-b-1.sceneStarter1.text-xs-left
+              View
+        %p= t(".scene1.body")
+      .col-lg-4
+        .clearfix
+          .pull-xs-left
+            %h4.text-info
+              %i.mdi.mdi-dns
+              Portals
+          .pull-xs-right
+            %button.btn.btn-outline-info.btn-sm.m-b-1.sceneStarter2.text-xs-left
+              View
+        %p= t(".scene2.body")
+      .col-lg-4
+        .clearfix
+          .pull-xs-left
+            %h4.text-primary
+              %i.mdi.mdi-email-secure
+              Encrypted Email
+          .pull-xs-right
+            %button.btn.btn-outline-primary.btn-sm.m-b-1.sceneStarter3.text-xs-left
+              View
+        %p= t(".scene3.body")

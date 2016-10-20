@@ -10,37 +10,24 @@
 
 #toy
   background: $gray-lighter
-  overflow: hidden
 
 .toy
   position: relative
   min-height: 35vw
   user-select: none
+  overflow: hidden
+
+  .btn-block p
+    width: 100%
 
   img
     max-width: 100%
-
-  .texts
-    z-index: 4
-    position: absolute
-    bottom: 10vw
-    width: 100%
-    text-align: center
-
-    .text
-      position: absolute
-      width: 100%
-      opacity: 0
 
   .foreground,
   .background,
   .middleground
     position: absolute
     width: 100%
-
-  .container-fluid
-    z-index: 4
-    position: relative
 
   .foreground
     z-index: 3
@@ -66,12 +53,6 @@
       height: 100%
       position: relative
       display: none
-      .body
-        position: absolute
-        left: 30vw
-        top: 26vw
-        width: 50vw
-        text-align: center
       .popup
         position: absolute
         .dot

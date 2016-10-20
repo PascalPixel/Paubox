@@ -477,10 +477,7 @@ en:
           Medical-grade security for existing email
           No new apps, no plug-ins, just email
       scene1:
-        body: |
-          Email was designed to connect people, not with security in mind.
-          Because email delivery is prioritized higher than security,
-          “normal” email is not secure.
+        body: Email was designed to prioritize delivery instead of security, “normal” email is not secure and can be hacked.
         popup1: User sends email using regular apps.
         popup2: Connection to the server may be insecure and messages can be intercepted.
         popup3: Server is insecure, if it is hacked into, information can be stolen.
@@ -489,10 +486,7 @@ en:
         popup6: Connection from recipient server to device can be insecure and email will be delivered in clear text.
         popup7: If device has no password it is insecure.
       scene2:
-        body: |
-          Traditional solutions lock down their network to secure email.
-          Sending notifications instead of email and forcing users to create passwords
-          and login to portals to view messages.
+        body: Traditional solutions use a portal that sends notifications instead of email, forcing users to create extra passwords and logins to view messages.
         popup1: User needs to log in to a special server or download a plugin.
         popup2: Connection is secure.
         popup3: Server is secure, but hard to get to.
@@ -501,9 +495,7 @@ en:
         popup6: Connection is secure.
         popup7: User must click on a link, create a user and password to login to see your message.
       scene3:
-        body: |
-          Paubox makes it easy to send and receive HIPAA compliant email
-          by removing extra steps without sacrificing security.
+        body: Paubox secures regular email and makes it HIPAA compliant, removing extra steps without sacrificing security.
         popup1: User sends email using regular apps.
         popup2: Connection to the server is secure.
         popup3: Server is secure.

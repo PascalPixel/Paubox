@@ -660,18 +660,18 @@ $( document ).on('turbolinks:load', function() {
     ];
 
     // Run toy
-    $('.toy .sceneStarter1').removeClass('btn-outline-info').addClass('btn-info');
+    $('.sceneStarter1').addClass('active');
     $('.scene-1').fadeIn();
     $.Velocity.RunSequence(aniScene1);
 
     // Scene Switcher
     var scene1Clicked = false;
-    $('.toy .sceneStarter1').click(function() {
+    $('.sceneStarter1').click(function() {
       if (scene1Clicked == false) {
         scene1Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style');
-        $('.toy .sceneStarter2, .toy .sceneStarter3').removeClass('active');
+        $('.sceneStarter2, .sceneStarter3').removeClass('active');
         $(this).addClass('active');
         $('.scene-1').fadeIn();
         $('.scene-2').fadeOut();
@@ -683,12 +683,12 @@ $( document ).on('turbolinks:load', function() {
       };
     });
     var scene2Clicked = false;
-    $('.toy .sceneStarter2').click(function() {
+    $('.sceneStarter2').click(function() {
       if (scene2Clicked == false) {
         scene2Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style');
-        $('.toy .sceneStarter1, .toy .sceneStarter3').removeClass('active');
+        $('.sceneStarter1, .sceneStarter3').removeClass('active');
         $(this).addClass('active');
         $('.scene-1').fadeOut();
         $('.scene-2').fadeIn();
@@ -700,12 +700,12 @@ $( document ).on('turbolinks:load', function() {
       };
     });
     var scene3Clicked = false;
-    $('.toy .sceneStarter3').click(function() {
+    $('.sceneStarter3').click(function() {
       if (scene3Clicked == false) {
         scene3Clicked = true;
         allVelocity.velocity('stop', true);
         allStyles.removeAttr('style')
-        $('.toy .sceneStarter1, .toy .sceneStarter2').removeClass('active');
+        $('.sceneStarter1, .sceneStarter2').removeClass('active');
         $(this).addClass('active');
         $('.scene-1').fadeOut();
         $('.scene-2').fadeOut();
