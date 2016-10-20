@@ -4,5 +4,11 @@
       .col-sm-4
       .col-sm-8
         %h2= intro[:title]
+    .row
+      .col-sm-4
+        .row
+          .col-xs-6.offset-xs-3
+            = image_tag "#{intro[:image]}.svg", class: 'img-fluid'
+      .col-sm-8
         %p= simple_format intro[:body]
 %hr

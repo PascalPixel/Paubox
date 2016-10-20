@@ -120,6 +120,7 @@ en:
       button_info: Request a Free Demo
       button_cta: Sign Up
       intro:
+        image: email_stack
         title: How it works
         body: |
           Paubox Encrypted Email is the easiest way to send and receive HIPAA compliant email. You can just write and send emails as normal and Paubox seamlessly secures your message from end-to-end. No software to download, plugins to install or extra steps to take.
@@ -173,6 +174,7 @@ en:
       button_info: Request a Free Demo
       button_cta: ""
       intro:
+        image: email_stack
         title: Secure online forms that can transform your business
         body: Save money by making operations more efficient
       features:
@@ -209,6 +211,7 @@ en:
       button_info: Request a Free Demo
       button_cta: ""
       intro:
+        image: email_stack
         title: Secure file sharing the way it should be
         body: Built on customer feedback. Keep control over every file. Gain peace of mind knowing your files are secure
       features:
@@ -245,6 +248,7 @@ en:
       button_info: Request a Free Demo
       button_cta: ""
       intro:
+        image: email_stack
         title: An email API for healthcare providers and developers
         body: |
           Paubox's HIPAA compliant encrypted email API allows hospitals, health management organizations (HMOs), clinics, doctors, and other covered entities to integrate Paubox's seamless and secure email solution with their IT infrastructure. The uses range from integrating with patient portals to securing website contact forms.
