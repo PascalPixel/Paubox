@@ -20,10 +20,12 @@
         %h6= t('.documentation')
         %ul.list-unstyled
           %li= link_to 'Help', 'https://www.paubox.com/blog/help'
-          %li= link_to 'What is HIPAA', 'https://www.paubox.com/blog/hipaa-compliance'
+          %li= link_to 'HIPAA Compliant Email', 'https://www.paubox.com/blog/hipaa-compliance'
           -# %li= link_to 'What is HIPAA', hipaa_compliance_path
           %li= link_to t('welcomes.security.title'), security_path
           %li= link_to t('welcomes.terms.title'), terms_path
+          %li
+            %a{'data-target' => '#contactForm', 'data-toggle' => 'modal'}= t('shared.menu.contact')
       .col-md-3
         %h6= t('.social.title')
         %ul.list-unstyled

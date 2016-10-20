@@ -5,9 +5,38 @@
 %section
   .container
     .row
+      .col-md-4.text-md-right
+        %h2= t('shared.contact.title')
+        %p
+        %p
+          %b E:
+          = t('shared.contact.email')
+          %br
+          %b P:
+          = t('shared.contact.phone')
+        %p
+          = t('shared.contact.address.street')
+          %br
+          = t('shared.contact.address.floor')
+          %br
+          = t('shared.contact.address.city')
+        %h6= t('shared.contact.tech_support.title')
+        %b E:
+        = t('shared.contact.tech_support.email')
+        %br
+        %b P:
+        = t('shared.contact.tech_support.phone')
+      .col-md-8
+        %h2= t('.mission.header')
+        %p= simple_format t('.mission.body')
+%section
+  .container
+    .row
       .col-sm-12
-        %h2= t('.team.header')
-        %hr
+        .text-xs-center
+          %h2= t('.team.header')
+          %br
+          %br
         - t('.team.items').each_slice(2) do |items|
           .row
             - items.each do |item|
@@ -20,8 +49,14 @@
                     %h5= item[:name]
                     %p= simple_format item[:body]
                     %br
-        %h2= t('.advisors.header')
-        %hr
+%section
+  .container
+    .row
+      .col-sm-12
+        .text-xs-center
+          %h2= t('.advisors.header')
+          %br
+          %br
         - t('.advisors.items').each_slice(2) do |items|
           .row
             - items.each do |item|

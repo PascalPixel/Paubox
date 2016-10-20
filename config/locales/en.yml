@@ -2,7 +2,7 @@ en:
   welcomes:
     home:
       title: Home
-      header: Medical-grade security for existing email
+      header: The easiest way to send and receive HIPAA Compliant Email
       sub_header: No new apps, no plug-ins, just email
       button_info: Request a Free Demo
       button_cta: Sign Up
@@ -28,6 +28,12 @@ en:
       title: About us
       header: Our Mission, Team & Advisors
       sub_header: Learn more about who we are
+      mission:
+        header: Our Mission
+        body: |
+          Email encryption is broken, with too many steps required for users to send and view emails. The result is a vulnerable system open to cyberattacks that costs individuals and companies billions of dollars each year.
+
+          We want to secure every email by increasing the adoption of encryption. We do this by putting the user experience first, but not at the expense of security. We want to start with the healthcare industry, which is under attack by hackers who value the personal health information of patients.
       team:
         header: Team
         items:
@@ -533,7 +539,7 @@ en:
         title: RN Co-Founder
         company: Hookele Health Navigators
     sub_footer:
-      header: Become HIPAA compliant
+      header: Make your email HIPAA compliant
       sub_header: Our customers secure 30,000+ emails every day
       button_info: Request a Free Demo
     footer:
@@ -562,7 +568,7 @@ en:
       superpencil: Superpencil
     menu:
       home: Home
-      about_hipaa: About HIPAA
+      about_hipaa: HIPAA Compliant Email
       solutions: Solutions
       customers: Customers
       help: Help
