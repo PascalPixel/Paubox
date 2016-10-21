@@ -243,7 +243,16 @@ section#toy
     width: 100%
   .front
     transform: rotateX(180deg)
+  .laptop-screen
+    width: 8vw
+    height: 6vw
+    border-radius: 0.5vw
+    position: absolute
+    top: 3vw
+    left: 4.825vw
+    background-color: white
   .laptop-window
+    font-family: $font-family-monospace
     opacity: 0
     width: 8vw
     height: 6vw
@@ -277,3 +286,27 @@ section#toy
     left: 2.8vw
     font-weight: bold
     transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
+
+  // Change color of popups based on scene
+  .scene-1 .popup
+    .dot
+      color: $brand-danger
+      border-color: $brand-danger
+    .content
+      color: $brand-danger
+    &:hover,
+    &.active
+      .dot
+        background: $brand-danger
+        color: white
+  .scene-3 .popup
+    .dot
+      color: $brand-primary
+      border-color: $brand-primary
+    .content
+      color: $brand-primary
+    &:hover,
+    &.active
+      .dot
+        background: $brand-primary
+        color: white
