@@ -2,7 +2,7 @@
   .container
     .row
       .col-sm-6
-        %h4 Encrypted Email
+        %h4 Paubox Encrypted Email
         %h1{style: "margin-top:-1rem;margin-left:-.1rem;"}
           %b Explained
       .col-sm-3
@@ -13,80 +13,67 @@
         %p
           %span.text-primary Mouseover or tap
           the questionmarks to view more detail about an element.
-    %br
-  .fallback
-    .container
-      = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
   .toy
-    .foreground
-      .scenes
-        - (1..3).each do |scene|
-          .scene{class: "scene-#{scene}"}
-            - (1..7).each do |popup|
-              .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
-                .dot
-                  %i.mdi.mdi-help
-                .content= t(".scene#{scene}.popup#{popup}")
-      .blue
-        .left= image_tag 'toy/inbox_left_blue_front.svg'
-        .right= image_tag 'toy/inbox_right_blue_front.svg'
-      .red
-        .left= image_tag 'toy/inbox_left_red_front.svg'
-        .right= image_tag 'toy/inbox_right_red_front.svg'
-    .middleground
-      - (1..6).each do |line|
-        .line{class: "line-#{line}"}
-      .laptop><
-        .top><
-          .back><= image_tag 'toy/laptop_back.svg'
-          .front><
-            = image_tag 'toy/laptop_front.svg'
-            .laptop-window>< !
-      - (1..6).each do |envelope|
-        .envelope{class: "envelope-#{envelope}"}><
-          .blue= image_tag 'toy/envelope_blue.svg'
-          .red= image_tag 'toy/envelope_red.svg'
-      .phone-window>< !
-    .background
-      .phone= image_tag 'toy/phone.svg'
-      .base= image_tag 'toy/laptop_base.svg'
-      .blue
-        .left= image_tag 'toy/inbox_left_blue_back.svg'
-        .right= image_tag 'toy/inbox_right_blue_back.svg'
-      .red
-        .left= image_tag 'toy/inbox_left_red_back.svg'
-        .right= image_tag 'toy/inbox_right_red_back.svg'
+    - (1..3).each do |scene|
+      .scene{class: "scene-#{scene}"}
+        .fallback
+          = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
+
+        .animated
+          .background
+            .phone= image_tag 'toy/phone.svg'
+            .base= image_tag 'toy/laptop_base.svg'
+            - if scene == 1
+              .left-inbox-back= image_tag 'toy/inbox_left_red_back.svg'
+              .right-inbox-back= image_tag 'toy/inbox_right_red_back.svg'
+            - else
+              .left-inbox-back= image_tag 'toy/inbox_left_blue_back.svg'
+              .right-inbox-back= image_tag 'toy/inbox_right_blue_back.svg'
+
+          .middleground
+            - (1..6).each do |line|
+              .line{class: "line-#{line}"}
+            .laptop><
+              .top><
+                .back><= image_tag 'toy/laptop_back.svg'
+                .front><
+                  = image_tag 'toy/laptop_front.svg'
+                  .laptop-window>< !
+            - (1..6).each do |envelope|
+              .envelope{class: "envelope-#{envelope}"}><
+                .blue= image_tag 'toy/envelope_blue.svg'
+                .red= image_tag 'toy/envelope_red.svg'
+            .phone-window>< !
+
+          .foreground
+            - if scene == 1
+              .left-inbox-front= image_tag 'toy/inbox_left_red_front.svg'
+              .right-inbox-front= image_tag 'toy/inbox_right_red_front.svg'
+            - else
+              .left-inbox-front= image_tag 'toy/inbox_left_blue_front.svg'
+              .right-inbox-front= image_tag 'toy/inbox_right_blue_front.svg'
+            .popups
+              - (1..7).each do |popup|
+                .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
+                  .dot
+                    %i.mdi.mdi-help
+                  .content= t(".scene#{scene}.popup#{popup}")
+
   .container
     %br
-    %br
-    .row
-      .col-lg-4
-        .clearfix
-          .pull-xs-left
-            %h4.text-danger
-              %i.mdi.mdi-email-open
-              Regular Email
-          .pull-xs-right
-            %button.btn.btn-outline-danger.btn-sm.m-b-1.sceneStarter1.text-xs-left
-              View
+    .row.scene-tabs
+      .col-md-4.scene-tab.sceneStarter1
+        %h4.text-danger
+          %i.mdi.mdi-email-open
+          Regular Email
         %p= t(".scene1.body")
-      .col-lg-4
-        .clearfix
-          .pull-xs-left
-            %h4.text-info
-              %i.mdi.mdi-dns
-              Portals
-          .pull-xs-right
-            %button.btn.btn-outline-info.btn-sm.m-b-1.sceneStarter2.text-xs-left
-              View
+      .col-md-4.scene-tab.sceneStarter2
+        %h4.text-info
+          %i.mdi.mdi-dns
+          Portals
         %p= t(".scene2.body")
-      .col-lg-4
-        .clearfix
-          .pull-xs-left
-            %h4.text-primary
-              %i.mdi.mdi-email-secure
-              Encrypted Email
-          .pull-xs-right
-            %button.btn.btn-outline-primary.btn-sm.m-b-1.sceneStarter3.text-xs-left
-              View
+      .col-md-4.scene-tab.sceneStarter3.active
+        %h4.text-primary
+          %i.mdi.mdi-email-secure
+          Encrypted Email
         %p= t(".scene3.body")

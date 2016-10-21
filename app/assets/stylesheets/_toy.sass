@@ -1,146 +1,166 @@
+// Toy section
+section#toy
+  background: $gray-lighter
+
+// Tabs in the footer
+.scene-tabs
+  position: relative
+.scene-tab
+  cursor: pointer
+  background: $gray-lighter
+  padding-top: 1rem
+  border: 0.125rem solid transparent
+  border-top-color: lighten($gray-light, 20%)
+  border-radius: 0 0 $border-radius $border-radius
+  &.active
+    border-color: lighten($gray-light, 20%)
+    border-top-color: transparent
+
+// Hide 3D animated version if not supported
 .fallback
   display: inherit
-.toy
+.animated
   display: none
 .preserve3d
   .fallback
     display: none
-  .toy
+  .animated
     display: inherit
 
-#toy
-  background: $gray-lighter
-
+// All toy CSS
 .toy
-  position: relative
-  min-height: 35vw
   user-select: none
   overflow: hidden
-
-  .btn-block p
-    width: 100%
+  height: 35vw
+  width: 100%
 
   img
-    max-width: 100%
+    @extend .img-fluid
 
+  // Hide Standard Email and Portal from the start
+  .scene
+    position: absolute
+    overflow: hidden
+    height: 35vw
+    width: 100%
+    &.scene-1,
+    &.scene-2
+      display: none
+
+  // Position all three layers on top of each other
+  // 100% width is for Firefox
   .foreground,
   .background,
   .middleground
     position: absolute
     width: 100%
 
+  // z-index is to prevent 3D elements from popping through
   .foreground
-    z-index: 3
-    .controls
-      position: absolute
-      bottom: -34vw
-      width: 100%
-      text-align: center
-    .left,
-    .right
-      position: absolute
-      width: 10.5vw
-      top: 12.7vw
-    .left
-      left: 34.4vw
-    .right
-      left: 65.5vw
-    .blue
-      opacity: 0
-    .scene
-      z-index: 50
-      width: 100%
-      height: 100%
-      position: relative
-      display: none
-      .popup
-        position: absolute
-        .dot
-          cursor: pointer
-          width: 2.3vw
-          font-size: 1.3vw
-          height: 2.3vw
-          background: $gray-lighter
-          border-radius: 5rem
-          color: $brand-info
-          text-align: center
-          position: absolute
-          left: 0
-          top: 0
-          border: 0.3vw solid $brand-info
-        .content
-          position: absolute
-          top: 2.2vw
-          left: 2.2vw
-          z-index: 6
-          width: 20vw
-          display: none
-          background: white
-          color: $brand-info
-          padding: 0.5rem
-          border-radius: $border-radius
-        &.right
-          .dot
-            left: auto
-            right: 0
-          .content
-            left: auto
-            right: 2.2vw
-        &:hover,
-        &.active
-          .dot
-            color: white
-            background: $brand-info
-          .content
-            display: block
-        &.popup-1
-          left: 5vw
-          top: 16vw
-        &.popup-2
-          left: 30vw
-          top: 19vw
-        &.popup-3
-          left: 42.5vw
-          top: 16vw
-        &.popup-4
-          left: 54.5vw
-          top: 5vw
-        &.popup-5
-          left: 57.2vw
-          top: 16vw
-        &.popup-6
-          left: 70.5vw
-          top: 19vw
-        &.popup-7
-          left: 82vw
-          top: 25.5vw
-
-  .background
-    z-index: 1
-    .left,
-    .right
-      position: absolute
-      width: 10.5vw
-      top: 10.5vw
-    .left
-      left: 34.4vw
-    .right
-      left: 65.5vw
-    .blue
-      opacity: 0
-    .base
-      position: absolute
-      width: 20.4vw
-      top: 20.3vw
-      left: 6.5vw
-    .phone
-      position: absolute
-      width: 10.4vw
-      top: 21.35vw
-      left: 83.7vw
-
-  .middleground
     z-index: 2
+  .middleground
+    z-index: 1
+  .background
+    z-index: 0
+
+  // Inboxes
+  .left-inbox-back,
+  .right-inbox-back,
+  .left-inbox-front,
+  .right-inbox-front
+    position: absolute
+    width: 10.5vw
+  .left-inbox-front,
+  .right-inbox-front
+    top: 12.7vw
+  .left-inbox-front,
+  .left-inbox-back
+    left: 34.4vw
+  .right-inbox-front,
+  .right-inbox-back
+    left: 65.5vw
+  .left-inbox-back,
+  .right-inbox-back
+    top: 10.5vw
+
+  // Help popups
+  .popups
+    width: 100%
+    height: 100%
+    position: relative
+  .popup
+    position: absolute
+
+    // Questionmark
+    .dot
+      cursor: pointer
+      width: 2.3vw
+      font-size: 1.3vw
+      height: 2.3vw
+      background: $gray-lighter
+      border-radius: 5rem
+      color: $brand-info
+      text-align: center
+      position: absolute
+      left: 0
+      top: 0
+      border: 0.3vw solid $brand-info
+
+    // Popup content
+    .content
+      position: absolute
+      top: 2.2vw
+      left: 2.2vw
+      width: 20vw
+      display: none
+      background: white
+      color: $brand-info
+      padding: 0.5rem
+      border-radius: $border-radius
+
+    // Optional popup display on the right of the icon
+    &.right
+      .dot
+        left: auto
+        right: 0
+      .content
+        left: auto
+        right: 2.2vw
+
+    // Display on hover
+    &:hover,
+    &.active
+      .dot
+        color: white
+        background: $brand-info
+      .content
+        display: block
+
+    // Placement of popups
+    &.popup-1
+      left: 5vw
+      top: 16vw
+    &.popup-2
+      left: 30vw
+      top: 19vw
+    &.popup-3
+      left: 42.5vw
+      top: 16vw
+    &.popup-4
+      left: 54.5vw
+      top: 5vw
+    &.popup-5
+      left: 68vw
+      top: 16vw
+    &.popup-6
+      left: 81vw
+      top: 19vw
+    &.popup-7
+      left: 92vw
+      top: 25.5vw
+
+  // 3D middle ground area where animation takes place
+  .middleground
     transform-style: preserve-3d
     transform: translateX(0vw) translateY(-32.5vw) translateZ(1vw) rotateX(55deg) rotateY(0deg) rotateZ(-45deg)
     height: 100vw
@@ -148,98 +168,112 @@
     // background-image: image-url('toy/grid.svg')
     // background-size: 3vw
 
-    img
-      max-width: 100%
-      height: auto
-
-    .line
-      position: absolute
-      &.line-1
-        top: 39.5vw
-        left: 27vw
-        border-top: 0.5vw dashed $brand-danger
-        width: 13vw
-      &.line-2
-        top: 39.5vw
-        left: 55vw
-        border-top: 0.5vw dashed $brand-danger
-        width: 13vw
-      &.line-3
-        top: 39.5vw
-        left: 68vw
-        border-left: 0.5vw dashed $brand-danger
-        height: 13vw
-      &.line-4
-        top: 68vw
-        left: 68vw
-        border-left: 0.5vw dashed $brand-danger
-        height: 13vw
-      &.line-5
-        top: 62vw
-        left: 45.5vw
-        border-top: 0.5vw dashed $brand-danger
-        width: 13vw
-        opacity: 0
-      &.line-6
-        top: 49vw
-        left: 45.5vw
-        border-left: 0.5vw dashed $brand-danger
-        height: 13vw
-        opacity: 0
-
-    .envelope
-      transform: translateX(9vw) translateY(33.4vw) translateZ(11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
-      position: absolute
-      width: 9vw
-      .blue,
-      .red
-        width: 100%
-        position: absolute
-        opacity: 0
-
-    .laptop
-      transform: translateX(5.85vw) translateY(32.2vw) translateZ(1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-      transform-style: preserve-3d
-
-      .top
-        width: 17.6vw
-        position: relative
-        transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-        transform-origin: 0% 100%
-        transform-style: preserve-3d
-
-        .front,
-        .back
-          backface-visibility: hidden
-          position: absolute
-          width: 100%
-        .front
-          transform: rotateX(180deg)
-          .laptop-window
-            opacity: 0
-            width: 8vw
-            height: 6vw
-            border: 0.5vw solid $brand-danger
-            border-radius: 0.5vw
-            color: $brand-danger
-            text-align: center
-            position: absolute
-            top: 3vw
-            left: 4.825vw
-            font-weight: bold
-            font-size: 4vw
-
-    .phone-window
+  // Lines on the floor
+  $line-length: 13vw
+  $line-border: 0.5vw dashed $brand-danger
+  .line
+    position: absolute
+    &.line-1
+      top: 39.5vw
+      left: 27vw
+      border-top: $line-border
+      width: $line-length
+    &.line-2
+      top: 39.5vw
+      left: 55vw
+      border-top: $line-border
+      width: $line-length
+    &.line-3
+      top: 39.5vw
+      left: 68vw
+      border-left: $line-border
+      height: $line-length
+    &.line-4
+      top: 68vw
+      left: 68vw
+      border-left: $line-border
+      height: $line-length
+    &.line-5
+      top: 62vw
+      left: 45.5vw
+      border-top: $line-border
+      width: $line-length
       opacity: 0
-      width: 3vw
-      height: 5.7vw
-      border: 0.5vw solid $brand-danger
-      border-radius: 0.5vw
-      color: $brand-danger
-      text-align: center
+    &.line-6
+      top: 49vw
+      left: 45.5vw
+      border-left: $line-border
+      height: $line-length
+      opacity: 0
+  .scene-2 .line
+    border-color: $brand-info
+  .scene-3 .line
+    border-color: $brand-primary
+
+  // Envelopes
+  .envelope
+    transform: translateX(9vw) translateY(33.4vw) translateZ(11.5vw) rotateX(-90deg) rotateY(0deg) rotateZ(0deg)
+    position: absolute
+    width: 9vw
+    .blue,
+    .red
+      width: 100%
       position: absolute
-      font-size: 4vw
-      top: 0vw
-      left: 2.8vw
-      font-weight: bold
-      transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
+      opacity: 0
+
+  // Laptop
+  .base
+    position: absolute
+    width: 20.4vw
+    top: 20.3vw
+    left: 6.5vw
+  .laptop
+    transform: translateX(5.85vw) translateY(32.2vw) translateZ(1vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    transform-style: preserve-3d
+  .top
+    width: 17.6vw
+    position: relative
+    transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    transform-origin: 0% 100%
+    transform-style: preserve-3d
+  .front,
+  .back
+    backface-visibility: hidden
+    position: absolute
+    width: 100%
+  .front
+    transform: rotateX(180deg)
+  .laptop-window
+    opacity: 0
+    width: 8vw
+    height: 6vw
+    border: 0.5vw solid $brand-danger
+    border-radius: 0.5vw
+    color: $brand-danger
+    text-align: center
+    position: absolute
+    top: 3vw
+    left: 4.825vw
+    font-weight: bold
+    font-size: 4vw
+
+  // Phone
+  .phone
+    position: absolute
+    width: 10.4vw
+    top: 21.35vw
+    left: 83.7vw
+  .phone-window
+    opacity: 0
+    width: 3vw
+    height: 5.7vw
+    border: 0.5vw solid $brand-danger
+    border-radius: 0.5vw
+    color: $brand-danger
+    text-align: center
+    position: absolute
+    font-size: 4vw
+    top: 0vw
+    left: 2.8vw
+    font-weight: bold
+    transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
