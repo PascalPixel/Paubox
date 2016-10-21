@@ -7,27 +7,9 @@ $( document ).on('turbolinks:load', function() {
     // Pre-set elements to variables
     var allStyles        = $('.toy div[style]');
     var allVelocity      = $('.toy .velocity-animating');
-    var texts            = $('.toy .scenes');
-    var text             = $('.toy .scene');
-    var popups1          = $('.toy .scene-1');
-    var popups2          = $('.toy .scene-2');
-    var popups3          = $('.toy .scene-3');
-    var line1            = $('.toy .line-1');
-    var line2            = $('.toy .line-2');
-    var line3            = $('.toy .line-3');
-    var line4            = $('.toy .line-4');
-    var line5            = $('.toy .line-5');
-    var line6            = $('.toy .line-6');
-    var laptopTop        = $('.toy .laptop .top');
-    var phoneWindow      = $('.toy .phone-window');
-    var laptopWindow     = $('.toy .laptop .laptop-window');
-    var envelope         = $('.toy .envelope');
-    var envelope1        = $('.toy .envelope-1');
-    var envelope1blue    = $('.toy .envelope-1 .blue');
-    var envelope1red     = $('.toy .envelope-1 .red');
-    var envelope2        = $('.toy .envelope-2');
-    var envelope2blue    = $('.toy .envelope-2 .blue');
-    var envelope2red     = $('.toy .envelope-2 .red');
+    var scene1           = $('.scene-1');
+    var scene2           = $('.scene-2');
+    var scene3           = $('.scene-3');
 
     // Variables for the location of email travelling back and forth
     var emailLaptop = {
@@ -42,7 +24,7 @@ $( document ).on('turbolinks:load', function() {
     var emailInbox = {
       translateX:        '44.2vw',
       translateY:        '39.5vw',
-      translateZ:        '8vw',
+      translateZ:        '5vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '90deg',
@@ -50,7 +32,7 @@ $( document ).on('turbolinks:load', function() {
     var emailSafe = {
       translateX:        '65.5vw',
       translateY:        '37.7vw',
-      translateZ:        '8vw',
+      translateZ:        '5vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
@@ -58,7 +40,7 @@ $( document ).on('turbolinks:load', function() {
     var emailUnsafe = {
       translateX:        '44.5vw',
       translateY:        '58.7vw',
-      translateZ:        '8vw',
+      translateZ:        '5vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '45deg',
@@ -66,7 +48,7 @@ $( document ).on('turbolinks:load', function() {
     var emailOutbox = {
       translateX:        '64vw',
       translateY:        '58vw',
-      translateZ:        '8vw',
+      translateZ:        '5vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
@@ -74,10 +56,11 @@ $( document ).on('turbolinks:load', function() {
     var emailPhone = {
       translateX:        '64.5vw',
       translateY:        '84.6vw',
-      translateZ:        '8vw',
+      translateZ:        '0vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
+      scale:             0.5,
     };
     var moveUp = {
       translateZ:        '8vw',
@@ -94,431 +77,360 @@ $( document ).on('turbolinks:load', function() {
 
     var aniScene1 = [
       {
-        e: envelope,
+        e: $('.scene-1 .envelope .red'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-1 .envelope .blue'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-1 .envelope'),
         p: emailLaptop,
         o: {
           duration:      0,
-          delay:         0,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+        },
+      }, {
+        e: $('.scene-1 .laptop .top'),
         p: {
           rotateX:       '0deg',
         },
         o: {
-          delay:         0,
           sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+        },
+      }, {
+        e: $('.scene-1 .laptop .top'),
         p: {
           rotateX:       '90deg',
         },
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1blue,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1 .blue'),
         p: showIt,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: emailInbox,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1blue,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1 .blue'),
         p: hideIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1red,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1 .red'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope1,
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: moveUp,
         o: {
           delay:         600,
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: emailSafe,
         o: {
           easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: emailOutbox,
         o: {
           easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope1,
+      }, {
+        e: $('.scene-1 .envelope-1'),
         p: moveUp,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1,
-        p: emailPhone,
-      },
-      {
-        e: envelope1,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
         },
+      }, {
+        e: $('.scene-1 .envelope-1'),
+        p: emailPhone,
       },
     ];
 
     var aniScene2 = [
       {
-        e: envelope,
+        e: $('.scene-2 .envelope .red'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-2 .envelope .blue'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-2 .envelope'),
         p: emailLaptop,
         o: {
           duration:      0,
-          delay:         0,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+        },
+      }, {
+        e: $('.scene-2 .laptop .top'),
         p: {
           rotateX:       '0deg',
         },
         o: {
-          delay:         0,
           sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+        },
+      }, {
+        e: $('.scene-2 .laptop .top'),
         p: {
           rotateX:       '90deg',
         },
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: phoneWindow,
+        },
+      }, {
+        e: $('.scene-2 .phone-window'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopWindow,
+        },
+      }, {
+        e: $('.scene-2 .laptop-window'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope2blue,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2 .blue'),
         p: showIt,
         o: {
           delay:         2000,
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: emailInbox,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: moveDown,
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: moveUp,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: emailSafe,
         o: {
           easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: emailOutbox,
         o: {
           easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: moveDown,
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: moveUp,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: emailPhone,
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-2 .envelope-2'),
         p: {
           translateZ:    '0vw',
           scale:         0.5,
         },
-      },
-      {
-        e: envelope1blue,
+      }, {
+        e: $('.scene-2 .envelope-1 .blue'),
         p: hideIt,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: line5,
+        },
+      }, {
+        e: $('.scene-2 .line-5'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: line6,
+        },
+      }, {
+        e: $('.scene-2 .line-6'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1blue,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1 .blue'),
         p: showIt,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: emailInbox,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope1,
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: moveUp,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1blue,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1 .blue'),
         p: hideIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1red,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1 .red'),
         p: showIt,
         o: {
           sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: emailUnsafe,
         o: {
           easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: emailOutbox,
         o: {
           easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope1,
+        },
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope1,
+      }, {
+        e: $('.scene-2 .envelope-1'),
         p: moveUp,
         o: {
           delay:         600,
-        }
-      },
-      {
-        e: envelope1,
-        p: emailPhone,
-      },
-      {
-        e: envelope1,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
         },
+      }, {
+        e: $('.scene-2 .envelope-1'),
+        p: emailPhone,
       },
     ];
 
     // Scene 3
     var aniScene3 = [
       {
-        e: envelope,
+        e: $('.scene-3 .envelope .blue'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-3 .envelope'),
         p: emailLaptop,
         o: {
           duration:      0,
-          delay:         0,
           sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+        },
+      }, {
+        e: $('.scene-3 .laptop .top'),
         p: {
           rotateX:       '0deg',
         },
-        o: {
-          delay:         0,
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopTop,
+      }, {
+        e: $('.scene-3 .laptop .top'),
         p: {
           rotateX:       '90deg',
         },
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: phoneWindow,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: laptopWindow,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line5,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: line6,
-        p: hideIt,
-        o: {
-          sequenceQueue: false,
-        }
-      },
-      {
-        e: envelope2blue,
+      }, {
+        e: $('.scene-3 .envelope-1 .blue'),
         p: showIt,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: emailInbox,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: moveUp,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: emailSafe,
-        o: {
-          easing:        'ease-in',
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: emailOutbox,
-        o: {
-          easing:        'ease-out',
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: moveDown,
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: moveUp,
-        o: {
-          delay:         600,
-        }
-      },
-      {
-        e: envelope2,
+      }, {
+        e: $('.scene-3 .envelope-1'),
         p: emailPhone,
-      },
-      {
-        e: envelope2,
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
+      }, {
+        e: $('.scene-3 .envelope-2 .blue'),
+        p: showIt,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: emailInbox,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: moveDown,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: moveUp,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: emailSafe,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: emailOutbox,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: moveDown,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: moveUp,
+      }, {
+        e: $('.scene-3 .envelope-2'),
+        p: emailPhone,
       },
     ];
 

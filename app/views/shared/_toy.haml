@@ -7,7 +7,7 @@
           %b Explained
       .col-sm-3
         %p
-          %span.text-primary Click the buttons
+          %span.text-primary Click the tabs
           below to compare Paubox to Regular Email and Portals.
       .col-sm-3
         %p
@@ -39,7 +39,7 @@
                 .front><
                   = image_tag 'toy/laptop_front.svg'
                   .laptop-window>< !
-            - (1..6).each do |envelope|
+            - (1..2).each do |envelope|
               .envelope{class: "envelope-#{envelope}"}><
                 .blue= image_tag 'toy/envelope_blue.svg'
                 .red= image_tag 'toy/envelope_red.svg'
