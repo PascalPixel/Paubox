@@ -10,11 +10,14 @@ section#toy
   background: $gray-lighter
   padding-top: 1rem
   border: 0.125rem solid transparent
-  border-top-color: lighten($gray-light, 20%)
-  border-radius: 0 0 .5rem .5rem
+  border-radius: .5rem
   &.active
     border-color: lighten($gray-light, 20%)
-    border-top-color: transparent
+  @include media-breakpoint-up(md)
+    border-top-color: lighten($gray-light, 20%)
+    border-radius: 0 0 .5rem .5rem
+    &.active
+      border-top-color: transparent
 
 // Hide 3D animated version if not supported
 .fallback

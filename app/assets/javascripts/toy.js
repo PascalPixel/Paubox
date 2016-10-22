@@ -413,44 +413,70 @@ $( document ).on('turbolinks:load', function() {
       },
     ];
 
-    // Run toy
-    $.Velocity.RunSequence(aniScene3);
+    // Scene trackers
+    var sceneRunning1 =  false;
+    var sceneRunning2 =  false;
+    var sceneRunning3 =  false;
 
     // Scene Switchers
     $('.sceneStarter1').click(function() {
-      allStyles.removeAttr('style');
-
-      $('.sceneStarter2, .sceneStarter3').removeClass('active');
+      allStyles.removeAttr('style')
+      $('.sceneStarter3, .sceneStarter2').removeClass('active');
       $(this).addClass('active');
-
-      $('.scene-2, .scene-3').hide();
+      $('.scene-3, .scene-2').hide();
       $('.scene-1').show();
 
-      $.Velocity.RunSequence(aniScene1);
+      if (sceneRunning1 == false) {
+        sceneRunning1 = true;
+
+        $.Velocity.RunSequence(aniScene1);
+
+        // Set a timeout based on the amount of elements in the animation (default 400) before re-enabling the button
+        setTimeout(function () {
+          sceneRunning1 = false;
+        }, aniScene1.length * 400);
+      };
     });
 
     $('.sceneStarter2').click(function() {
-      allStyles.removeAttr('style');
-
+      allStyles.removeAttr('style')
       $('.sceneStarter1, .sceneStarter3').removeClass('active');
       $(this).addClass('active');
-
       $('.scene-1, .scene-3').hide();
       $('.scene-2').show();
 
-      $.Velocity.RunSequence(aniScene2);
+      if (sceneRunning2 == false) {
+        sceneRunning2 = true;
+
+        $.Velocity.RunSequence(aniScene2);
+
+        // Set a timeout based on the amount of elements in the animation (default 400) before re-enabling the button
+        setTimeout(function () {
+          sceneRunning2 = false;
+        }, aniScene2.length * 400);
+      };
     });
 
     $('.sceneStarter3').click(function() {
       allStyles.removeAttr('style')
-
       $('.sceneStarter1, .sceneStarter2').removeClass('active');
       $(this).addClass('active');
-
       $('.scene-1, .scene-2').hide();
       $('.scene-3').show();
 
-      $.Velocity.RunSequence(aniScene3);
+      if (sceneRunning3 == false) {
+        sceneRunning3 = true;
+
+        $.Velocity.RunSequence(aniScene3);
+
+        // Set a timeout based on the amount of elements in the animation (default 400) before re-enabling the button
+        setTimeout(function () {
+          sceneRunning3 = false;
+        }, aniScene3.length * 400);
+      };
     });
+
+    // Autoplay
+    $('.sceneStarter3').click();
   };
 });
