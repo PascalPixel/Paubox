@@ -52,8 +52,8 @@
             .left-inbox-front= image_tag "toy/#{scene}/inbox_left_front.svg", class: 'img-fluid'
             .right-inbox-front= image_tag "toy/#{scene}/inbox_right_front.svg", class: 'img-fluid'
             .popups
-              - (1..7).each do |popup|
-                .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
+              - (1..8).each do |popup|
+                .popup{class: "popup-#{popup} #{'right' if (6..8).include? popup}"}
                   .dot
                     %i.mdi.mdi-help
                   .content= t(".scene#{scene}.popup#{popup}")

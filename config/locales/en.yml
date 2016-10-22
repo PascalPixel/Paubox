@@ -470,27 +470,30 @@ en:
         popup2: Connection to the server may be insecure and messages can be intercepted.
         popup3: Server is insecure, if it is hacked into, information can be stolen.
         popup4: Email sent to the receiving server can be intercepted.
-        popup5: Receiving server can be insecure.
-        popup6: Connection from recipient server to device can be insecure and email will be delivered in clear text.
-        popup7: If device has no password it is insecure.
+        popup5: ""
+        popup6: Receiving server can be insecure.
+        popup7: Connection from recipient server to device can be insecure and email will be delivered in clear text.
+        popup8: If device has no password it is insecure.
       scene2:
         body: Traditional solutions use a portal that sends notifications instead of email, forcing users to create extra passwords and logins to view messages.
         popup1: User needs to log in to a special server or download a plugin.
         popup2: Connection is secure.
         popup3: Server is secure, but hard to get to.
-        popup4: Actual email is never sent, just a notification.
-        popup5: Only a notification is received.
-        popup6: Connection is secure.
-        popup7: User must click on a link, create a user and password to login to see your message.
+        popup4: Logins are cumbersome, leading to regular, unsecure emails still being sent.
+        popup5: Actual email is never sent, just a notification.
+        popup6: Only a notification is received.
+        popup7: Connection is secure.
+        popup8: User must click on a link, create a user and password to login to see your message.
       scene3:
         body: Paubox secures regular email and makes it HIPAA compliant, removing extra steps without sacrificing security.
         popup1: User sends email using regular apps.
         popup2: Connection to the server is secure.
         popup3: Server is secure.
         popup4: Email is protected in transit.
-        popup5: If receiving server is unable to handle secure email, a notification is sent to view on secure web app.
-        popup6: If receiving server can accept encryption, then email is securely delivered to the device.
-        popup7: User reads secure email like normal email.
+        popup5: ""
+        popup6: If receiving server is unable to handle secure email, a notification is sent to view on secure web app.
+        popup7: If receiving server can accept encryption, then email is securely delivered to the device.
+        popup8: User reads secure email like normal email.
     solutions_list:
       title: Our Solutions
       encrypted_email:

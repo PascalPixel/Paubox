@@ -150,17 +150,22 @@ section#toy
       left: 54.5vw
       top: 5vw
     &.popup-5
+      left: 54.5vw
+      top: 23vw
+    &.popup-6
       left: 68vw
       top: 16vw
-    &.popup-6
+    &.popup-7
       left: 81vw
       top: 19vw
-    &.popup-7
+    &.popup-8
       left: 92vw
       top: 25.5vw
 
   // Change color of popups based on scene
   .scene-1 .popup
+    &.popup-5
+      display: none
     .dot
       color: $brand-danger
       border-color: $brand-danger
@@ -183,6 +188,8 @@ section#toy
         background: $brand-primary
         color: white
   .scene-3 .popup
+    &.popup-5
+      display: none
     .dot
       color: $brand-success
       border-color: $brand-success
@@ -242,6 +249,12 @@ section#toy
       opacity: 0
   .scene-2 .line
     border-color: $brand-primary
+    &.line-2,
+    &.line-3
+      border-color: $brand-danger
+    &.line-5,
+    &.line-6
+      opacity: 1
   .scene-3 .line
     border-color: $brand-success
 

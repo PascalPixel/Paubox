@@ -101,23 +101,49 @@ $( document ).on('turbolinks:load', function() {
           rotateX:       '90deg',
         },
       }, {
-        e: $('.scene-1 .envelope-1 .blue'),
-        p: showIt,
-      }, {
-        e: $('.scene-1 .envelope-1'),
-        p: emailInbox,
-      }, {
-        e: $('.scene-1 .envelope-1 .blue'),
-        p: hideIt,
+        e: $('.scene-1 .laptop-screen'),
+        p: {
+          height:        '9.75vw',
+          top:           '1.25vw',
+        },
         o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-1 .phone-screen'),
+        p: {
+          width:        '7.4vw',
+          left:           '0vw',
+        },
+        o: {
+          duration:      200,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-1 .laptop-screen'),
+        p: {
+          width:         '15.1vw',
+          left:          '1.25vw',
+        },
+        o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-1 .phone-screen'),
+        p: {
+          height:         '4vw',
+          top:          '0vw',
+        },
+        o: {
+          duration:      200,
           sequenceQueue: false,
         },
       }, {
         e: $('.scene-1 .envelope-1 .red'),
         p: showIt,
-        o: {
-          sequenceQueue: false,
-        },
+      }, {
+        e: $('.scene-1 .envelope-1'),
+        p: emailInbox,
       }, {
         e: $('.scene-1 .envelope-1'),
         p: moveDown,
@@ -175,6 +201,44 @@ $( document ).on('turbolinks:load', function() {
           rotateX:       '90deg',
         },
       }, {
+        e: $('.scene-2 .laptop-screen'),
+        p: {
+          height:        '9.75vw',
+          top:           '1.25vw',
+        },
+        o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-2 .phone-screen'),
+        p: {
+          width:        '7.4vw',
+          left:           '0vw',
+        },
+        o: {
+          duration:      200,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-2 .laptop-screen'),
+        p: {
+          width:         '15.1vw',
+          left:          '1.25vw',
+        },
+        o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-2 .phone-screen'),
+        p: {
+          height:         '4vw',
+          top:          '0vw',
+        },
+        o: {
+          duration:      200,
+          sequenceQueue: false,
+        },
+      }, {
         e: $('.scene-2 .envelope-2 .blue'),
         p: showIt,
       }, {
@@ -188,7 +252,7 @@ $( document ).on('turbolinks:load', function() {
         p: moveUp,
       }, {
         e: $('.scene-2 .envelope-2'),
-        p: emailSafe,
+        p: emailUnsafe,
       }, {
         e: $('.scene-2 .envelope-2'),
         p: emailOutbox,
@@ -206,18 +270,6 @@ $( document ).on('turbolinks:load', function() {
         p: {
           translateZ:    '0vw',
           scale:         0.5,
-        },
-      }, {
-        e: $('.scene-2 .line-5'),
-        p: showIt,
-        o: {
-          sequenceQueue: false,
-        },
-      }, {
-        e: $('.scene-2 .line-6'),
-        p: showIt,
-        o: {
-          sequenceQueue: false,
         },
       }, {
         e: $('.scene-2 .envelope-1 .blue'),
@@ -245,13 +297,15 @@ $( document ).on('turbolinks:load', function() {
         },
       }, {
         e: $('.scene-2 .envelope-1'),
-        p: emailUnsafe,
+        p: emailSafe,
       }, {
         e: $('.scene-2 .envelope-1'),
         p: emailOutbox,
       }, {
         e: $('.scene-2 .envelope-1'),
-        p: moveDown,
+        p: {
+          translateZ:    '0.1vw',
+        },
       }, {
         e: $('.scene-2 .envelope-1'),
         p: moveUp,
