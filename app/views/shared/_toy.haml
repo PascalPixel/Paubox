@@ -19,46 +19,40 @@
         .fallback
           = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
 
-        .animated
-          .background
-            .phone= image_tag 'toy/phone.svg', class: 'img-fluid'
-            .base= image_tag 'toy/laptop_base.svg', class: 'img-fluid'
-            - if scene == 1
-              .left-inbox-back= image_tag 'toy/inbox_left_red_back.svg', class: 'img-fluid'
-              .right-inbox-back= image_tag 'toy/inbox_right_red_back.svg', class: 'img-fluid'
-            - else
-              .left-inbox-back= image_tag 'toy/inbox_left_blue_back.svg', class: 'img-fluid'
-              .right-inbox-back= image_tag 'toy/inbox_right_blue_back.svg', class: 'img-fluid'
+        .animated><
+          .background><
+            .phone= image_tag "toy/#{scene}/phone.svg", class: 'img-fluid'
+            .base= image_tag "toy/#{scene}/laptop_base.svg", class: 'img-fluid'
+            .left-inbox-back= image_tag "toy/#{scene}/inbox_left_back.svg", class: 'img-fluid'
+            .right-inbox-back= image_tag "toy/#{scene}/inbox_right_back.svg", class: 'img-fluid'
 
-          .middleground
+          .middleground><
             - (1..6).each do |line|
               .line{class: "line-#{line}"}
             .laptop><
               .top><
-                .back><= image_tag 'toy/laptop_back.svg'
+                .back><
+                  = image_tag "toy/#{scene}/laptop_back.svg", class: 'img-fluid'
                 .front><
-                  = image_tag 'toy/laptop_front.svg', class: 'img-fluid'
-                  .laptop-screen
-                    .laptop-window
-                      Password
-                      ******
+                  = image_tag "toy/#{scene}/laptop_front.svg", class: 'img-fluid'
+                  .laptop-screen><
+                    .laptop-window><
+                      %span Password
+                      %span ******
             - (1..2).each do |envelope|
               .envelope{class: "envelope-#{envelope}"}><
-                .blue= image_tag 'toy/envelope_blue.svg', class: 'img-fluid'
-                .red= image_tag 'toy/envelope_red.svg', class: 'img-fluid'
+                .red= image_tag 'toy/1/envelope.svg', class: 'img-fluid'
+                .blue= image_tag 'toy/2/envelope.svg', class: 'img-fluid'
+                .green= image_tag 'toy/3/envelope.svg', class: 'img-fluid'
             .phone-window>< !
 
-          .foreground
-            - if scene == 1
-              .left-inbox-front= image_tag 'toy/inbox_left_red_front.svg', class: 'img-fluid'
-              .right-inbox-front= image_tag 'toy/inbox_right_red_front.svg', class: 'img-fluid'
-            - else
-              .left-inbox-front= image_tag 'toy/inbox_left_blue_front.svg', class: 'img-fluid'
-              .right-inbox-front= image_tag 'toy/inbox_right_blue_front.svg', class: 'img-fluid'
-            .popups
+          .foreground><
+            .left-inbox-front= image_tag "toy/#{scene}/inbox_left_front.svg", class: 'img-fluid'
+            .right-inbox-front= image_tag "toy/#{scene}/inbox_right_front.svg", class: 'img-fluid'
+            .popups><
               - (1..7).each do |popup|
-                .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}
-                  .dot
+                .popup{class: "popup-#{popup} #{'right' if (5..7).include? popup}"}><
+                  .dot><
                     %i.mdi.mdi-help
                   .content= t(".scene#{scene}.popup#{popup}")
 
@@ -71,12 +65,12 @@
           Regular Email
         %p= t(".scene1.body")
       .col-md-4.scene-tab.sceneStarter2
-        %h4.text-info
+        %h4.text-primary
           %i.mdi.mdi-dns
           Portals
         %p= t(".scene2.body")
       .col-md-4.scene-tab.sceneStarter3.active
-        %h4.text-primary
+        %h4.text-success
           %i.mdi.mdi-email-secure
           Encrypted Email
         %p= t(".scene3.body")

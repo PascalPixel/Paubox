@@ -72,7 +72,7 @@ section#toy
     width: 10.5vw
   .left-inbox-front,
   .right-inbox-front
-    top: 12.7vw
+    top: 13vw
   .left-inbox-front,
   .left-inbox-back
     left: 34.4vw
@@ -206,9 +206,9 @@ section#toy
       height: $line-length
       opacity: 0
   .scene-2 .line
-    border-color: $brand-info
-  .scene-3 .line
     border-color: $brand-primary
+  .scene-3 .line
+    border-color: $brand-success
 
   // Envelopes
   .envelope
@@ -256,9 +256,9 @@ section#toy
     opacity: 0
     width: 8vw
     height: 6vw
-    border: 0.5vw solid $brand-danger
+    border: 0.5vw solid $brand-primary
     border-radius: 0.5vw
-    color: $brand-danger
+    color: $brand-primary
     text-align: center
     position: absolute
     top: 3vw
@@ -276,9 +276,9 @@ section#toy
     opacity: 0
     width: 3vw
     height: 5.7vw
-    border: 0.5vw solid $brand-danger
+    border: 0.5vw solid $brand-primary
     border-radius: 0.5vw
-    color: $brand-danger
+    color: $brand-primary
     text-align: center
     position: absolute
     font-size: 4vw
@@ -299,7 +299,7 @@ section#toy
       .dot
         background: $brand-danger
         color: white
-  .scene-3 .popup
+  .scene-2 .popup
     .dot
       color: $brand-primary
       border-color: $brand-primary
@@ -309,4 +309,15 @@ section#toy
     &.active
       .dot
         background: $brand-primary
+        color: white
+  .scene-3 .popup
+    .dot
+      color: $brand-success
+      border-color: $brand-success
+    .content
+      color: $brand-success
+    &:hover,
+    &.active
+      .dot
+        background: $brand-success
         color: white
