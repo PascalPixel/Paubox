@@ -13,17 +13,17 @@ $( document ).on('turbolinks:load', function() {
 
     // Variables for the location of email travelling back and forth
     var emailLaptop = {
-      translateX:        '9.4vw',
-      translateY:        '30vw',
-      translateZ:        '8vw',
+      translateX:        '10vw',
+      translateY:        '32.3vw',
+      translateZ:        '10vw',
       rotateX:           '-90deg',
       rotateY:           '0deg',
       rotateZ:           '0deg',
       scale:             1,
     };
     var emailInbox = {
-      translateX:        '41.3vw',
-      translateY:        '36.7vw',
+      translateX:        '44.2vw',
+      translateY:        '39.5vw',
       translateZ:        '5vw',
       rotateX:           '0deg',
       rotateY:           '0deg',
@@ -286,6 +286,44 @@ $( document ).on('turbolinks:load', function() {
         e: $('.scene-3 .laptop .top'),
         p: {
           rotateX:       '90deg',
+        },
+      }, {
+        e: $('.scene-3 .laptop-screen'),
+        p: {
+          height:        '9.75vw',
+          top:           '1.25vw',
+        },
+        o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-3 .phone-screen'),
+        p: {
+          width:        '7.4vw',
+          left:           '0vw',
+        },
+        o: {
+          duration:      200,
+          sequenceQueue: false,
+        },
+      }, {
+        e: $('.scene-3 .laptop-screen'),
+        p: {
+          width:         '15.1vw',
+          left:          '1.25vw',
+        },
+        o: {
+          duration:      200,
+        },
+      }, {
+        e: $('.scene-3 .phone-screen'),
+        p: {
+          height:         '4vw',
+          top:          '0vw',
+        },
+        o: {
+          duration:      200,
+          sequenceQueue: false,
         },
       }, {
         e: $('.scene-3 .envelope-1 .green'),

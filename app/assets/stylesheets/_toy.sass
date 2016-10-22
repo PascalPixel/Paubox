@@ -159,6 +159,41 @@ section#toy
       left: 92vw
       top: 25.5vw
 
+  // Change color of popups based on scene
+  .scene-1 .popup
+    .dot
+      color: $brand-danger
+      border-color: $brand-danger
+    .content
+      color: $brand-danger
+    &:hover,
+    &.active
+      .dot
+        background: $brand-danger
+        color: white
+  .scene-2 .popup
+    .dot
+      color: $brand-primary
+      border-color: $brand-primary
+    .content
+      color: $brand-primary
+    &:hover,
+    &.active
+      .dot
+        background: $brand-primary
+        color: white
+  .scene-3 .popup
+    .dot
+      color: $brand-success
+      border-color: $brand-success
+    .content
+      color: $brand-success
+    &:hover,
+    &.active
+      .dot
+        background: $brand-success
+        color: white
+
   // 3D middle ground area where animation takes place
   .middleground
     transform-style: preserve-3d
@@ -216,7 +251,8 @@ section#toy
     position: absolute
     width: 9vw
     .blue,
-    .red
+    .red,
+    .green
       width: 100%
       position: absolute
       opacity: 0
@@ -244,12 +280,12 @@ section#toy
   .front
     transform: rotateX(180deg)
   .laptop-screen
-    width: 8vw
-    height: 6vw
-    border-radius: 0.5vw
+    width: 0.5vw
+    height: 0.5vw
+    border-radius: 0.2vw
     position: absolute
-    top: 3vw
-    left: 4.825vw
+    top: 6vw
+    left: 8.5vw
     background-color: white
   .laptop-window
     font-family: $font-family-monospace
@@ -272,7 +308,21 @@ section#toy
     width: 10.4vw
     top: 21.35vw
     left: 83.7vw
+  .phone-wrap
+    transform: translate3d(65.3vw, 84vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+    height: 4vw
+    width: 7.4vw
+    position: absolute
+  .phone-screen
+    width: 0.5vw
+    height: 0.5vw
+    border-radius: 0.1vw
+    position: absolute
+    top: 1.7vw
+    left: 3vw
+    background-color: white
   .phone-window
+    font-family: $font-family-monospace
     opacity: 0
     width: 3vw
     height: 5.7vw
@@ -281,43 +331,7 @@ section#toy
     color: $brand-primary
     text-align: center
     position: absolute
-    font-size: 4vw
     top: 0vw
     left: 2.8vw
     font-weight: bold
-    transform: translate3d(64.5vw, 83vw, 0vw) rotateX(0deg) rotateY(0deg) rotateZ(90deg)
-
-  // Change color of popups based on scene
-  .scene-1 .popup
-    .dot
-      color: $brand-danger
-      border-color: $brand-danger
-    .content
-      color: $brand-danger
-    &:hover,
-    &.active
-      .dot
-        background: $brand-danger
-        color: white
-  .scene-2 .popup
-    .dot
-      color: $brand-primary
-      border-color: $brand-primary
-    .content
-      color: $brand-primary
-    &:hover,
-    &.active
-      .dot
-        background: $brand-primary
-        color: white
-  .scene-3 .popup
-    .dot
-      color: $brand-success
-      border-color: $brand-success
-    .content
-      color: $brand-success
-    &:hover,
-    &.active
-      .dot
-        background: $brand-success
-        color: white
+    font-size: 4vw
