@@ -28,28 +28,31 @@
             .base= image_tag "toy/#{scene}/laptop_base.svg", class: 'img-fluid'
             .left-inbox-back= image_tag "toy/#{scene}/inbox_left_back.svg", class: 'img-fluid'
             .right-inbox-back= image_tag "toy/#{scene}/inbox_right_back.svg", class: 'img-fluid'
+            - if scene == 2
+              .server= image_tag "toy/#{scene}/server.svg", class: 'img-fluid'
 
-          .middleground
-            - (1..6).each do |line|
-              .line{class: "line-#{line}"}
-            .laptop
-              .top
-                .back
-                  = image_tag "toy/#{scene}/laptop_back.svg", class: 'img-fluid'
-                .front
-                  = image_tag "toy/#{scene}/laptop_front.svg", class: 'img-fluid'
-                  .laptop-screen
-                    .laptop-window
-                      %span Password
-                      %span ******
-            .phone-wrap
-              .phone-screen
-                .phone-window !
-            - (1..2).each do |envelope|
-              .envelope{class: "envelope-#{envelope}"}
-                .red= image_tag 'toy/1/envelope.svg', class: 'img-fluid'
-                .blue= image_tag 'toy/2/envelope.svg', class: 'img-fluid'
-                .green= image_tag 'toy/3/envelope.svg', class: 'img-fluid'
+          .middle-wrap
+            .middleground
+              - (1..6).each do |line|
+                .line{class: "line-#{line}"}
+              .laptop
+                .top
+                  .back
+                    = image_tag "toy/#{scene}/laptop_back.svg", class: 'img-fluid'
+                  .front
+                    = image_tag "toy/#{scene}/laptop_front.svg", class: 'img-fluid'
+                    .laptop-screen
+                      .laptop-window
+                        %span Password
+                        %span ******
+              .phone-wrap
+                .phone-screen
+                  .phone-window !
+              - (1..2).each do |envelope|
+                .envelope{class: "envelope-#{envelope}"}
+                  .red= image_tag 'toy/1/envelope.svg', class: 'img-fluid'
+                  .blue= image_tag 'toy/2/envelope.svg', class: 'img-fluid'
+                  .green= image_tag 'toy/3/envelope.svg', class: 'img-fluid'
 
           .foreground
             .left-inbox-front= image_tag "toy/#{scene}/inbox_left_front.svg", class: 'img-fluid'

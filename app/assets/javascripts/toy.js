@@ -239,6 +239,15 @@ $( document ).on('turbolinks:load', function() {
           sequenceQueue: false,
         },
       }, {
+        e: $('.scene-2 .phone-window'),
+        p: showIt,
+      }, {
+        e: $('.scene-2 .laptop-window'),
+        p: showIt,
+        o: {
+          sequenceQueue: false,
+        },
+      }, {
         e: $('.scene-2 .envelope-2 .blue'),
         p: showIt,
       }, {
