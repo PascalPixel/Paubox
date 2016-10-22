@@ -17,7 +17,10 @@
     - (1..3).each do |scene|
       .scene{class: "scene-#{scene}"}
         .fallback
-          = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
+          .container-fluid
+            %br
+            %br
+            = image_tag 'toy/encrypted_email.svg', class: 'img-fluid'
 
         .animated
           .background

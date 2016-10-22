@@ -15,9 +15,9 @@
             <g>
                 <g id="Combined-Shape">
                     <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-                    <use stroke="#8FB900" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+                    <use stroke="#12BDB8" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
                 </g>
-                <circle id="Oval" fill="#8FB900" cx="259.5" cy="180.5" r="27.5"></circle>
+                <circle id="Oval" fill="#12BDB8" cx="259.5" cy="180.5" r="27.5"></circle>
             </g>
         </g>
     </g>

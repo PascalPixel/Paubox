@@ -6,7 +6,7 @@
     <defs>
         <linearGradient x1="-82.5357445%" y1="93.4365571%" x2="69.9793919%" y2="93.4365571%" id="linearGradient-1">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#CCDF8D" offset="100%"></stop>
+            <stop stop-color="#93DCDA" offset="100%"></stop>
         </linearGradient>
         <rect id="path-2" x="0" y="0" width="518" height="359" rx="23"></rect>
         <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-5" y="-5" width="528" height="369">
@@ -24,11 +24,11 @@
             <g>
                 <g id="Combined-Shape">
                     <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
-                    <use stroke="#8FB900" mask="url(#mask-3)" stroke-width="10" xlink:href="#path-2"></use>
+                    <use stroke="#12BDB8" mask="url(#mask-3)" stroke-width="10" xlink:href="#path-2"></use>
                 </g>
                 <g id="Combined-Shape-Copy-41">
-                    <use fill="#8FB900" fill-rule="evenodd" xlink:href="#path-4"></use>
-                    <use stroke="#8FB900" mask="url(#mask-5)" stroke-width="10" xlink:href="#path-4"></use>
+                    <use fill="#12BDB8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use stroke="#12BDB8" mask="url(#mask-5)" stroke-width="10" xlink:href="#path-4"></use>
                 </g>
             </g>
         </g>

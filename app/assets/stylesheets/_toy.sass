@@ -11,7 +11,7 @@ section#toy
   padding-top: 1rem
   border: 0.125rem solid transparent
   border-top-color: lighten($gray-light, 20%)
-  border-radius: 0 0 $border-radius $border-radius
+  border-radius: 0 0 .5rem .5rem
   &.active
     border-color: lighten($gray-light, 20%)
     border-top-color: transparent
@@ -164,8 +164,6 @@ section#toy
 
   // Change color of popups based on scene
   .scene-1 .popup
-    &.popup-5
-      display: none
     .dot
       color: $brand-danger
       border-color: $brand-danger
@@ -176,6 +174,8 @@ section#toy
       .dot
         background: $brand-danger
         color: white
+    &.popup-5
+      display: none
   .scene-2 .popup
     .dot
       color: $brand-primary
@@ -187,9 +187,18 @@ section#toy
       .dot
         background: $brand-primary
         color: white
+    &.popup-4
+      .dot
+        color: $brand-danger
+        border-color: $brand-danger
+      .content
+        color: $brand-danger
+      &:hover,
+      &.active
+        .dot
+          background: $brand-danger
+          color: white
   .scene-3 .popup
-    &.popup-5
-      display: none
     .dot
       color: $brand-success
       border-color: $brand-success
@@ -200,6 +209,8 @@ section#toy
       .dot
         background: $brand-success
         color: white
+    &.popup-5
+      display: none
 
   // 3D middle ground area where animation takes place
   .middleground

@@ -6,7 +6,7 @@
     <defs>
         <linearGradient x1="33.1764249%" y1="93.4365571%" x2="44.4736702%" y2="93.4365571%" id="linearGradient-1">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#83DAD8" offset="100%"></stop>
+            <stop stop-color="#CCDF8D" offset="100%"></stop>
         </linearGradient>
         <path d="M0.306591539,105.785871 C-0.161319367,108.751751 1.82973568,111.72094 5.83691208,113.982873 L170.237688,206.782241 C178.206883,211.280616 191.130073,211.276011 199.105886,206.7739 L295.316914,152.465625 C299.323335,150.204119 301.318913,147.239346 301.304335,144.278361 C301.289879,141.34216 301.31364,107.247174 301.304383,104.29009 C301.295178,101.34997 299.304058,98.4126647 295.331691,96.1703817 L130.930915,3.37101291 C122.961721,-1.12736135 110.03853,-1.12275632 102.062717,3.37935409 L5.85168909,57.6876298 C1.81835363,59.9643282 -0.177031735,62.9537747 0.306591539,65.9345678 C-0.0942070791,68.8507961 -0.110109955,102.854555 0.306591539,105.785871 Z" id="path-2"></path>
         <pattern id="pattern-3" width="258" height="258" x="-258" y="-258" patternUnits="userSpaceOnUse">
@@ -19,7 +19,7 @@
         </mask>
         <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-6">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
-            <stop stop-color="#93E5E2" offset="100%"></stop>
+            <stop stop-color="#CCDF8D" offset="100%"></stop>
         </linearGradient>
         <path d="M5.97272333,119.982873 L170.373499,212.782241 C178.342694,217.280616 191.265884,217.276011 199.241698,212.7739 L295.452726,158.465625 C299.459146,156.204119 301.454725,153.239346 301.440147,150.278361 C301.430989,147.34997 299.439869,144.412665 295.467503,142.170382 L131.066727,49.3710129 C123.097532,44.8726386 110.174342,44.8772437 102.198528,49.3793541 L5.98750034,103.68763 C1.95416489,105.964328 -0.0412204817,108.953775 0.000645258507,111.934568 C-0.0255081143,114.751751 1.96554693,117.72094 5.97272333,119.982873 Z" id="path-7"></path>
         <pattern id="pattern-8" width="258" height="258" x="-258" y="-212" patternUnits="userSpaceOnUse">
@@ -37,12 +37,12 @@
                     <g id="Combined-Shape-Copy-6" transform="translate(150.653296, 105.076627) scale(-1, 1) rotate(-360.000000) translate(-150.653296, -105.076627) ">
                         <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                         <use fill-opacity="0.5" fill="url(#pattern-3)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-2"></use>
-                        <use stroke="#12BDB8" mask="url(#mask-5)" stroke-width="10" xlink:href="#path-2"></use>
+                        <use stroke="#8FB900" mask="url(#mask-5)" stroke-width="10" xlink:href="#path-2"></use>
                     </g>
                     <g id="Combined-Shape-Copy-5" transform="translate(150.720113, 131.076627) scale(-1, 1) rotate(-360.000000) translate(-150.720113, -131.076627) ">
                         <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
                         <use fill-opacity="0.5" fill="url(#pattern-8)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-7"></use>
-                        <use stroke="#12BDB8" mask="url(#mask-10)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-7"></use>
+                        <use stroke="#8FB900" mask="url(#mask-10)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" xlink:href="#path-7"></use>
                     </g>
                 </g>
             </g>

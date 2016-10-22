@@ -303,15 +303,19 @@ $( document ).on('turbolinks:load', function() {
         p: emailOutbox,
       }, {
         e: $('.scene-2 .envelope-1'),
-        p: {
-          translateZ:    '0.1vw',
-        },
+        p: moveDown,
       }, {
         e: $('.scene-2 .envelope-1'),
         p: moveUp,
       }, {
         e: $('.scene-2 .envelope-1'),
         p: emailPhone,
+      }, {
+        e: $('.scene-2 .envelope-1'),
+        p: {
+          translateZ:    '0.1vw',
+          scale:         0.5,
+        },
       },
     ];
 
@@ -419,8 +423,8 @@ $( document ).on('turbolinks:load', function() {
       $('.sceneStarter2, .sceneStarter3').removeClass('active');
       $(this).addClass('active');
 
-      $('.scene-2, .scene-3').fadeOut();
-      $('.scene-1').fadeIn();
+      $('.scene-2, .scene-3').hide();
+      $('.scene-1').show();
 
       $.Velocity.RunSequence(aniScene1);
     });
@@ -431,8 +435,8 @@ $( document ).on('turbolinks:load', function() {
       $('.sceneStarter1, .sceneStarter3').removeClass('active');
       $(this).addClass('active');
 
-      $('.scene-1, .scene-3').fadeOut();
-      $('.scene-2').fadeIn();
+      $('.scene-1, .scene-3').hide();
+      $('.scene-2').show();
 
       $.Velocity.RunSequence(aniScene2);
     });
@@ -443,8 +447,8 @@ $( document ).on('turbolinks:load', function() {
       $('.sceneStarter1, .sceneStarter2').removeClass('active');
       $(this).addClass('active');
 
-      $('.scene-1, .scene-2').fadeOut();
-      $('.scene-3').fadeIn();
+      $('.scene-1, .scene-2').hide();
+      $('.scene-3').show();
 
       $.Velocity.RunSequence(aniScene3);
     });
