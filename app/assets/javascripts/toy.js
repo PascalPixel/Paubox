@@ -189,6 +189,13 @@ $( document ).on('turbolinks:load', function() {
           sequenceQueue: false,
         },
       }, {
+        e: $('.scene-2 .envelope .post_it'),
+        p: hideIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
         e: $('.scene-2 .envelope'),
         p: emailLaptop,
         o: {
@@ -263,6 +270,19 @@ $( document ).on('turbolinks:load', function() {
         e: $('.scene-2 .envelope-2'),
         p: emailUnsafe,
       }, {
+        e: $('.scene-2 .envelope-2 .blue'),
+        p: hideIt,
+        o: {
+          duration:      0,
+        },
+      }, {
+        e: $('.scene-2 .envelope-2 .post_it'),
+        p: showIt,
+        o: {
+          duration:      0,
+          sequenceQueue: false,
+        },
+      }, {
         e: $('.scene-2 .envelope-2'),
         p: emailOutbox,
       }, {
@@ -274,13 +294,9 @@ $( document ).on('turbolinks:load', function() {
       }, {
         e: $('.scene-2 .envelope-2'),
         p: emailPhone,
-      }, {
-        e: $('.scene-2 .envelope-2'),
-        p: {
-          translateZ:    '0vw',
-          scale:         0.5,
-        },
-      }, {
+      },
+      // Second email is sent through unsafe
+      {
         e: $('.scene-2 .envelope-1 .blue'),
         p: showIt,
       }, {
@@ -319,12 +335,6 @@ $( document ).on('turbolinks:load', function() {
       }, {
         e: $('.scene-2 .envelope-1'),
         p: emailPhone,
-      }, {
-        e: $('.scene-2 .envelope-1'),
-        p: {
-          translateZ:    '0.1vw',
-          scale:         0.5,
-        },
       },
     ];
 

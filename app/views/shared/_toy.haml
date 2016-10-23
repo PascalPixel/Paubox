@@ -28,8 +28,6 @@
             .base= image_tag "toy/#{scene}/laptop_base.svg", class: 'img-fluid'
             .left-inbox-back= image_tag "toy/#{scene}/inbox_left_back.svg", class: 'img-fluid'
             .right-inbox-back= image_tag "toy/#{scene}/inbox_right_back.svg", class: 'img-fluid'
-            - if scene == 2
-              .server= image_tag "toy/#{scene}/server.svg", class: 'img-fluid'
 
           .middle-wrap
             .middleground
@@ -47,16 +45,21 @@
                         %span ******
               .phone-wrap
                 .phone-screen
-                  .phone-window !
+                  .phone-window
+                    %span Password
+                    %span ******
               - (1..2).each do |envelope|
                 .envelope{class: "envelope-#{envelope}"}
                   .red= image_tag 'toy/1/envelope.svg', class: 'img-fluid'
                   .blue= image_tag 'toy/2/envelope.svg', class: 'img-fluid'
                   .green= image_tag 'toy/3/envelope.svg', class: 'img-fluid'
+                  .post_it= image_tag 'toy/2/post_it.svg', class: 'img-fluid'
 
           .foreground
             .left-inbox-front= image_tag "toy/#{scene}/inbox_left_front.svg", class: 'img-fluid'
             .right-inbox-front= image_tag "toy/#{scene}/inbox_right_front.svg", class: 'img-fluid'
+            - if scene == 2
+              .server= image_tag "toy/#{scene}/server.svg", class: 'img-fluid'
             .popups
               - (1..8).each do |popup|
                 .popup{class: "popup-#{popup} #{'right' if (6..8).include? popup}"}

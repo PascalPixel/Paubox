@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="412px" height="412px" viewBox="0 0 412 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
+    <title>server</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="56.9289598%" y1="-4.72293097%" x2="83.1331008%" y2="53.2073766%" id="linearGradient-1">
+        <linearGradient x1="69.0983073%" y1="-14.6482602%" x2="138.941406%" y2="41.4490238%" id="linearGradient-1">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#EFF3FD" offset="86.4886808%"></stop>
             <stop stop-color="#80A2ED" offset="100%"></stop>
@@ -18,7 +18,7 @@
             <rect x="-5" y="25.0000003" width="310" height="226.695958" fill="white"></rect>
             <use xlink:href="#path-2" fill="black"></use>
         </mask>
-        <linearGradient x1="63.8453242%" y1="2.77715091%" x2="85.2918027%" y2="56.0694037%" id="linearGradient-6">
+        <linearGradient x1="44.1581157%" y1="8.10191292%" x2="85.2918027%" y2="56.0694037%" id="linearGradient-6">
             <stop stop-color="#FFFFFF" offset="0%"></stop>
             <stop stop-color="#EFF3FD" offset="86.4886808%"></stop>
             <stop stop-color="#80A2ED" offset="100%"></stop>
@@ -136,9 +136,9 @@
     <g id="Illustration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Encrypted-Email-1" transform="translate(-2891.000000, -1009.000000)">
             <g id="blue" transform="translate(160.000000, 1014.000000)">
-                <g id="Group-2" transform="translate(2736.000000, 0.000000)">
-                    <g id="server" transform="translate(0.000000, 126.000000)">
-                        <g id="Group-Copy">
+                <g id="server" transform="translate(2736.000000, 0.000000)">
+                    <g transform="translate(0.000000, 126.000000)" id="Group-Copy">
+                        <g>
                             <g id="Combined-Shape">
                                 <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
                                 <use fill-opacity="0.5" fill="url(#pattern-3)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-2"></use>
@@ -179,8 +179,8 @@
                             <path d="M396.935031,130.219622 L396.935031,151.304658 C396.935031,152.761862 395.906978,153.349187 394.644559,152.619807 C393.379566,151.88894 392.354087,150.113211 392.354087,148.657953 L392.354087,127.572918 C392.354087,126.115714 393.38214,125.528389 394.644559,126.257769 C395.909552,126.988636 396.935031,128.764365 396.935031,130.219622 Z" id="Path-Copy-9" fill="#0247DC" transform="translate(394.644559, 139.438788) scale(-1, 1) translate(-394.644559, -139.438788) "></path>
                         </g>
                     </g>
-                    <g id="server" transform="translate(0.000000, 63.000000)">
-                        <g id="Group-Copy">
+                    <g transform="translate(0.000000, 63.000000)" id="Group-Copy">
+                        <g>
                             <g id="Combined-Shape">
                                 <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-21"></use>
                                 <use fill-opacity="0.5" fill="url(#pattern-22)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-21"></use>
@@ -221,8 +221,8 @@
                             <path d="M396.935031,130.219622 L396.935031,151.304658 C396.935031,152.761862 395.906978,153.349187 394.644559,152.619807 C393.379566,151.88894 392.354087,150.113211 392.354087,148.657953 L392.354087,127.572918 C392.354087,126.115714 393.38214,125.528389 394.644559,126.257769 C395.909552,126.988636 396.935031,128.764365 396.935031,130.219622 Z" id="Path-Copy-9" fill="#0247DC" transform="translate(394.644559, 139.438788) scale(-1, 1) translate(-394.644559, -139.438788) "></path>
                         </g>
                     </g>
-                    <g id="server">
-                        <g id="Group-Copy">
+                    <g id="Group-Copy">
+                        <g>
                             <g id="Combined-Shape">
                                 <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-37"></use>
                                 <use fill-opacity="0.5" fill="url(#pattern-38)" fill-rule="evenodd" style="mix-blend-mode: overlay;" xlink:href="#path-37"></use>
