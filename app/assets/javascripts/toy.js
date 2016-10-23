@@ -440,8 +440,8 @@ $( document ).on('turbolinks:load', function() {
     // Scene Switchers
     $('.sceneStarter1').click(function() {
       allStyles.removeAttr('style')
-      $('.sceneStarter3, .sceneStarter2').removeClass('active');
-      $(this).addClass('active');
+      $('.sceneStarter3, .sceneStarter2, .sceneStarter3 .btn, .sceneStarter2 .btn').removeClass('active');
+      $('.sceneStarter1, .sceneStarter1 .btn').addClass('active');
       $('.scene-3, .scene-2').hide();
       $('.scene-1').show();
 
@@ -459,8 +459,8 @@ $( document ).on('turbolinks:load', function() {
 
     $('.sceneStarter2').click(function() {
       allStyles.removeAttr('style')
-      $('.sceneStarter1, .sceneStarter3').removeClass('active');
-      $(this).addClass('active');
+      $('.sceneStarter1, .sceneStarter3, .sceneStarter1 .btn, .sceneStarter3 .btn').removeClass('active');
+      $('.sceneStarter2, .sceneStarter2 .btn').addClass('active');
       $('.scene-1, .scene-3').hide();
       $('.scene-2').show();
 
@@ -478,8 +478,8 @@ $( document ).on('turbolinks:load', function() {
 
     $('.sceneStarter3').click(function() {
       allStyles.removeAttr('style')
-      $('.sceneStarter1, .sceneStarter2').removeClass('active');
-      $(this).addClass('active');
+      $('.sceneStarter1, .sceneStarter2, .sceneStarter1 .btn, .sceneStarter2 .btn').removeClass('active');
+      $('.sceneStarter3, .sceneStarter3 .btn').addClass('active');
       $('.scene-1, .scene-2').hide();
       $('.scene-3').show();
 
