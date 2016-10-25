@@ -10,7 +10,7 @@
           .col-lg-6
             .row
               .col-xs-2.col-md-3.col-lg-2
-                = image_tag "customers/#{item[:image]}.png", alt: item[:name], class: 'img-fluid img-circle'
+                = image_tag "customers/#{item[:image]}.png", alt: item[:name], class: 'img-fluid rounded-circle'
               .col-xs-10.col-md-9.col-lg-10
                 %blockquote.blockquote
                   %p= simple_format item[:body]

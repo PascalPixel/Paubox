@@ -33,7 +33,7 @@ gem 'simple_form', '~> 3.2.1'
 gem 'postmark-rails', '~> 0.13.0'
 
 # Bootstrap 4 for layout
-gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'bootstrap', '~> 4.0.0.alpha5'
 
 # Synthax highlighting
 gem 'haml-coderay', '~> 0.2.0'

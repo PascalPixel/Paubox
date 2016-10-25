@@ -1,49 +1,40 @@
 %nav.navbar.navbar-dark.bg-primary.navbar-fixed-top
-  %ul.nav.navbar-nav.hidden-sm-up
-    %li.nav-item
-      = link_to root_path, class: 'nav-link' do
-        = image_tag 'branding/white/paubox.svg'
-  %button.navbar-toggler.hidden-sm-up.pull-xs-right{'aria-controls' => 'collapseNav', 'aria-expanded' => 'false', 'aria-label' => 'Toggle navigation', 'data-target' => '#collapseNav', 'data-toggle' => 'collapse', :type => 'button'}
-    ☰
-  #collapseNav.collapse.navbar-toggleable-xs
+  .clearfix.float-lg-left
+    %button.navbar-toggler.hidden-lg-up.float-xs-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+    = link_to root_path, class: 'navbar-brand float-xs-left' do
+      = image_tag 'branding/white/paubox.svg'
+  #navbarResponsive.collapse.navbar-toggleable-md
     %ul.nav.navbar-nav
-      %li.nav-item.hidden-xs-down
-        = link_to root_path, class: 'nav-link' do
-          = image_tag 'branding/white/paubox.svg'
       %li.nav-item
         = link_to t('.about_hipaa'), 'https://www.paubox.com/blog/hipaa-compliance', class: 'nav-link'
         -# %li= link_to t('.about_hipaa'), hipaa_compliance_path
       %li.nav-item.dropdown
-        %a.nav-link#solutionsDropdown.dropdown-toggle{'aria-expanded' => 'false', 'aria-haspopup' => 'true', 'data-toggle' => 'dropdown'}
+        %a#solutionsDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
           = t('welcomes.solutions.title')
-        .dropdown-menu{'aria-labelledby' => 'solutionsDropdown'}
+        .dropdown-menu{"aria-labelledby" => "solutionsDropdown"}
           = link_to t('welcomes.solution_encrypted_email.title'), solutions_encrypted_email_path, class: 'dropdown-item'
           = link_to t('welcomes.solution_encrypted_form.title'), solutions_encrypted_form_path, class: 'dropdown-item'
           = link_to t('welcomes.solution_branded_storage.title'), solutions_branded_storage_path, class: 'dropdown-item'
           = link_to t('welcomes.solution_email_api.title'), solutions_email_api_path, class: 'dropdown-item'
-      %li.nav-item.hidden-sm-down
+      %li.nav-item
         = link_to t('welcomes.customers.title'), customers_path, class: 'nav-link'
       %li.nav-item.dropdown
-        %a#dropdownMenuLink.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+        %a#moreDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
           More
-        .dropdown-menu{"aria-labelledby" => "dropdownMenuLink"}
-          = link_to t('welcomes.customers.title'), customers_path, class: 'dropdown-item hidden-md-up'
+        .dropdown-menu{"aria-labelledby" => "moreDropdown"}
           = link_to t('welcomes.about.title'), about_path, class: 'dropdown-item'
           = link_to t('welcomes.partners.title'), partners_path, class: 'dropdown-item'
           = link_to t('welcomes.security.title'), security_path, class: 'dropdown-item'
           = link_to t('welcomes.terms.title'), terms_path, class: 'dropdown-item'
-          %a.dropdown-item.hidden-md-up{'data-target' => '#contactForm', 'data-toggle' => 'modal'}
-            = t('.contact')
           .dropdown-divider
           = link_to 'Blog', 'https://www.paubox.com/blog', class: 'dropdown-item'
-          = link_to 'Help', 'https://www.paubox.com/blog/help', class: 'dropdown-item hidden-md-up'
           = link_to 'Jobs', 'https://www.paubox.com/blog/jobs', class: 'dropdown-item'
           = link_to 'Press', 'https://www.paubox.com/blog/press', class: 'dropdown-item'
-    %ul.nav.navbar-nav.pull-sm-right
-      %li.nav-item.hidden-sm-down
+    %ul.nav.navbar-nav.float-lg-right
+      %li.nav-item
         %a.nav-link{'data-target' => '#contactForm', 'data-toggle' => 'modal'}
           = t('.contact')
-      %li.nav-item.hidden-sm-down
+      %li.nav-item
         = link_to 'Help', 'https://www.paubox.com/blog/help', class: 'nav-link'
       - if user_signed_in?
         %li.nav-item
