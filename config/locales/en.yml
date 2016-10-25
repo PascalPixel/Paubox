@@ -306,9 +306,9 @@ en:
       header: Our Solutions
       sub_header: Getting encrypted in every way
     customers:
-      title: Our Customers
-      header: Customer Success Stories
-      sub_header: Our customers all have their own reasons to love Paubox
+      title: Customer Success
+      header: Our Customers
+      sub_header: Each has their own reasons to love Paubox
       links: Read more
       people:
       - body: |
