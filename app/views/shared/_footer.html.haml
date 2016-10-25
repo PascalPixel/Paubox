@@ -38,13 +38,5 @@
               %a{href: item[:link], rel: 'nofollow', target: '_blank'}
                 %i.mdi{class: "mdi-#{item[:icon]}"}
                 = item[:name]
-    .row.mt-3
-      .col-sm-6
-        %small= t('.copyright')
-      .col-sm-6
-        .float-sm-right
-          %a{href: "http://www.superpencil.com/?utm_source=timegiver&utm_medium=footer+link&utm_campaign=project", class: 'superpencil', alt: t('.superpencil')}
-            %small= t('.design')
-            %b.tag.tag-secondary
-              = image_tag 'partners/superpencil.svg', alt: 'Superpencil'
-              = t('.superpencil')
+    .row.mt-3.text-xs-center
+      %small= t('.copyright')

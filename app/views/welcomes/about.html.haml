@@ -69,3 +69,12 @@
                     %h5= item[:name]
                     %p= simple_format item[:body]
                     %br
+
+%section
+  .container
+    .row
+      .col-sm-12.text-xs-center
+        %a{href: "http://www.superpencil.com/?utm_source=paubox&utm_medium=about+link&utm_campaign=client", class: 'btn btn-warning superpencil', alt: 'Superpencil', target: '_blank'}
+          Design & Front-end Development by
+          = image_tag 'partners/superpencil.svg', alt: 'Superpencil'
+          %b Superpencil
