@@ -29,6 +29,7 @@
       .col-md-8
         %h2= t('.mission.header')
         %p= simple_format t('.mission.body')
+%hr
 %section
   .container
     .row
@@ -49,6 +50,7 @@
                     %h5= item[:name]
                     %p= simple_format item[:body]
                     %br
+%hr
 %section
   .container
     .row
@@ -69,12 +71,12 @@
                     %h5= item[:name]
                     %p= simple_format item[:body]
                     %br
-
+%hr
 %section
   .container
     .row
       .col-sm-12.text-xs-center
-        %a{href: "http://www.superpencil.com/?utm_source=paubox&utm_medium=about+link&utm_campaign=client", class: 'btn btn-warning superpencil', alt: 'Superpencil', target: '_blank'}
-          Design & Front-end Development by
+        %h3 Design & Front-end Development by
+        %a{href: "http://www.superpencil.com/?utm_source=paubox&utm_medium=about+link&utm_campaign=client", class: 'btn btn-warning btn-superpencil', alt: 'Superpencil', target: '_blank'}
           = image_tag 'partners/superpencil.svg', alt: 'Superpencil'
           %b Superpencil

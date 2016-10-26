@@ -18,6 +18,7 @@
           %li No program or renewal fees
           %li Friendly commission structure to fit your business model
           %li White label opportunity for cloud storage and online forms
+%hr
 %section
   .container
     .row
@@ -47,3 +48,6 @@
         = image_tag 'partners/trifecta.png', class: 'img-fluid'
       .col-xs-6.col-lg-3
         = image_tag 'partners/warp.png', class: 'img-fluid'
+%hr
+= render partial: 'shared/sub_footer',
+         locals: { footer: t('.sub_footer')}

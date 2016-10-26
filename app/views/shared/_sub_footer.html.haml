@@ -2,6 +2,11 @@
   .container
     .row
       .col-sm-12.text-xs-center
-        %h3= t('.header')
-        %h5.mb-2= t('.sub_header')
-        %button.btn.btn-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= t('.button_info')
+        -unless footer[:header].blank?
+          %h3= footer[:header]
+        - unless footer[:sub_header].blank?
+          %h5.mb-2= footer[:sub_header]
+        - unless footer[:button_cta].blank?
+          %button.btn.btn-primary{'data-target' => '#requestDemo', 'data-toggle' => 'modal'}= footer[:button_cta]
+        - unless footer[:button_contact].blank?
+          %button.btn.btn-info{'data-target' => '#contactForm', 'data-toggle' => 'modal'}= footer[:button_contact]

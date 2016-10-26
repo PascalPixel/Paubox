@@ -24,6 +24,11 @@ en:
         - image: cio
           name: CIO
           link: ""
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     about:
       title: About us
       header: Our Mission, Team & Advisors
@@ -167,6 +172,11 @@ en:
           body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
           icon: file-document
           color: text-info
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     solution_encrypted_form:
       title: Encrypted Forms
       header: Eliminate the paper and make getting information easier
@@ -204,6 +214,11 @@ en:
           body: Every Paubox product comes with a no risk, free 14-day trial.
           icon: file-document
           color: text-info
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     solution_branded_storage:
       title: Branded Storage
       header: HIPAA compliant file sharing and cloud storage
@@ -241,6 +256,11 @@ en:
           body: Every Paubox product comes with a no risk, free 14-day trial.
           icon: file-document
           color: text-info
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     solution_email_api:
       title: Email API
       header: A HIPAA compliant email API for developers and IT professionals
@@ -275,10 +295,15 @@ en:
           body: Not having a BAA in place with your vendors could have you facing steep fines. Paubox will sign a BAA to make sure you stay HIPAA compliant.
           icon: file-document
           color: text-primary
-    partner:
-      title: Partner Program
-      big_header: Stand out with Paubox
-      sub_header: ""
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
+    partners:
+      title: Partners
+      header: Partner Program
+      sub_header: Stand out with Paubox
       button_info: ""
       button_cta: Sign Up
       intro:
@@ -295,16 +320,20 @@ en:
         items:
         - item: ""
         - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
-        - item: ""
+      sub_footer:
+        header: Become a Paubox partner
+        sub_header: We would love to hear from you
+        button_cta: ""
+        button_contact: Send a message
     solutions:
       title: Solutions
       header: Our Solutions
       sub_header: Getting encrypted in every way
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     customers:
       title: Customer Success
       header: Our Customers
@@ -438,6 +467,11 @@ en:
         name: Hookele Health Navigators
         image: hookele
         link: "https://www.paubox.com/blog/customers/case-study-hookelehealth"
+      sub_footer:
+        header: Make your email HIPAA compliant
+        sub_header: Our customers secure 30,000+ emails every day
+        button_cta: Request a Free Demo
+        button_contact: ""
     hipaa:
       title: About HIPAA
       header: About HIPAA Compliant Email
@@ -454,10 +488,6 @@ en:
       title: Terms
       header: Terms of Service
       sub_header: Paubox, Inc.
-    partners:
-      title: Partners
-      header: Partner Program
-      sub_header: Stand out with Paubox
     jobs:
       title: Jobs
       header: Jobs
@@ -537,10 +567,6 @@ en:
         image: bonnie_castonguay
         title: RN Co-Founder
         company: Hookele Health Navigators
-    sub_footer:
-      header: Make your email HIPAA compliant
-      sub_header: Our customers secure 30,000+ emails every day
-      button_info: Request a Free Demo
     footer:
       documentation: Documentation
       about: About
