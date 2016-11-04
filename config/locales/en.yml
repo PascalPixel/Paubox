@@ -11,7 +11,7 @@ en:
         media_logos:
         - image: techcrunch
           name: Techcrunch
-          link: ""
+          link: "https://techcrunch.com/2016/08/01/heres-the-18th-batch-of-companies-from-500-startups/"
         - image: inc
           name: Inc
           link: ""
@@ -27,7 +27,7 @@ en:
       sub_footer:
         header: Make your email HIPAA compliant
         sub_header: Our customers secure 30,000+ emails every day
-        button_cta: Request a Free Demo
+        button_cta: Get Compliant Now
         button_contact: ""
     about:
       title: About us
@@ -50,7 +50,7 @@ en:
         - name: Rick Kuwahara
           title: CMO
           body: |
-            Rick has over 10 years of sales and marketing experience. He is an expert at building data-driven, integrated marketing campaigns that drive growth. Hegraduated from the University of Hawaii at Manoa with a BAin English and aMBA.
+            Rick has over 10 years of sales and marketing experience. He is an expert at building data-driven, integrated marketing campaigns that drive growth. He graduated from the University of Hawaii at Manoa with a BA in English and a MBA.
           image: rick_kuwahara
         - name: Roger Manson
           title: Senior Director Customer
