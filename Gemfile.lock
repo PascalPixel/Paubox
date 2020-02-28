@@ -130,7 +130,7 @@ GEM
     postmark-rails (0.13.0)
       actionmailer (>= 3.0.0)
       postmark (~> 1.8.0)
-    puma (3.6.0)
+    puma (3.12.4)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -239,7 +239,7 @@ DEPENDENCIES
   mail_form!
   pg (~> 0.18.4)
   postmark-rails (~> 0.13.0)
-  puma (~> 3.6.0)
+  puma (~> 3.12.4)
   rails (~> 5.0.0)
   rails-assets-animate.css (~> 3.5.2)!
   rails-assets-chartjs (~> 2.3.0)!
